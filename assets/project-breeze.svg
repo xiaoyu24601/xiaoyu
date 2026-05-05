@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">Breeze Notes placeholder</title>
+  <desc id="desc">A minimal summer inspired interface illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#dff8ff"/>
+      <stop offset=".55" stop-color="#f7fffb"/>
+      <stop offset="1" stop-color="#ffe3bd"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="660" fill="url(#bg)"/>
+  <path d="M145 188c42-58 117-87 205-55 74 27 97 89 178 72 83-18 107-91 200-62 72 22 101 86 88 151-22 113-153 161-326 159-208-3-416-67-345-265Z" fill="#fff" opacity=".68"/>
+  <rect x="250" y="210" width="460" height="292" rx="28" fill="#fff" opacity=".86"/>
+  <rect x="296" y="260" width="180" height="18" rx="9" fill="#65bed0"/>
+  <rect x="296" y="314" width="334" height="14" rx="7" fill="#b8dedf"/>
+  <rect x="296" y="354" width="250" height="14" rx="7" fill="#cdeae5"/>
+  <circle cx="632" cy="274" r="38" fill="#ffd0a0"/>
+  <path d="M336 444c52-44 120-39 162 3 25 25 58 28 94 2 23-17 55-19 84 9v44H296v-25c11-9 24-20 40-33Z" fill="#b9eadf"/>
+</svg>

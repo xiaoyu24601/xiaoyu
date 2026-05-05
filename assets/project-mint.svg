@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">Mint Gallery placeholder</title>
+  <desc id="desc">A clean gallery layout illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0" stop-color="#f7fffb"/>
+      <stop offset=".5" stop-color="#e2f7ff"/>
+      <stop offset="1" stop-color="#fff0d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="660" fill="url(#bg)"/>
+  <path d="M126 180c54-43 113-46 176-18 48 21 88 17 126-13 41-33 96-35 144-4 53 35 99 35 142 0 40-32 88-27 119 9" fill="none" stroke="#fff" stroke-width="58" stroke-linecap="round" opacity=".76"/>
+  <rect x="196" y="196" width="232" height="286" rx="24" fill="#fff" opacity=".88"/>
+  <rect x="470" y="154" width="294" height="214" rx="24" fill="#fff" opacity=".88"/>
+  <rect x="470" y="402" width="294" height="104" rx="24" fill="#fff" opacity=".88"/>
+  <circle cx="312" cy="294" r="50" fill="#ffd2ad"/>
+  <path d="M230 426c46-56 92-62 139-14 12 12 25 24 40 35v35H196v-21c10-9 21-20 34-35Z" fill="#bcebdd"/>
+  <rect x="510" y="208" width="168" height="16" rx="8" fill="#67c3d2"/>
+  <rect x="510" y="256" width="214" height="14" rx="7" fill="#c4e5e4"/>
+  <rect x="510" y="300" width="126" height="14" rx="7" fill="#d7eee9"/>
+  <rect x="510" y="439" width="180" height="14" rx="7" fill="#ffd1db"/>
+</svg>

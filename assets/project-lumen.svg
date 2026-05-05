@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">Lumen Desk placeholder</title>
+  <desc id="desc">A calm dashboard illustration with soft blocks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="1" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#e5fff4"/>
+      <stop offset=".58" stop-color="#f8fdff"/>
+      <stop offset="1" stop-color="#ffdce3"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="660" fill="url(#bg)"/>
+  <circle cx="770" cy="120" r="66" fill="#ffd7a8" opacity=".75"/>
+  <rect x="180" y="142" width="600" height="376" rx="34" fill="#fff" opacity=".84"/>
+  <rect x="230" y="196" width="150" height="34" rx="17" fill="#65bed0"/>
+  <rect x="230" y="274" width="210" height="150" rx="22" fill="#e0f7f5"/>
+  <rect x="472" y="274" width="258" height="68" rx="20" fill="#fff3de"/>
+  <rect x="472" y="366" width="258" height="58" rx="18" fill="#e9f7ff"/>
+  <path d="M253 467c61-37 116-30 166 1 36 23 72 21 112-6 55-38 120-26 181 25" fill="none" stroke="#7fd4c7" stroke-width="18" stroke-linecap="round"/>
+</svg>

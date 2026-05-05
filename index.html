@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="一个清爽、透明感、带有唯美像素夏日氛围的个人作品网站。" />
+    <title>小鱼 | 夏日作品集</title>
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>小鱼</span>
+      </a>
+
+      <nav class="site-nav" aria-label="主导航">
+        <button class="nav-toggle" type="button" aria-label="打开菜单" aria-expanded="false" data-nav-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="#about">关于</a>
+          <a href="#now">现在</a>
+          <a href="#work">作品</a>
+          <a href="#skills">技能</a>
+          <a href="#contact">联系</a>
+        </div>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="切换深浅色模式" data-theme-toggle>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M12 18.5A6.5 6.5 0 1 0 12 5.5a6.5 6.5 0 0 0 0 13Zm0 3a1 1 0 0 1-1-1v-.6a1 1 0 1 1 2 0v.6a1 1 0 0 1-1 1Zm0-17.4a1 1 0 0 1-1-1v-.6a1 1 0 1 1 2 0v.6a1 1 0 0 1-1 1ZM3.5 13H2.9a1 1 0 0 1 0-2h.6a1 1 0 1 1 0 2Zm17.6 0h-.6a1 1 0 1 1 0-2h.6a1 1 0 1 1 0 2ZM5.7 19.7a1 1 0 0 1-.7-1.7l.4-.4A1 1 0 1 1 6.8 19l-.4.4a1 1 0 0 1-.7.3Zm12.5-12.5a1 1 0 0 1-.7-1.7l.4-.4a1 1 0 1 1 1.4 1.4l-.4.4a1 1 0 0 1-.7.3Zm.4 12.8a1 1 0 0 1-.7-.3l-.4-.4a1 1 0 0 1 1.4-1.4l.4.4a1 1 0 0 1-.7 1.7ZM6.1 7.5a1 1 0 0 1-.7-.3L5 6.8a1 1 0 0 1 1.4-1.4l.4.4a1 1 0 0 1-.7 1.7Z" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="cloud cloud-one" aria-hidden="true"></div>
+        <div class="cloud cloud-two" aria-hidden="true"></div>
+        <div class="star-pixels" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy-block reveal">
+            <p class="eyebrow">Summer Light / Personal Space</p>
+            <h1>把灵感写成清澈、温柔、可以被打开的作品。</h1>
+            <p class="hero-copy">
+              我喜欢简洁的界面、轻盈的交互和有秩序的内容表达。这里收集我的练习、项目、审美偏好和正在形成的想法。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#work">查看作品</a>
+              <a class="button ghost" href="#contact">联系我</a>
+            </div>
+          </div>
+
+          <div class="hero-art reveal" aria-label="像素风夏日插画">
+            <img src="assets/summer-pixel-scene.svg" alt="透明感夏日天空、海面与小站台的像素风插画" />
+            <div class="glass-note">
+              <span>Current mood</span>
+              <strong>clear sky, soft code</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>关于我</h2>
+        </div>
+        <div class="about-grid reveal">
+          <p>
+            我正在搭建自己的个人网站，也在持续学习前端、设计和产品表达。比起堆满效果，我更在意页面是否清楚、舒服、能让人快速理解我是谁、做过什么、想做什么。
+          </p>
+          <div class="tag-list" aria-label="兴趣关键词">
+            <span>前端开发</span>
+            <span>界面设计</span>
+            <span>像素风</span>
+            <span>夏日电影感</span>
+            <span>治愈系视觉</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section now" id="now">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Now</p>
+          <h2>现在关注的事</h2>
+        </div>
+        <div class="now-grid">
+          <article class="now-card reveal">
+            <span class="card-index">01</span>
+            <h3>把想法做成可访问的网页</h3>
+            <p>从静态页面开始，慢慢补齐部署、域名、内容维护和作品记录。</p>
+          </article>
+          <article class="now-card reveal">
+            <span class="card-index">02</span>
+            <h3>练习更克制的视觉表达</h3>
+            <p>用色彩、留白、层级和小动效制造记忆点，而不是让装饰抢走内容。</p>
+          </article>
+          <article class="now-card reveal">
+            <span class="card-index">03</span>
+            <h3>整理项目与学习轨迹</h3>
+            <p>把完成过的练习、代码片段和设计探索沉淀成可展示的作品。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>作品展示</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="assets/project-breeze.svg" alt="Breeze Notes 项目封面" loading="lazy" />
+            <div>
+              <p class="project-type">Web App / Notes</p>
+              <h3>Breeze Notes</h3>
+              <p>轻量笔记工具概念，强调快速记录、自然分类和安静的阅读体验。</p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="assets/project-lumen.svg" alt="Lumen Desk 项目封面" loading="lazy" />
+            <div>
+              <p class="project-type">Dashboard / Habit</p>
+              <h3>Lumen Desk</h3>
+              <p>个人工作流仪表盘，整合待办、习惯和灵感收集，适合日常复盘。</p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="assets/project-mint.svg" alt="Mint Gallery 项目封面" loading="lazy" />
+            <div>
+              <p class="project-type">Gallery / Template</p>
+              <h3>Mint Gallery</h3>
+              <p>极简图片展厅模板，用柔和视觉突出内容本身，适合摄影或插画展示。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>技能与工具</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-item reveal"><span class="skill-icon">H</span><p>HTML / CSS</p></div>
+          <div class="skill-item reveal"><span class="skill-icon">JS</span><p>JavaScript</p></div>
+          <div class="skill-item reveal"><span class="skill-icon">Py</span><p>Python</p></div>
+          <div class="skill-item reveal"><span class="skill-icon">UI</span><p>UI Design</p></div>
+          <div class="skill-item reveal"><span class="skill-icon">Git</span><p>Git / GitHub</p></div>
+          <div class="skill-item reveal"><span class="skill-icon">AI</span><p>AI Tools</p></div>
+        </div>
+      </section>
+
+      <section class="section timeline" id="timeline">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trace</p>
+          <h2>小小路线图</h2>
+        </div>
+        <ol class="timeline-list reveal">
+          <li><time>Step 1</time><span>完善个人介绍、作品截图和真实链接。</span></li>
+          <li><time>Step 2</time><span>上传到 GitHub Pages，让别人能通过链接访问。</span></li>
+          <li><time>Step 3</time><span>后续补充博客、学习记录或项目复盘。</span></li>
+        </ol>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>如果你也有新的想法，可以从这里找到我。</h2>
+          <div class="contact-list">
+            <a class="contact-link" href="mailto:2696827479@qq.com"><span>QQ 邮箱</span><strong>2696827479@qq.com</strong></a>
+            <a class="contact-link" href="https://github.com/xiaoyu24601" target="_blank" rel="noreferrer"><span>GitHub</span><strong>@xiaoyu24601</strong></a>
+            <a class="contact-link" href="https://space.bilibili.com/" target="_blank" rel="noreferrer"><span>Bilibili</span><strong>可替换为你的主页</strong></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> 小鱼. Built with summer light.</p>
+    </footer>
+  </body>
+</html>
