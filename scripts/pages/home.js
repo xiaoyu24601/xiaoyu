@@ -1,6 +1,9 @@
-import { featuredContent, home, quickEntries, recentUpdates } from "../../data/site-data.js";
+import { updates } from "../../data/updates-data.js";
+import { featuredContent, home, quickEntries } from "../../data/site-data.js";
 import { linkCardList, sectionHeading } from "../render-helpers.js";
 import { escapeHtml } from "../utils.js";
+
+const recentUpdates = updates.slice(0, 5);
 
 export const renderHomePage = () => `
   <section class="hero section" id="hero">
@@ -37,7 +40,13 @@ export const renderHomePage = () => `
   </section>
 
   <section class="section compact-section" data-defer-section>
-    ${sectionHeading({ eyebrow: "Updates", title: "最近更新" })}
+    <div class="section-heading reveal section-heading-row">
+      <div>
+        <p class="eyebrow">Recent Updates</p>
+        <h2>最近更新</h2>
+      </div>
+      <a class="section-link" href="blog.html">View All</a>
+    </div>
     <div class="updates-list">
       ${recentUpdates
         .map(
@@ -45,6 +54,7 @@ export const renderHomePage = () => `
             <a class="update-item reveal" href="${escapeHtml(item.href)}">
               <time>${escapeHtml(item.date)}</time>
               <span>
+                <i>${escapeHtml(item.type)}</i>
                 <strong>${escapeHtml(item.title)}</strong>
                 <em>${escapeHtml(item.summary)}</em>
               </span>

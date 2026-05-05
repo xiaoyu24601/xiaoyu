@@ -95,6 +95,7 @@ const initNavigation = () => {
     document.body.classList.toggle("nav-open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
     navToggle.setAttribute("aria-label", isOpen ? "关闭菜单" : "打开菜单");
+    navToggle.setAttribute("aria-controls", "site-menu");
   });
 
   navLinks.addEventListener("click", (event) => {

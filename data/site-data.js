@@ -60,27 +60,6 @@ export const quickEntries = [
   },
 ];
 
-export const recentUpdates = [
-  {
-    date: "2026-05-05",
-    title: "完成多页面架构拆分",
-    summary: "从单页锚点站点重构为 Home / About / Projects / Resources / Downloads / Blog / Contact。",
-    href: "blog.html",
-  },
-  {
-    date: "2026-05-05",
-    title: "抽离数据配置与共享 Layout",
-    summary: "导航、项目、资源、博客和联系信息统一由配置驱动，页面使用共享渲染层。",
-    href: "about.html",
-  },
-  {
-    date: "2026-05-05",
-    title: "保留原有视觉并优化扩展能力",
-    summary: "继续沿用清爽、透明、夏日像素风格，同时为资源库和下载中心预留结构。",
-    href: "resources.html",
-  },
-];
-
 export const featuredContent = [
   {
     label: "Selected Project",
@@ -181,107 +160,6 @@ export const timeline = [
   { time: "Step 1", text: "完善个人介绍、作品截图和真实链接。" },
   { time: "Step 2", text: "上传到 GitHub Pages，让别人能通过链接访问。" },
   { time: "Step 3", text: "后续补充博客、学习记录或项目复盘。" },
-];
-
-export const resourceCategories = [
-  { id: "all", label: "全部" },
-  { id: "ai-tools", label: "AI工具" },
-  { id: "prompts", label: "提示词" },
-  { id: "model-platforms", label: "模型平台" },
-  { id: "learning", label: "学习资料" },
-  { id: "links", label: "常用链接" },
-  { id: "favorites", label: "我的收藏" },
-];
-
-export const resources = [
-  {
-    title: "ChatGPT",
-    description: "日常问答、写作、代码辅助和资料整理的通用 AI 助手。",
-    category: "ai-tools",
-    url: "https://chatgpt.com/",
-    backupUrl: "https://openai.com/chatgpt/",
-    note: "适合作为默认入口，复杂任务建议拆成明确步骤。",
-    tags: ["AI工具", "写作", "代码", "常用"],
-    isFavorite: true,
-    isImportant: true,
-  },
-  {
-    title: "Claude",
-    description: "适合长文本阅读、结构化写作、代码解释和文档分析。",
-    category: "ai-tools",
-    url: "https://claude.ai/",
-    backupUrl: "https://www.anthropic.com/claude",
-    note: "长文档处理体验稳定，可作为 ChatGPT 的互补工具。",
-    tags: ["AI工具", "长文本", "写作"],
-    isFavorite: true,
-    isImportant: false,
-  },
-  {
-    title: "提示词模板库",
-    description: "收集可复用的提示词结构，用于学习、写作、开发和资料整理。",
-    category: "prompts",
-    url: "https://www.promptingguide.ai/",
-    backupUrl: "https://github.com/dair-ai/Prompt-Engineering-Guide",
-    note: "后续可以把自己的常用提示词拆成独立 JSON 数据。",
-    tags: ["提示词", "Prompt", "学习"],
-    isFavorite: false,
-    isImportant: true,
-  },
-  {
-    title: "OpenAI Platform",
-    description: "OpenAI API、模型文档、控制台和开发者资源入口。",
-    category: "model-platforms",
-    url: "https://platform.openai.com/",
-    backupUrl: "https://platform.openai.com/docs",
-    note: "查询模型、API、计费和示例时优先看官方文档。",
-    tags: ["模型平台", "API", "文档"],
-    isFavorite: true,
-    isImportant: true,
-  },
-  {
-    title: "Hugging Face",
-    description: "模型、数据集、Spaces 和开源 AI 应用生态平台。",
-    category: "model-platforms",
-    url: "https://huggingface.co/",
-    backupUrl: "https://huggingface.co/models",
-    note: "适合查找开源模型、演示空间和模型卡说明。",
-    tags: ["模型平台", "开源", "数据集"],
-    isFavorite: false,
-    isImportant: false,
-  },
-  {
-    title: "MDN Web Docs",
-    description: "前端标准、浏览器 API、HTML/CSS/JavaScript 的权威学习资料。",
-    category: "learning",
-    url: "https://developer.mozilla.org/",
-    backupUrl: "https://developer.mozilla.org/zh-CN/",
-    note: "遇到 Web API 和 CSS 细节时优先查这里。",
-    tags: ["学习资料", "前端", "文档"],
-    isFavorite: true,
-    isImportant: false,
-  },
-  {
-    title: "GitHub",
-    description: "代码托管、项目管理、开源检索和个人作品发布入口。",
-    category: "links",
-    url: "https://github.com/",
-    backupUrl: "https://docs.github.com/",
-    note: "个人站部署和资源版本管理可以继续依赖 GitHub Pages。",
-    tags: ["常用链接", "部署", "开源"],
-    isFavorite: true,
-    isImportant: false,
-  },
-  {
-    title: "个人 AI 收藏夹",
-    description: "预留给自己长期沉淀的高频工具、文章、提示词和模型观察。",
-    category: "favorites",
-    url: "resources.html",
-    backupUrl: "resources.html",
-    note: "这是内部占位条目，后续可替换为自己的真实收藏数据库。",
-    tags: ["我的收藏", "长期维护", "个人"],
-    isFavorite: true,
-    isImportant: true,
-  },
 ];
 
 export const posts = [

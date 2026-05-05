@@ -1,4 +1,4 @@
-import { resourceCategories, resources } from "../../data/site-data.js";
+import { resourceCategories, resources } from "../../data/resources-data.js";
 import { pageHero } from "../render-helpers.js";
 import { escapeHtml } from "../utils.js";
 
@@ -66,7 +66,7 @@ export const renderResourcesPage = () => `
 `;
 
 export const renderResourceCard = (item) => `
-  <article class="resource-card ${item.isImportant ? "is-important" : ""} ${item.isFavorite ? "is-favorite" : ""}" data-resource-card>
+  <article class="resource-card ${item.featured ? "is-important" : ""}" data-resource-card>
     <div class="resource-card-main">
       <div class="resource-card-head">
         <div>
@@ -74,8 +74,7 @@ export const renderResourceCard = (item) => `
           <h3>${escapeHtml(item.title)}</h3>
         </div>
         <div class="resource-flags" aria-label="资源标记">
-          ${item.isImportant ? '<span class="flag important">Important</span>' : ""}
-          ${item.isFavorite ? '<span class="flag favorite">Favorite</span>' : ""}
+          ${item.featured ? '<span class="flag important">Featured</span>' : ""}
         </div>
       </div>
       <p>${escapeHtml(item.description)}</p>

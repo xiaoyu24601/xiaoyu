@@ -1,5 +1,5 @@
 import { downloads } from "../data/downloads-data.js";
-import { resources } from "../data/site-data.js";
+import { resources } from "../data/resources-data.js";
 import { writeToClipboard } from "./utils.js";
 
 export const initProjectInteractions = () => {
@@ -102,7 +102,7 @@ export const initResourceInteractions = () => {
 
   const getCategoryItems = (category) => {
     if (category === "all") return resources;
-    if (category === "favorites") return resources.filter((item) => item.isFavorite);
+    if (category === "featured") return resources.filter((item) => item.featured);
     return resources.filter((item) => item.category === category);
   };
 
@@ -118,9 +118,9 @@ export const initResourceInteractions = () => {
     const visibleItems = resources.filter((item) => {
       const fields = [item.title, item.description, item.category, item.url, item.backupUrl, item.note, ...(item.tags || [])].join(" ").toLowerCase();
       const matchesQuery = !query || fields.includes(query);
-      const matchesCategory = state.category === "all" || (state.category === "favorites" ? item.isFavorite : item.category === state.category);
+      const matchesCategory = state.category === "all" || (state.category === "featured" ? item.featured : item.category === state.category);
       const matchesTag = state.tag === "all" || item.tags?.includes(state.tag);
-      const matchesImportant = !state.importantOnly || item.isImportant;
+      const matchesImportant = !state.importantOnly || item.featured;
       return matchesQuery && matchesCategory && matchesTag && matchesImportant;
     });
 
@@ -193,6 +193,7 @@ export const initResourceInteractions = () => {
 export const initDownloadInteractions = () => {
   const searchInput = document.querySelector("[data-download-search]");
   const categoryButtons = document.querySelectorAll("[data-download-category]");
+  const tagButtons = document.querySelectorAll("[data-download-tag]");
   const resetButton = document.querySelector("[data-download-reset]");
   const list = document.querySelector("[data-download-list]");
   const count = document.querySelector("[data-download-count]");
@@ -204,6 +205,7 @@ export const initDownloadInteractions = () => {
   const state = {
     query: "",
     category: "all",
+    tag: "all",
   };
 
   const getCategoryItems = (category) => {
@@ -232,12 +234,14 @@ export const initDownloadInteractions = () => {
         item.downloadUrl,
         item.backupUrl,
         item.category,
+        ...(item.tags || []),
       ]
         .join(" ")
         .toLowerCase();
       const matchesQuery = !query || fields.includes(query);
       const matchesCategory = state.category === "all" || item.category === state.category;
-      return matchesQuery && matchesCategory;
+      const matchesTag = state.tag === "all" || item.tags?.includes(state.tag);
+      return matchesQuery && matchesCategory && matchesTag;
     });
 
     list.innerHTML =
@@ -261,11 +265,21 @@ export const initDownloadInteractions = () => {
     });
   });
 
+  tagButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.tag = button.dataset.downloadTag || "all";
+      tagButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      renderDownloads();
+    });
+  });
+
   resetButton?.addEventListener("click", () => {
     state.query = "";
     state.category = "all";
+    state.tag = "all";
     searchInput.value = "";
     categoryButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.downloadCategory === "all"));
+    tagButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.downloadTag === "all"));
     renderDownloads();
   });
 

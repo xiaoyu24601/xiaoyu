@@ -17,7 +17,7 @@ export const renderLayout = (page) => `
         <span></span>
         <span></span>
       </button>
-      <div class="nav-links" data-nav-links>
+      <div class="nav-links" id="site-menu" data-nav-links>
         ${navigation
           .map(
             (item) =>
