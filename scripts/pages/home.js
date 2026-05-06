@@ -1,9 +1,26 @@
 import { updates } from "../../data/updates-data.js";
+import { aiNewsItems, aiNewsMeta } from "../../data/ai-news-data.js";
 import { featuredContent, home, quickEntries } from "../../data/site-data.js";
 import { linkCardList, sectionHeading } from "../render-helpers.js";
 import { escapeHtml } from "../utils.js";
 
 const recentUpdates = updates.slice(0, 5);
+const latestAiNews = aiNewsItems.slice(0, 3);
+
+const aiNewsUpdatedLabel = () => {
+  if (!aiNewsMeta.generatedAt) return aiNewsMeta.updateLabel || "等待首次自动更新";
+
+  try {
+    return new Intl.DateTimeFormat("zh-CN", {
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(aiNewsMeta.generatedAt));
+  } catch {
+    return aiNewsMeta.updateLabel || aiNewsMeta.generatedAt;
+  }
+};
 
 export const renderHomePage = () => `
   <section class="hero section" id="hero">
@@ -62,6 +79,36 @@ export const renderHomePage = () => `
           `
         )
         .join("")}
+    </div>
+  </section>
+
+  <section class="section compact-section" data-defer-section>
+    <div class="section-heading reveal section-heading-row">
+      <div>
+        <p class="eyebrow">AI Radar</p>
+        <h2>AI 资讯速览</h2>
+      </div>
+      <a class="section-link" href="ai-news.html">View Radar</a>
+    </div>
+    <div class="ai-news-preview">
+      <div class="ai-news-preview-meta reveal">
+        <span>Last Update</span>
+        <strong>${escapeHtml(aiNewsUpdatedLabel())}</strong>
+        <p>${escapeHtml(aiNewsMeta.itemCount || latestAiNews.length)} 条资讯来自 ${escapeHtml(aiNewsMeta.sourceCount || "多")} 个来源</p>
+      </div>
+      <div class="ai-news-preview-list">
+        ${latestAiNews
+          .map(
+            (item) => `
+              <a class="ai-news-preview-card reveal" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">
+                <p class="project-type">${escapeHtml(item.source)} / ${escapeHtml(item.category || "AI")}</p>
+                <h3>${escapeHtml(item.title)}</h3>
+                <p>${escapeHtml(item.summary)}</p>
+              </a>
+            `
+          )
+          .join("")}
+      </div>
     </div>
   </section>
 

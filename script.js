@@ -9,6 +9,7 @@ const pageModuleLoaders = {
   about: () => import("./scripts/pages/about.js").then((module) => module.renderAboutPage),
   projects: () => import("./scripts/pages/projects.js").then((module) => module.renderProjectsPage),
   resources: () => import("./scripts/pages/resources.js").then((module) => module.renderResourcesPage),
+  "ai-news": () => import("./scripts/pages/ai-news.js").then((module) => module.renderAiNewsPage),
   downloads: () => import("./scripts/pages/downloads.js").then((module) => module.renderDownloadsPage),
   blog: () => import("./scripts/pages/blog.js").then((module) => module.renderBlogPage),
   contact: () => import("./scripts/pages/contact.js").then((module) => module.renderContactPage),
@@ -17,6 +18,7 @@ const pageModuleLoaders = {
 const interactionLoaders = {
   projects: () => import("./scripts/page-interactions.js").then((module) => module.initProjectInteractions()),
   resources: () => import("./scripts/page-interactions.js").then((module) => module.initResourceInteractions()),
+  "ai-news": () => import("./scripts/page-interactions.js").then((module) => module.initAiNewsInteractions()),
   downloads: () => import("./scripts/page-interactions.js").then((module) => module.initDownloadInteractions()),
 };
 

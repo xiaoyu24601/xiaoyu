@@ -13,6 +13,7 @@ export const navigation = [
   { label: "About", text: "关于", href: "about.html", page: "about" },
   { label: "Projects", text: "作品", href: "projects.html", page: "projects" },
   { label: "Resources", text: "资源", href: "resources.html", page: "resources" },
+  { label: "AI News", text: "AI 资讯", href: "ai-news.html", page: "ai-news" },
   { label: "Downloads", text: "下载", href: "downloads.html", page: "downloads" },
   { label: "Blog", text: "博客", href: "blog.html", page: "blog" },
   { label: "Contact", text: "联系", href: "contact.html", page: "contact" },
@@ -45,6 +46,12 @@ export const quickEntries = [
     title: "AI 资源",
     summary: "沉淀 AI 工具、提示词、学习资料和灵感收藏。",
     href: "resources.html",
+  },
+  {
+    label: "AI Radar",
+    title: "AI 资讯",
+    summary: "自动整合近期 AI 新闻、模型发布、研究进展和开源动态。",
+    href: "ai-news.html",
   },
   {
     label: "Downloads",

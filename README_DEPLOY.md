@@ -26,3 +26,15 @@ https://你的用户名.github.io/ao-portfolio/
 ```text
 https://你的用户名.github.io/
 ```
+
+## AI 资讯自动更新
+
+网站新增了 AI 资讯页 `ai-news.html`，数据来自 `data/ai-news-data.js`。
+
+本地手动刷新：
+
+```powershell
+node scripts/fetch-ai-news.mjs
+```
+
+推送到 GitHub 后，`.github/workflows/update-ai-news.yml` 会每天自动运行一次，拉取 RSS 资讯并提交更新后的数据文件。也可以在 GitHub Actions 页面手动运行 `Update AI News`。

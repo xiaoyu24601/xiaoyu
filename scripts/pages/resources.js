@@ -34,6 +34,11 @@ export const renderResourcesPage = () => `
       </aside>
 
       <div class="resource-panel">
+        <a class="ai-news-inline-link" href="ai-news.html">
+          <span>AI Radar</span>
+          <strong>查看自动聚合的热门 AI 资讯</strong>
+        </a>
+
         <div class="resource-toolbar" data-resource-toolbar>
           <label class="search-field">
             <span>搜索资源</span>

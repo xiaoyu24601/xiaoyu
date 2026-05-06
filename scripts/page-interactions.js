@@ -1,4 +1,5 @@
 import { downloads } from "../data/downloads-data.js";
+import { aiNewsItems } from "../data/ai-news-data.js";
 import { resources } from "../data/resources-data.js";
 import { writeToClipboard } from "./utils.js";
 
@@ -299,5 +300,90 @@ export const initDownloadInteractions = () => {
   import("./pages/downloads.js").then((module) => {
     renderDownloadCard = module.renderDownloadCard;
     renderDownloads();
+  });
+};
+
+export const initAiNewsInteractions = () => {
+  const searchInput = document.querySelector("[data-ai-news-search]");
+  const tagButtons = document.querySelectorAll("[data-ai-news-tag]");
+  const categoryButtons = document.querySelectorAll("[data-ai-news-category]");
+  const resetButton = document.querySelector("[data-ai-news-reset]");
+  const list = document.querySelector("[data-ai-news-list]");
+  const count = document.querySelector("[data-ai-news-count]");
+  const categoryCounts = document.querySelectorAll("[data-ai-news-category-count]");
+  let renderAiNewsCard;
+
+  if (!searchInput || !tagButtons.length || !categoryButtons.length || !list) return;
+
+  const state = {
+    query: "",
+    category: "all",
+    tag: "all",
+  };
+
+  const getCategoryItems = (category) => {
+    if (category === "all") return aiNewsItems;
+    return aiNewsItems.filter((item) => item.category === category);
+  };
+
+  categoryCounts.forEach((item) => {
+    const category = item.dataset.aiNewsCategoryCount || "all";
+    item.textContent = getCategoryItems(category).length;
+  });
+
+  const renderNews = () => {
+    if (!renderAiNewsCard) return;
+
+    const query = state.query.trim().toLowerCase();
+    const visibleItems = aiNewsItems.filter((item) => {
+      const fields = [item.title, item.summary, item.source, item.category, item.url, ...(item.tags || [])].join(" ").toLowerCase();
+      const matchesQuery = !query || fields.includes(query);
+      const matchesCategory = state.category === "all" || item.category === state.category;
+      const matchesTag = state.tag === "all" || item.tags?.includes(state.tag);
+      return matchesQuery && matchesCategory && matchesTag;
+    });
+
+    list.innerHTML =
+      visibleItems.length > 0
+        ? visibleItems.map(renderAiNewsCard).join("")
+        : `<p class="empty-state">没有找到匹配的 AI 资讯。可以调整分类、标签或搜索关键词。</p>`;
+
+    if (count) count.textContent = visibleItems.length;
+  };
+
+  searchInput.addEventListener("input", (event) => {
+    state.query = event.target.value;
+    renderNews();
+  });
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.category = button.dataset.aiNewsCategory || "all";
+      categoryButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      renderNews();
+    });
+  });
+
+  tagButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.tag = button.dataset.aiNewsTag || "all";
+      tagButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      renderNews();
+    });
+  });
+
+  resetButton?.addEventListener("click", () => {
+    state.query = "";
+    state.category = "all";
+    state.tag = "all";
+    searchInput.value = "";
+    categoryButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.aiNewsCategory === "all"));
+    tagButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.aiNewsTag === "all"));
+    renderNews();
+  });
+
+  import("./pages/ai-news.js").then((module) => {
+    renderAiNewsCard = module.renderAiNewsCard;
+    renderNews();
   });
 };
