@@ -1,4 +1,4 @@
-import { vocabularyLevels, vocabularyWords } from "../../data/vocabulary-data.js";
+import { vocabularyLevels, vocabularyPlanDefaults, vocabularyWords } from "../../data/vocabulary-data.js";
 import { pageHero } from "../render-helpers.js";
 import { escapeHtml } from "../utils.js";
 
@@ -21,6 +21,10 @@ export const renderVocabularyPage = () => `
         </div>
         <h2 data-vocab-word>${escapeHtml(featuredWord.word)}</h2>
         <p class="vocab-meaning" data-vocab-meaning>${escapeHtml(featuredWord.meaning)}</p>
+        <div class="vocab-audio-row">
+          <button class="resource-action primary" type="button" data-vocab-speak>播放发音</button>
+          <button class="resource-action" type="button" data-vocab-next>学完，下一个</button>
+        </div>
         <div class="vocab-tabs" aria-label="单词详情">
           <button class="filter-button is-active" type="button" data-vocab-tab="grammar">语法</button>
           <button class="filter-button" type="button" data-vocab-tab="derivatives">派生</button>
@@ -52,7 +56,37 @@ export const renderVocabularyPage = () => `
           <span>今日进度</span>
           <strong data-vocab-progress>1 / ${escapeHtml(vocabularyWords.filter((word) => word.level === featuredWord.level).length)}</strong>
         </div>
+        <div class="vocab-daily-plan">
+          <label class="search-field">
+            <span>每日新词</span>
+            <input type="number" min="5" max="120" value="${escapeHtml(vocabularyPlanDefaults.dailyTarget)}" data-vocab-daily-target />
+          </label>
+          <label class="search-field">
+            <span>目标保持率</span>
+            <input type="number" min="50" max="100" value="${escapeHtml(vocabularyPlanDefaults.retentionTarget)}" data-vocab-retention />
+          </label>
+        </div>
+        <div class="vocab-plan-result" data-vocab-plan-result></div>
       </aside>
+    </div>
+  </section>
+
+  <section class="section compact-section" data-defer-section>
+    <div class="section-heading reveal">
+      <p class="eyebrow">复习曲线</p>
+      <h2>量化复习计划</h2>
+    </div>
+    <div class="review-curve reveal" data-review-curve>
+      ${vocabularyPlanDefaults.reviewDays
+        .map(
+          (day, index) => `
+            <div class="review-step">
+              <span>第 ${escapeHtml(day)} 天</span>
+              <strong>${escapeHtml(index === 0 ? "首次复习" : `第 ${index + 1} 轮`)}</strong>
+            </div>
+          `
+        )
+        .join("")}
     </div>
   </section>
 

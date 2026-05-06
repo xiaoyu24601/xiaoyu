@@ -4,6 +4,12 @@ export const vocabularyLevels = [
   { id: "college", label: "大学", target: "四六级 / 考研基础", count: "5200+" },
 ];
 
+export const vocabularyPlanDefaults = {
+  dailyTarget: 20,
+  reviewDays: [1, 2, 4, 7, 15, 30],
+  retentionTarget: 85,
+};
+
 export const vocabularyWords = [
   {
     word: "achieve",

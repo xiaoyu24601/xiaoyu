@@ -309,6 +309,7 @@ export const initAiNewsInteractions = () => {
   const tagButtons = document.querySelectorAll("[data-ai-news-tag]");
   const categoryButtons = document.querySelectorAll("[data-ai-news-category]");
   const resetButton = document.querySelector("[data-ai-news-reset]");
+  const dateInput = document.querySelector("[data-ai-news-date]");
   const list = document.querySelector("[data-ai-news-list]");
   const count = document.querySelector("[data-ai-news-count]");
   const categoryCounts = document.querySelectorAll("[data-ai-news-category-count]");
@@ -320,6 +321,7 @@ export const initAiNewsInteractions = () => {
     query: "",
     category: "all",
     tag: "all",
+    date: "",
   };
 
   const getCategoryItems = (category) => {
@@ -341,7 +343,8 @@ export const initAiNewsInteractions = () => {
       const matchesQuery = !query || fields.includes(query);
       const matchesCategory = state.category === "all" || item.category === state.category;
       const matchesTag = state.tag === "all" || item.tags?.includes(state.tag);
-      return matchesQuery && matchesCategory && matchesTag;
+      const matchesDate = !state.date || item.date === state.date;
+      return matchesQuery && matchesCategory && matchesTag && matchesDate;
     });
 
     list.innerHTML =
@@ -354,6 +357,11 @@ export const initAiNewsInteractions = () => {
 
   searchInput.addEventListener("input", (event) => {
     state.query = event.target.value;
+    renderNews();
+  });
+
+  dateInput?.addEventListener("change", (event) => {
+    state.date = event.target.value;
     renderNews();
   });
 
@@ -377,7 +385,9 @@ export const initAiNewsInteractions = () => {
     state.query = "";
     state.category = "all";
     state.tag = "all";
+    state.date = "";
     searchInput.value = "";
+    if (dateInput) dateInput.value = "";
     categoryButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.aiNewsCategory === "all"));
     tagButtons.forEach((item) => item.classList.toggle("is-active", item.dataset.aiNewsTag === "all"));
     renderNews();
@@ -404,6 +414,12 @@ export const initVocabularyInteractions = () => {
   const answerInput = document.querySelector("[data-vocab-answer]");
   const checkButton = document.querySelector("[data-vocab-check]");
   const feedback = document.querySelector("[data-vocab-feedback]");
+  const speakButton = document.querySelector("[data-vocab-speak]");
+  const nextButton = document.querySelector("[data-vocab-next]");
+  const dailyTargetInput = document.querySelector("[data-vocab-daily-target]");
+  const retentionInput = document.querySelector("[data-vocab-retention]");
+  const planResult = document.querySelector("[data-vocab-plan-result]");
+  const reviewCurve = document.querySelector("[data-review-curve]");
   let renderVocabularyCard;
 
   if (!levelButtons.length || !list || !wordNode || !meaningNode || !detailNode) return;
@@ -423,6 +439,33 @@ export const initVocabularyInteractions = () => {
 
   const levelWords = () => vocabularyWords.filter((word) => word.level === state.level);
 
+  const updatePlan = () => {
+    const dailyTarget = Number(dailyTargetInput?.value || 20);
+    const retention = Number(retentionInput?.value || 85);
+    const totalText = document.querySelector(`[data-vocab-level="${state.level}"] strong`)?.textContent || "";
+    const estimatedTotal = Number(totalText.replace(/\D/g, "")) || levelWords().length;
+    const days = Math.max(1, Math.ceil(estimatedTotal / Math.max(dailyTarget, 1)));
+
+    if (planResult) {
+      planResult.textContent = `预计 ${days} 天完成当前词书；每日 ${dailyTarget} 个新词，保持率目标 ${retention}%。`;
+    }
+
+    if (reviewCurve) {
+      const reviewDays = [1, 2, 4, 7, 15, 30];
+      reviewCurve.innerHTML = reviewDays
+        .map(
+          (day, index) => `
+            <div class="review-step">
+              <span>第 ${day} 天</span>
+              <strong>${index === 0 ? "首次复习" : `第 ${index + 1} 轮`}</strong>
+              <em>${Math.max(1, Math.round(dailyTarget * Math.pow(retention / 100, index)))} 个复习量</em>
+            </div>
+          `
+        )
+        .join("");
+    }
+  };
+
   const fillWord = (word) => {
     state.activeWord = word;
     wordNode.textContent = word.word;
@@ -436,6 +479,7 @@ export const initVocabularyInteractions = () => {
 
     const index = levelWords().findIndex((item) => item.word === word.word) + 1;
     if (progressNode) progressNode.textContent = `${Math.max(index, 1)} / ${levelWords().length}`;
+    updatePlan();
   };
 
   const renderList = () => {
@@ -463,6 +507,7 @@ export const initVocabularyInteractions = () => {
       levelButtons.forEach((item) => item.classList.toggle("is-active", item === button));
       fillWord(levelWords()[0] || vocabularyWords[0]);
       renderList();
+      updatePlan();
     });
   });
 
@@ -493,9 +538,30 @@ export const initVocabularyInteractions = () => {
     feedback.textContent = value === state.activeWord.word.toLowerCase() ? "拼写正确" : `再试一次：${state.activeWord.word}`;
   });
 
+  speakButton?.addEventListener("click", () => {
+    if (!("speechSynthesis" in window)) return;
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(state.activeWord.word);
+    utterance.lang = "en-US";
+    utterance.rate = 0.82;
+    window.speechSynthesis.speak(utterance);
+  });
+
+  nextButton?.addEventListener("click", () => {
+    const words = levelWords();
+    const currentIndex = words.findIndex((word) => word.word === state.activeWord.word);
+    const nextWord = words[(currentIndex + 1) % words.length] || vocabularyWords[0];
+    fillWord(nextWord);
+  });
+
+  dailyTargetInput?.addEventListener("input", updatePlan);
+  retentionInput?.addEventListener("input", updatePlan);
+
   import("./pages/vocabulary.js").then((module) => {
     renderVocabularyCard = module.renderVocabularyCard;
     fillWord(state.activeWord);
     renderList();
+    updatePlan();
   });
 };

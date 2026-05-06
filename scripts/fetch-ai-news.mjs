@@ -8,7 +8,90 @@ const sources = [
   { name: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", weight: 8 },
   { name: "The Batch", url: "https://www.deeplearning.ai/the-batch/feed/", weight: 7 },
   { name: "MIT News AI", url: "https://news.mit.edu/rss/topic/artificial-intelligence2", weight: 7 },
-  { name: "GitHub AI Trending", url: "https://github.com/trending/python.atom?since=daily", weight: 6 },
+];
+
+const repoQueries = [
+  "agent llm stars:>800 pushed:>2026-02-01",
+  "multi-agent stars:>500 pushed:>2026-02-01",
+  "ai coding stars:>300 pushed:>2026-02-01",
+  "code agent stars:>300 pushed:>2026-02-01",
+  "mcp llm stars:>300 pushed:>2026-02-01",
+  "rag llm stars:>800 pushed:>2026-02-01",
+];
+
+const fallbackRepos = [
+  {
+    name: "microsoft/autogen",
+    description: "面向多智能体协作、工具调用和自动化工作流的开源框架。",
+    url: "https://github.com/microsoft/autogen",
+    stars: 48000,
+    forks: 7200,
+    language: "Python",
+    updatedAt: "2026-05-01",
+    topics: ["agents", "llm", "multi-agent", "workflow"],
+    heatScore: 720,
+    trendScore: 260,
+  },
+  {
+    name: "langchain-ai/langchain",
+    description: "构建 LLM 应用、RAG、工具调用和 Agent 工作流的核心框架。",
+    url: "https://github.com/langchain-ai/langchain",
+    stars: 108000,
+    forks: 18000,
+    language: "Python",
+    updatedAt: "2026-05-01",
+    topics: ["llm", "rag", "agents", "framework"],
+    heatScore: 1680,
+    trendScore: 310,
+  },
+  {
+    name: "crewAIInc/crewAI",
+    description: "用于编排角色化 AI Agent 团队和任务流的轻量框架。",
+    url: "https://github.com/crewAIInc/crewAI",
+    stars: 38000,
+    forks: 5200,
+    language: "Python",
+    updatedAt: "2026-05-01",
+    topics: ["agents", "automation", "workflow"],
+    heatScore: 553,
+    trendScore: 290,
+  },
+  {
+    name: "continuedev/continue",
+    description: "开源 AI 编程助手，可接入 IDE、本地模型和代码上下文。",
+    url: "https://github.com/continuedev/continue",
+    stars: 27000,
+    forks: 2600,
+    language: "TypeScript",
+    updatedAt: "2026-05-01",
+    topics: ["ai-coding", "ide", "llm"],
+    heatScore: 356,
+    trendScore: 245,
+  },
+  {
+    name: "open-webui/open-webui",
+    description: "本地和私有化 LLM Web UI，适合搭建个人 AI 工作台。",
+    url: "https://github.com/open-webui/open-webui",
+    stars: 92000,
+    forks: 12000,
+    language: "JavaScript",
+    updatedAt: "2026-05-01",
+    topics: ["local-ai", "llm", "ollama"],
+    heatScore: 1320,
+    trendScore: 275,
+  },
+  {
+    name: "modelcontextprotocol/servers",
+    description: "MCP 官方服务器集合，适合扩展 Agent 的工具和数据源能力。",
+    url: "https://github.com/modelcontextprotocol/servers",
+    stars: 15000,
+    forks: 1800,
+    language: "TypeScript",
+    updatedAt: "2026-05-01",
+    topics: ["mcp", "agents", "tool-use"],
+    heatScore: 210,
+    trendScore: 330,
+  },
 ];
 
 const strongTechTerms = [
@@ -90,12 +173,12 @@ const excludedTerms = [
 ];
 
 const categoryRules = [
-  { name: "Agent", terms: ["agent", "agents", "workflow", "automation", "tool use", "mcp", "智能体"] },
-  { name: "AI Coding", terms: ["ai coding", "code agent", "codex", "claude code", "copilot", "cursor", "developer"] },
-  { name: "Open Source", terms: ["open source", "github", "release", "repository", "开源"] },
-  { name: "Model Tech", terms: ["model", "llm", "multimodal", "reasoning", "inference", "serving", "大模型"] },
-  { name: "Skill", terms: ["prompt", "rag", "retrieval", "embedding", "fine-tuning", "eval", "技能", "提示词"] },
-  { name: "Research", terms: ["research", "paper", "benchmark", "dataset", "evaluation"] },
+  { name: "智能体", terms: ["agent", "agents", "workflow", "automation", "tool use", "mcp", "智能体"] },
+  { name: "AI 编程", terms: ["ai coding", "code agent", "codex", "claude code", "copilot", "cursor", "developer"] },
+  { name: "开源项目", terms: ["open source", "github", "release", "repository", "开源"] },
+  { name: "模型技术", terms: ["model", "llm", "multimodal", "reasoning", "inference", "serving", "大模型"] },
+  { name: "实用技能", terms: ["prompt", "rag", "retrieval", "embedding", "fine-tuning", "eval", "技能", "提示词"] },
+  { name: "研究进展", terms: ["research", "paper", "benchmark", "dataset", "evaluation"] },
 ];
 
 const decodeEntities = (value = "") =>
@@ -150,19 +233,19 @@ const summarize = (text) => {
 
 const detectCategory = (title, summary) => {
   const haystack = `${title} ${summary}`.toLowerCase();
-  return categoryRules.find((rule) => rule.terms.some((term) => haystack.includes(term)))?.name || "Tooling";
+  return categoryRules.find((rule) => rule.terms.some((term) => haystack.includes(term)))?.name || "技术工具";
 };
 
 const buildTags = (title, summary, category) => {
   const haystack = `${title} ${summary}`.toLowerCase();
   const tags = [category];
 
-  if (haystack.includes("open source") || haystack.includes("github")) tags.push("Open Source");
-  if (haystack.includes("agent") || haystack.includes("workflow")) tags.push("Agent");
-  if (haystack.includes("api") || haystack.includes("developer") || haystack.includes("sdk")) tags.push("Developer");
-  if (haystack.includes("research") || haystack.includes("paper")) tags.push("Research");
-  if (haystack.includes("model") || haystack.includes("llm")) tags.push("Model");
-  if (haystack.includes("prompt") || haystack.includes("rag") || haystack.includes("embedding")) tags.push("Skill");
+  if (haystack.includes("open source") || haystack.includes("github")) tags.push("开源");
+  if (haystack.includes("agent") || haystack.includes("workflow")) tags.push("智能体");
+  if (haystack.includes("api") || haystack.includes("developer") || haystack.includes("sdk")) tags.push("开发者");
+  if (haystack.includes("research") || haystack.includes("paper")) tags.push("研究");
+  if (haystack.includes("model") || haystack.includes("llm")) tags.push("模型");
+  if (haystack.includes("prompt") || haystack.includes("rag") || haystack.includes("embedding")) tags.push("技能");
 
   return [...new Set(tags)].slice(0, 4);
 };
@@ -224,6 +307,85 @@ const parseFeed = async (source) => {
     .filter((item) => item.title && item.url && isUsefulTechItem(item.title, item.summary));
 };
 
+const daysAgo = (days) => {
+  const date = new Date();
+  date.setUTCDate(date.getUTCDate() - days);
+  return date;
+};
+
+const isWithinDays = (dateValue, days) => {
+  const date = new Date(dateValue);
+  return !Number.isNaN(date.getTime()) && date >= daysAgo(days);
+};
+
+const periodSummary = (items, days) => {
+  const scoped = items.filter((item) => isWithinDays(item.date, days));
+  const categoryCounts = scoped.reduce((counts, item) => {
+    counts[item.category] = (counts[item.category] || 0) + 1;
+    return counts;
+  }, {});
+  const topCategory = Object.entries(categoryCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || "技术工具";
+
+  return {
+    count: scoped.length,
+    topCategory,
+    topItems: scoped.slice(0, 3).map((item) => item.title),
+  };
+};
+
+const fetchGitHubRepos = async () => {
+  const headers = {
+    "user-agent": "xiaoyu-ai-news-radar/1.0 (+https://github.com/)",
+    accept: "application/vnd.github+json",
+  };
+  const allRepos = [];
+
+  for (const query of repoQueries) {
+    const url = `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=stars&order=desc&per_page=12`;
+    const response = await fetch(url, { headers });
+
+    if (!response.ok) continue;
+
+    const data = await response.json();
+    allRepos.push(...(data.items || []));
+  }
+
+  const seen = new Set();
+  const repos = allRepos
+    .filter((repo) => {
+      const haystack = `${repo.full_name} ${repo.description || ""} ${(repo.topics || []).join(" ")}`.toLowerCase();
+      const hasTechSignal = strongTechTerms.some((term) => haystack.includes(term));
+      const hasEnoughStars = repo.stargazers_count >= 500;
+      const isActive = isWithinDays(repo.pushed_at, 120);
+      const key = repo.full_name.toLowerCase();
+
+      if (seen.has(key) || !hasTechSignal || !hasEnoughStars || !isActive) return false;
+      seen.add(key);
+      return true;
+    })
+    .map((repo) => {
+      const daysSinceCreated = Math.max(1, (Date.now() - new Date(repo.created_at).getTime()) / 864e5);
+      const starsPerDay = repo.stargazers_count / daysSinceCreated;
+      const recentBoost = isWithinDays(repo.pushed_at, 14) ? 1.25 : 1;
+      const trendScore = Math.round((starsPerDay * 18 + repo.forks_count * 0.08 + repo.open_issues_count * 0.03) * recentBoost);
+
+      return {
+        name: repo.full_name,
+        description: repo.description || "暂无描述",
+        url: repo.html_url,
+        stars: repo.stargazers_count,
+        forks: repo.forks_count,
+        language: repo.language || "Unknown",
+        updatedAt: shortDate(repo.pushed_at),
+        topics: (repo.topics || []).slice(0, 5),
+        heatScore: Math.round(repo.stargazers_count / 100 + repo.forks_count / 30),
+        trendScore,
+      };
+    });
+
+  return repos.length ? repos : fallbackRepos;
+};
+
 const fallbackItems = [
   {
     title: "AI 资讯模块已就绪",
@@ -237,12 +399,22 @@ const fallbackItems = [
   },
 ];
 
-const toModule = ({ items, generatedAt, activeSources }) => `export const aiNewsMeta = ${JSON.stringify(
+const toModule = ({ items, repos, generatedAt, activeSources }) => {
+  const hotRepos = [...repos].sort((a, b) => b.heatScore - a.heatScore || b.stars - a.stars).slice(0, 8);
+  const risingRepos = [...repos].sort((a, b) => b.trendScore - a.trendScore || b.updatedAt.localeCompare(a.updatedAt)).slice(0, 8);
+  const summaries = {
+    daily: periodSummary(items, 1),
+    weekly: periodSummary(items, 7),
+    monthly: periodSummary(items, 30),
+  };
+
+  return `export const aiNewsMeta = ${JSON.stringify(
   {
     generatedAt,
     updateLabel: new Date(generatedAt).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" }),
     sourceCount: activeSources,
     itemCount: items.length,
+    repoCount: repos.length,
   },
   null,
   2
@@ -255,10 +427,19 @@ export const aiNewsSources = ${JSON.stringify(
 )};
 
 export const aiNewsItems = ${JSON.stringify(items, null, 2)};
+
+export const aiRepoRadar = ${JSON.stringify({ hot: hotRepos, rising: risingRepos }, null, 2)};
+
+export const aiNewsSummaries = ${JSON.stringify(summaries, null, 2)};
 `;
+};
 
 const main = async () => {
-  const results = await Promise.allSettled(sources.map(parseFeed));
+  const [feedResults, repoResult] = await Promise.all([
+    Promise.allSettled(sources.map(parseFeed)),
+    fetchGitHubRepos().catch(() => fallbackRepos),
+  ]);
+  const results = feedResults;
   const activeSources = results.filter((result) => result.status === "fulfilled").length;
   const allItems = results.flatMap((result) => (result.status === "fulfilled" ? result.value : []));
   const deduped = [];
@@ -276,11 +457,11 @@ const main = async () => {
 
   await writeFile(
     new URL("../data/ai-news-data.js", import.meta.url),
-    toModule({ items: items.length ? items : fallbackItems, generatedAt, activeSources }),
+    toModule({ items: items.length ? items : fallbackItems, repos: repoResult, generatedAt, activeSources }),
     "utf8"
   );
 
-  console.log(`AI news updated: ${items.length} items from ${activeSources}/${sources.length} sources.`);
+  console.log(`AI news updated: ${items.length} items and ${repoResult.length} repos from ${activeSources}/${sources.length} sources.`);
 };
 
 main().catch((error) => {

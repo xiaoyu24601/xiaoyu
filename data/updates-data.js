@@ -1,6 +1,13 @@
 export const updates = [
   {
     date: "2026-05-06",
+    title: "升级单词学习计划与 AI 技术雷达",
+    summary: "单词练习室新增发音、下一词、每日新词计划和复习曲线；AI 资讯新增日期查询、日周月总结，并把 GitHub 仓库分为高热度和上升趋势两类。",
+    type: "Feature",
+    href: "vocabulary.html",
+  },
+  {
+    date: "2026-05-06",
     title: "完善 AI 技术资讯雷达与单词练习室作品",
     summary: "修复 AI 资讯页显示兜底，资讯来源改为偏技术、Agent、AI Coding、开源工具和实用技能，并新增包含词库、语法、派生、搭配和拼写复习的单词练习室作品。",
     type: "Feature",
