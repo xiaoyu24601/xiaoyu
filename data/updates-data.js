@@ -1,5 +1,12 @@
 export const updates = [
   {
+    date: "2026-05-06",
+    title: "完善 AI 技术资讯雷达与单词练习室作品",
+    summary: "修复 AI 资讯页显示兜底，资讯来源改为偏技术、Agent、AI Coding、开源工具和实用技能，并新增包含词库、语法、派生、搭配和拼写复习的单词练习室作品。",
+    type: "Feature",
+    href: "ai-news.html",
+  },
+  {
     date: "2026-05-05",
     title: "上线多页面个人站架构",
     summary: "把首页、关于、作品、资源、下载、博客和联系拆成清晰路由，为长期维护预留结构。",
