@@ -51,7 +51,7 @@ export const renderDownloadsPage = () => `
 
         <div class="resource-result-bar">
           <strong data-download-count>${downloads.length}</strong>
-          <span>downloads available</span>
+          <span>个下载项</span>
         </div>
 
         <div class="download-list" data-download-list>
@@ -76,18 +76,18 @@ export const renderDownloadCard = (item) => `
 
     <dl class="download-meta">
       <div>
-        <dt>Platform</dt>
+        <dt>平台</dt>
         <dd>${escapeHtml(item.platform)}</dd>
       </div>
       <div>
-        <dt>Usage</dt>
+        <dt>用途</dt>
         <dd>${escapeHtml(item.usage)}</dd>
       </div>
     </dl>
 
     <div class="download-notes">
-      <p><strong>Note</strong>${escapeHtml(item.note)}</p>
-      <p><strong>Category</strong>${escapeHtml(downloadCategoryLabel(item.category))}</p>
+      <p><strong>备注</strong>${escapeHtml(item.note)}</p>
+      <p><strong>分类</strong>${escapeHtml(downloadCategoryLabel(item.category))}</p>
     </div>
 
     <div class="mini-tags">
@@ -95,9 +95,9 @@ export const renderDownloadCard = (item) => `
     </div>
 
     <div class="download-actions">
-      <a class="resource-action primary" href="${escapeHtml(item.downloadUrl)}" target="_blank" rel="noreferrer">Official Download</a>
-      <button class="resource-action" type="button" data-copy-download="${escapeHtml(item.downloadUrl)}">Copy Link</button>
-      <a class="resource-action" href="${escapeHtml(item.backupUrl)}" target="_blank" rel="noreferrer">Backup Link</a>
+      <a class="resource-action primary" href="${escapeHtml(item.downloadUrl)}" target="_blank" rel="noreferrer">官方下载</a>
+      <button class="resource-action" type="button" data-copy-download="${escapeHtml(item.downloadUrl)}">复制链接</button>
+      <a class="resource-action" href="${escapeHtml(item.backupUrl)}" target="_blank" rel="noreferrer">备用链接</a>
     </div>
   </article>
 `;

@@ -1,6 +1,7 @@
 import { downloads } from "../data/downloads-data.js";
 import { aiNewsItems } from "../data/ai-news-data.js";
 import { resources } from "../data/resources-data.js";
+import { vocabularyWords } from "../data/vocabulary-data.js";
 import { writeToClipboard } from "./utils.js";
 
 export const initProjectInteractions = () => {
@@ -178,7 +179,7 @@ export const initResourceInteractions = () => {
 
     const originalText = copyButton.textContent;
     const didCopy = await writeToClipboard(copyButton.dataset.copyResource);
-    copyButton.textContent = didCopy ? "Copied" : "Copy Failed";
+    copyButton.textContent = didCopy ? "已复制" : "复制失败";
 
     window.setTimeout(() => {
       copyButton.textContent = originalText;
@@ -290,7 +291,7 @@ export const initDownloadInteractions = () => {
 
     const originalText = copyButton.textContent;
     const didCopy = await writeToClipboard(copyButton.dataset.copyDownload);
-    copyButton.textContent = didCopy ? "Copied" : "Copy Failed";
+    copyButton.textContent = didCopy ? "已复制" : "复制失败";
 
     window.setTimeout(() => {
       copyButton.textContent = originalText;
@@ -385,5 +386,116 @@ export const initAiNewsInteractions = () => {
   import("./pages/ai-news.js").then((module) => {
     renderAiNewsCard = module.renderAiNewsCard;
     renderNews();
+  });
+};
+
+export const initVocabularyInteractions = () => {
+  const levelButtons = document.querySelectorAll("[data-vocab-level]");
+  const tabButtons = document.querySelectorAll("[data-vocab-tab]");
+  const searchInput = document.querySelector("[data-vocab-search]");
+  const list = document.querySelector("[data-vocab-list]");
+  const wordNode = document.querySelector("[data-vocab-word]");
+  const meaningNode = document.querySelector("[data-vocab-meaning]");
+  const detailNode = document.querySelector("[data-vocab-detail]");
+  const sentenceNode = document.querySelector("[data-vocab-sentence]");
+  const translationNode = document.querySelector("[data-vocab-translation]");
+  const progressNode = document.querySelector("[data-vocab-progress]");
+  const quizMeaning = document.querySelector("[data-vocab-quiz-meaning]");
+  const answerInput = document.querySelector("[data-vocab-answer]");
+  const checkButton = document.querySelector("[data-vocab-check]");
+  const feedback = document.querySelector("[data-vocab-feedback]");
+  let renderVocabularyCard;
+
+  if (!levelButtons.length || !list || !wordNode || !meaningNode || !detailNode) return;
+
+  const state = {
+    level: "junior",
+    activeWord: vocabularyWords[0],
+    tab: "grammar",
+    query: "",
+  };
+
+  const detailText = (word) => {
+    if (state.tab === "derivatives") return word.derivatives.join(" / ");
+    if (state.tab === "collocations") return word.collocations.join(" / ");
+    return word.grammar;
+  };
+
+  const levelWords = () => vocabularyWords.filter((word) => word.level === state.level);
+
+  const fillWord = (word) => {
+    state.activeWord = word;
+    wordNode.textContent = word.word;
+    meaningNode.textContent = word.meaning;
+    detailNode.textContent = detailText(word);
+    if (sentenceNode) sentenceNode.textContent = word.sentence;
+    if (translationNode) translationNode.textContent = word.translation;
+    if (quizMeaning) quizMeaning.textContent = word.meaning;
+    if (answerInput) answerInput.value = "";
+    if (feedback) feedback.textContent = "准备开始";
+
+    const index = levelWords().findIndex((item) => item.word === word.word) + 1;
+    if (progressNode) progressNode.textContent = `${Math.max(index, 1)} / ${levelWords().length}`;
+  };
+
+  const renderList = () => {
+    if (!renderVocabularyCard) return;
+
+    const query = state.query.trim().toLowerCase();
+    const visibleWords = vocabularyWords.filter((word) => {
+      const fields = [word.word, word.meaning, word.part, word.grammar, word.root, ...(word.derivatives || []), ...(word.collocations || [])].join(" ").toLowerCase();
+      return word.level === state.level && (!query || fields.includes(query));
+    });
+
+    list.innerHTML =
+      visibleWords.length > 0
+        ? visibleWords.map(renderVocabularyCard).join("")
+        : `<p class="empty-state">没有找到匹配的单词，可以切换阶段或换一个关键词。</p>`;
+
+    if (!visibleWords.some((word) => word.word === state.activeWord.word) && visibleWords[0]) {
+      fillWord(visibleWords[0]);
+    }
+  };
+
+  levelButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.level = button.dataset.vocabLevel || "junior";
+      levelButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      fillWord(levelWords()[0] || vocabularyWords[0]);
+      renderList();
+    });
+  });
+
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      state.tab = button.dataset.vocabTab || "grammar";
+      tabButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+      detailNode.textContent = detailText(state.activeWord);
+    });
+  });
+
+  searchInput?.addEventListener("input", (event) => {
+    state.query = event.target.value;
+    renderList();
+  });
+
+  list.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-vocab-card]");
+    if (!card) return;
+
+    const word = vocabularyWords.find((item) => item.word === card.dataset.word);
+    if (word) fillWord(word);
+  });
+
+  checkButton?.addEventListener("click", () => {
+    const value = answerInput?.value.trim().toLowerCase();
+    if (!feedback || !value) return;
+    feedback.textContent = value === state.activeWord.word.toLowerCase() ? "拼写正确" : `再试一次：${state.activeWord.word}`;
+  });
+
+  import("./pages/vocabulary.js").then((module) => {
+    renderVocabularyCard = module.renderVocabularyCard;
+    fillWord(state.activeWord);
+    renderList();
   });
 };

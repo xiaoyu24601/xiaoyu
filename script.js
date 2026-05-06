@@ -8,6 +8,7 @@ const pageModuleLoaders = {
   home: () => import("./scripts/pages/home.js").then((module) => module.renderHomePage),
   about: () => import("./scripts/pages/about.js").then((module) => module.renderAboutPage),
   projects: () => import("./scripts/pages/projects.js").then((module) => module.renderProjectsPage),
+  vocabulary: () => import("./scripts/pages/vocabulary.js").then((module) => module.renderVocabularyPage),
   resources: () => import("./scripts/pages/resources.js").then((module) => module.renderResourcesPage),
   "ai-news": () => import("./scripts/pages/ai-news.js").then((module) => module.renderAiNewsPage),
   downloads: () => import("./scripts/pages/downloads.js").then((module) => module.renderDownloadsPage),
@@ -17,6 +18,7 @@ const pageModuleLoaders = {
 
 const interactionLoaders = {
   projects: () => import("./scripts/page-interactions.js").then((module) => module.initProjectInteractions()),
+  vocabulary: () => import("./scripts/page-interactions.js").then((module) => module.initVocabularyInteractions()),
   resources: () => import("./scripts/page-interactions.js").then((module) => module.initResourceInteractions()),
   "ai-news": () => import("./scripts/page-interactions.js").then((module) => module.initAiNewsInteractions()),
   downloads: () => import("./scripts/page-interactions.js").then((module) => module.initDownloadInteractions()),
@@ -31,6 +33,7 @@ const mountPage = async () => {
   const loadRenderer = pageModuleLoaders[page] || pageModuleLoaders.home;
   const renderPage = await loadRenderer();
   main.innerHTML = renderPage();
+  document.documentElement.classList.add("js-ready");
 };
 
 const initTheme = () => {

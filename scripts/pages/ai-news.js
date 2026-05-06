@@ -23,29 +23,29 @@ const formatUpdateTime = () => {
 
 export const renderAiNewsPage = () => `
   ${pageHero({
-    eyebrow: "AI Radar",
+    eyebrow: "AI 技术雷达",
     title: "热门 AI 资讯聚合",
-    copy: "自动收集整合优质 AI 新闻、研究进展、模型发布、开源项目和产品动态，按来源可信度、时效性和内容相关度排序。",
+    copy: "自动收集整合 AI 工程实践、Agent、开源工具、模型技术、实用技能和开发者动态，过滤泛商业资讯。",
   })}
 
   <section class="section ai-news-section" data-defer-section>
     <div class="ai-news-shell reveal">
       <aside class="ai-news-sidebar" aria-label="AI 资讯筛选">
         <div class="resource-sidebar-head">
-          <p class="eyebrow">Signals</p>
+          <p class="eyebrow">技术信号</p>
           <h2>资讯雷达</h2>
         </div>
         <dl class="ai-news-stats">
           <div>
-            <dt>Last Update</dt>
+            <dt>最近更新</dt>
             <dd>${escapeHtml(formatUpdateTime())}</dd>
           </div>
           <div>
-            <dt>Sources</dt>
+            <dt>可用来源</dt>
             <dd>${escapeHtml(aiNewsMeta.sourceCount || aiNewsSources.length)}</dd>
           </div>
           <div>
-            <dt>Items</dt>
+            <dt>收录条数</dt>
             <dd>${escapeHtml(aiNewsMeta.itemCount || aiNewsItems.length)}</dd>
           </div>
         </dl>
@@ -85,7 +85,7 @@ export const renderAiNewsPage = () => `
 
         <div class="resource-result-bar">
           <strong data-ai-news-count>${aiNewsItems.length}</strong>
-          <span>signals collected</span>
+          <span>条技术资讯</span>
           <a class="section-link ai-news-source-link" href="data/ai-news-data.js">查看数据</a>
         </div>
 
@@ -104,15 +104,15 @@ export const renderAiNewsCard = (item) => `
         <p class="project-type">${escapeHtml(item.source)} / ${escapeHtml(item.category || "AI")}</p>
         <h3>${escapeHtml(item.title)}</h3>
       </div>
-      <span class="version-pill">${escapeHtml(item.date || "Recent")}</span>
+      <span class="version-pill">${escapeHtml(item.date || "近期")}</span>
     </div>
     <p class="ai-news-summary">${escapeHtml(item.summary)}</p>
     <div class="mini-tags">
       ${(item.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
     </div>
     <div class="ai-news-actions">
-      <a class="resource-action primary" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Read Source</a>
-      <span class="ai-news-score">Score ${escapeHtml(item.score ?? 0)}</span>
+      <a class="resource-action primary" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">阅读原文</a>
+      <span class="ai-news-score">热度 ${escapeHtml(item.score ?? 0)}</span>
     </div>
   </article>
 `;

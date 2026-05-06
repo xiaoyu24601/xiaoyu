@@ -1513,9 +1513,245 @@ h3 {
   font-weight: 900;
 }
 
+.project-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0;
+}
+
+.project-card-actions .project-more {
+  margin-top: 1rem;
+}
+
+.project-link {
+  display: inline-flex;
+}
+
 .project-more:hover {
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+.vocab-hero-section {
+  padding-top: clamp(2rem, 5vw, 4rem);
+}
+
+.vocab-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.36fr);
+  gap: 1.2rem;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  align-items: start;
+}
+
+.vocab-study-card,
+.vocab-plan,
+.vocab-word-card,
+.vocab-quiz {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.vocab-study-card,
+.vocab-plan {
+  padding: clamp(1rem, 3vw, 1.35rem);
+}
+
+.vocab-card-top,
+.vocab-quiz,
+.vocab-quiz-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.vocab-card-top {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vocab-card-top span {
+  color: var(--muted);
+  font-weight: 900;
+}
+
+.vocab-study-card h2 {
+  margin-top: 0.7rem;
+  font-size: clamp(2.6rem, 8vw, 5.2rem);
+}
+
+.vocab-meaning {
+  margin: 0.4rem 0 0;
+  color: var(--primary-deep);
+  font-size: 1.28rem;
+  font-weight: 900;
+}
+
+.vocab-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
+}
+
+.vocab-detail {
+  min-height: 64px;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(78, 183, 202, 0.08);
+  color: var(--text);
+  font-weight: 800;
+}
+
+.vocab-study-card blockquote {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  border-left: 4px solid var(--primary);
+  background: rgba(255, 208, 138, 0.16);
+}
+
+.vocab-study-card blockquote p,
+.vocab-study-card cite {
+  margin: 0;
+}
+
+.vocab-study-card cite {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-style: normal;
+}
+
+.vocab-levels {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.vocab-progress {
+  margin-top: 1rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(78, 183, 202, 0.08);
+}
+
+.vocab-progress span,
+.vocab-word-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vocab-progress strong {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--primary-deep);
+  font-size: 1.4rem;
+}
+
+.vocab-search {
+  min-width: min(100%, 360px);
+}
+
+.vocab-word-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.vocab-word-card {
+  min-height: 178px;
+  padding: 1rem;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: transform var(--duration-fast) ease, border-color var(--duration-fast) ease, background var(--duration-fast) ease, box-shadow var(--duration-fast) ease;
+}
+
+.vocab-word-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(78, 183, 202, 0.48);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: var(--shadow);
+}
+
+.vocab-word-card strong,
+.vocab-word-card em,
+.vocab-word-card small {
+  display: block;
+}
+
+.vocab-word-card strong {
+  margin-top: 0.45rem;
+  font-size: 1.45rem;
+}
+
+.vocab-word-card em {
+  margin-top: 0.4rem;
+  color: var(--primary-deep);
+  font-style: normal;
+  font-weight: 900;
+}
+
+.vocab-word-card small {
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.vocab-quiz {
+  justify-content: space-between;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 1.2rem;
+  align-items: center;
+}
+
+.vocab-quiz p {
+  margin: 0.65rem 0 0;
+  color: var(--muted);
+}
+
+.vocab-quiz-box {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.vocab-quiz-box span {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(78, 183, 202, 0.08);
+  color: var(--primary-deep);
+  font-weight: 900;
+}
+
+.vocab-quiz-box input {
+  min-height: 42px;
+  width: min(100%, 220px);
+  padding: 0.58rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.vocab-quiz-box strong {
+  min-width: 5rem;
+  color: var(--muted);
 }
 
 .skill-grid {
@@ -1724,13 +1960,14 @@ h3 {
   margin: 0;
 }
 
-.reveal {
+.js-ready .reveal {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 560ms cubic-bezier(0.2, 0.7, 0.2, 1), transform 560ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
-.reveal.is-visible {
+.js-ready .reveal.is-visible,
+.reveal {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1813,6 +2050,7 @@ h3 {
   .resource-shell,
   .download-shell,
   .ai-news-shell,
+  .vocab-shell,
   .ai-news-preview {
     grid-template-columns: 1fr;
   }
@@ -1825,6 +2063,15 @@ h3 {
 
   .ai-news-preview-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vocab-word-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vocab-quiz {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .category-filter {
@@ -1945,7 +2192,8 @@ h3 {
   .project-grid,
   .overview-grid,
   .content-grid,
-  .content-grid.two-columns {
+  .content-grid.two-columns,
+  .vocab-word-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2024,7 +2272,8 @@ h3 {
 
   .ai-news-card,
   .ai-news-preview-card,
-  .ai-news-preview-meta {
+  .ai-news-preview-meta,
+  .vocab-word-card {
     min-height: auto;
   }
 
@@ -2137,6 +2386,21 @@ h3 {
   .ai-news-source-link {
     width: fit-content;
     margin-left: 0;
+  }
+
+  .vocab-card-top,
+  .vocab-quiz-box {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .vocab-quiz-box {
+    justify-content: flex-start;
+  }
+
+  .vocab-quiz-box input,
+  .vocab-quiz-box .resource-action {
+    width: 100%;
   }
 
   .resource-action,

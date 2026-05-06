@@ -35,7 +35,7 @@ export const renderResourcesPage = () => `
 
       <div class="resource-panel">
         <a class="ai-news-inline-link" href="ai-news.html">
-          <span>AI Radar</span>
+          <span>AI 技术雷达</span>
           <strong>查看自动聚合的热门 AI 资讯</strong>
         </a>
 
@@ -58,7 +58,7 @@ export const renderResourcesPage = () => `
 
         <div class="resource-result-bar">
           <strong data-resource-count>${resources.length}</strong>
-          <span>items found</span>
+          <span>个资源</span>
           <button class="resource-reset" type="button" data-resource-reset>重置筛选</button>
         </div>
 
@@ -79,17 +79,17 @@ export const renderResourceCard = (item) => `
           <h3>${escapeHtml(item.title)}</h3>
         </div>
         <div class="resource-flags" aria-label="资源标记">
-          ${item.featured ? '<span class="flag important">Featured</span>' : ""}
+          ${item.featured ? '<span class="flag important">精选</span>' : ""}
         </div>
       </div>
       <p>${escapeHtml(item.description)}</p>
       <dl class="resource-meta">
         <div>
-          <dt>Note</dt>
+          <dt>备注</dt>
           <dd>${escapeHtml(item.note)}</dd>
         </div>
         <div>
-          <dt>URL</dt>
+          <dt>链接</dt>
           <dd>${escapeHtml(item.url)}</dd>
         </div>
       </dl>
@@ -98,9 +98,9 @@ export const renderResourceCard = (item) => `
       ${(item.tags || []).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}
     </div>
     <div class="resource-actions">
-      <a class="resource-action primary" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Open</a>
-      <button class="resource-action" type="button" data-copy-resource="${escapeHtml(item.url)}">Copy Link</button>
-      <a class="resource-action" href="${escapeHtml(item.backupUrl)}" target="_blank" rel="noreferrer">Backup Link</a>
+      <a class="resource-action primary" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">打开</a>
+      <button class="resource-action" type="button" data-copy-resource="${escapeHtml(item.url)}">复制链接</button>
+      <a class="resource-action" href="${escapeHtml(item.backupUrl)}" target="_blank" rel="noreferrer">备用链接</a>
     </div>
   </article>
 `;

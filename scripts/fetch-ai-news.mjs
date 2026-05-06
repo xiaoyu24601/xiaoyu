@@ -1,40 +1,101 @@
 import { writeFile } from "node:fs/promises";
 
 const sources = [
-  { name: "OpenAI News", url: "https://openai.com/news/rss.xml", weight: 10 },
+  { name: "OpenAI News", url: "https://openai.com/news/rss.xml", weight: 7 },
   { name: "Google Research", url: "https://research.google/blog/rss/", weight: 9 },
   { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml", weight: 9 },
-  { name: "Anthropic News", url: "https://www.anthropic.com/news/rss.xml", weight: 9 },
+  { name: "Anthropic News", url: "https://www.anthropic.com/news/rss.xml", weight: 7 },
   { name: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", weight: 8 },
   { name: "The Batch", url: "https://www.deeplearning.ai/the-batch/feed/", weight: 7 },
   { name: "MIT News AI", url: "https://news.mit.edu/rss/topic/artificial-intelligence2", weight: 7 },
-  { name: "TechCrunch AI", url: "https://techcrunch.com/category/artificial-intelligence/feed/", weight: 6 },
+  { name: "GitHub AI Trending", url: "https://github.com/trending/python.atom?since=daily", weight: 6 },
 ];
 
-const aiTerms = [
-  "ai",
-  "artificial intelligence",
+const strongTechTerms = [
   "agent",
+  "agents",
+  "ai coding",
+  "code agent",
+  "codex",
+  "claude code",
+  "copilot",
+  "cursor",
+  "mcp",
+  "tool use",
+  "workflow",
+  "automation",
+  "prompt",
+  "rag",
+  "retrieval",
+  "embedding",
+  "fine-tuning",
+  "eval",
+  "benchmark",
+  "framework",
+  "sdk",
+  "api",
+  "developer",
+  "open source",
+  "github",
+  "repository",
+  "release",
+  "inference",
+  "serving",
+  "local ai",
+  "ollama",
+  "llama",
   "llm",
   "model",
-  "open source",
   "multimodal",
   "reasoning",
-  "inference",
-  "robotics",
-  "benchmark",
+  "智能体",
+  "开源",
+  "工作流",
+  "提示词",
+  "技能",
+  "工具",
+  "编程",
+  "开发者",
+  "本地模型",
+];
+
+const weakAiTerms = [
+  "ai",
+  "artificial intelligence",
   "生成式",
   "人工智能",
   "大模型",
-  "智能体",
+];
+
+const excludedTerms = [
+  "ads",
+  "advertising",
+  "cfo",
+  "finance",
+  "funding",
+  "investment",
+  "revenue",
+  "partnership",
+  "collaborate",
+  "policy",
+  "regulation",
+  "safety report",
+  "office",
+  "广告",
+  "融资",
+  "财务",
+  "合作",
+  "监管",
+  "政策",
 ];
 
 const categoryRules = [
-  { name: "Model", terms: ["model", "llm", "multimodal", "reasoning", "inference", "大模型"] },
-  { name: "Agent", terms: ["agent", "workflow", "automation", "tool use", "智能体"] },
+  { name: "Agent", terms: ["agent", "agents", "workflow", "automation", "tool use", "mcp", "智能体"] },
+  { name: "AI Coding", terms: ["ai coding", "code agent", "codex", "claude code", "copilot", "cursor", "developer"] },
+  { name: "Open Source", terms: ["open source", "github", "release", "repository", "开源"] },
+  { name: "Model Tech", terms: ["model", "llm", "multimodal", "reasoning", "inference", "serving", "大模型"] },
+  { name: "Skill", terms: ["prompt", "rag", "retrieval", "embedding", "fine-tuning", "eval", "技能", "提示词"] },
   { name: "Research", terms: ["research", "paper", "benchmark", "dataset", "evaluation"] },
-  { name: "Open Source", terms: ["open source", "github", "release", "repository"] },
-  { name: "Product", terms: ["launch", "product", "app", "api", "platform"] },
 ];
 
 const decodeEntities = (value = "") =>
@@ -89,7 +150,7 @@ const summarize = (text) => {
 
 const detectCategory = (title, summary) => {
   const haystack = `${title} ${summary}`.toLowerCase();
-  return categoryRules.find((rule) => rule.terms.some((term) => haystack.includes(term)))?.name || "Industry";
+  return categoryRules.find((rule) => rule.terms.some((term) => haystack.includes(term)))?.name || "Tooling";
 };
 
 const buildTags = (title, summary, category) => {
@@ -98,19 +159,31 @@ const buildTags = (title, summary, category) => {
 
   if (haystack.includes("open source") || haystack.includes("github")) tags.push("Open Source");
   if (haystack.includes("agent") || haystack.includes("workflow")) tags.push("Agent");
-  if (haystack.includes("api") || haystack.includes("developer")) tags.push("Developer");
+  if (haystack.includes("api") || haystack.includes("developer") || haystack.includes("sdk")) tags.push("Developer");
   if (haystack.includes("research") || haystack.includes("paper")) tags.push("Research");
   if (haystack.includes("model") || haystack.includes("llm")) tags.push("Model");
+  if (haystack.includes("prompt") || haystack.includes("rag") || haystack.includes("embedding")) tags.push("Skill");
 
   return [...new Set(tags)].slice(0, 4);
+};
+
+const isUsefulTechItem = (title, summary) => {
+  const text = `${title} ${summary}`.toLowerCase();
+  const strongMatches = strongTechTerms.filter((term) => text.includes(term)).length;
+  const weakMatches = weakAiTerms.filter((term) => text.includes(term)).length;
+  const excludedMatches = excludedTerms.filter((term) => text.includes(term)).length;
+
+  return strongMatches > 0 && strongMatches * 2 + weakMatches - excludedMatches * 3 > 0;
 };
 
 const scoreItem = ({ title, summary, publishedAt, sourceWeight }) => {
   const text = `${title} ${summary}`.toLowerCase();
   const ageHours = publishedAt ? Math.max(0, (Date.now() - publishedAt.getTime()) / 36e5) : 168;
   const recencyScore = Math.max(0, 42 - Math.floor(ageHours / 6));
-  const keywordScore = aiTerms.reduce((score, term) => score + (text.includes(term) ? 4 : 0), 0);
-  return Math.min(100, Math.round(sourceWeight * 4 + recencyScore + keywordScore));
+  const strongScore = strongTechTerms.reduce((score, term) => score + (text.includes(term) ? 6 : 0), 0);
+  const weakScore = weakAiTerms.reduce((score, term) => score + (text.includes(term) ? 2 : 0), 0);
+  const penalty = excludedTerms.reduce((score, term) => score + (text.includes(term) ? 10 : 0), 0);
+  return Math.max(0, Math.min(100, Math.round(sourceWeight * 4 + recencyScore + strongScore + weakScore - penalty)));
 };
 
 const parseFeed = async (source) => {
@@ -148,18 +221,18 @@ const parseFeed = async (source) => {
         score: scoreItem({ title, summary, publishedAt, sourceWeight: source.weight }),
       };
     })
-    .filter((item) => item.title && item.url);
+    .filter((item) => item.title && item.url && isUsefulTechItem(item.title, item.summary));
 };
 
 const fallbackItems = [
   {
     title: "AI 资讯模块已就绪",
     source: "Local",
-    category: "System",
+    category: "Tooling",
     date: "待更新",
-    summary: "自动收集脚本暂未获取到外部内容。稍后重新运行 node scripts/fetch-ai-news.mjs 即可刷新。",
+    summary: "自动收集脚本暂未获取到足够的技术向内容。稍后重新运行 node scripts/fetch-ai-news.mjs 即可刷新。",
     url: "ai-news.html",
-    tags: ["Auto Update", "RSS", "AI News"],
+    tags: ["自动更新", "RSS", "AI 技术"],
     score: 0,
   },
 ];

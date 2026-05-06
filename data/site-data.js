@@ -116,6 +116,20 @@ export const focusItems = [
 
 export const projects = [
   {
+    title: "Word Studio",
+    type: "Web App / Vocabulary",
+    category: "web",
+    categoryLabel: "网页应用",
+    image: "assets/project-word-studio.svg",
+    imageAlt: "单词练习室项目封面",
+    summary: "初高中到大学阶段的英语单词练习网站，包含语法、派生、搭配、例句和拼写复习。",
+    detail:
+      "单词练习室参考真实语境学习方式，按初中、高中、大学阶段组织词库，展示词义、语法、派生词、固定搭配、词根提示和例句，并提供轻量拼写复习。",
+    tools: "HTML, CSS, JavaScript",
+    status: "可交互原型",
+    href: "vocabulary.html",
+  },
+  {
     title: "Breeze Notes",
     type: "Web App / Notes",
     category: "web",
@@ -127,6 +141,7 @@ export const projects = [
       "轻量笔记工具概念，强调快速记录、自然分类和安静的阅读体验。它适合继续扩展为真实的笔记原型，例如加入标签、搜索、归档和导出功能。",
     tools: "HTML, CSS, JavaScript",
     status: "概念设计",
+    href: "",
   },
   {
     title: "Lumen Desk",
@@ -139,6 +154,7 @@ export const projects = [
     detail: "个人工作流仪表盘，整合待办、习惯和灵感收集，适合日常复盘。后续可以补充数据统计、日历视图和本地存储。",
     tools: "HTML, CSS, JavaScript",
     status: "交互草案",
+    href: "",
   },
   {
     title: "Mint Gallery",
@@ -151,6 +167,7 @@ export const projects = [
     detail: "极简图片展厅模板，用柔和视觉突出内容本身，适合摄影或插画展示。可以继续加入分类、灯箱预览和响应式瀑布流。",
     tools: "HTML, CSS, SVG",
     status: "视觉模板",
+    href: "",
   },
 ];
 

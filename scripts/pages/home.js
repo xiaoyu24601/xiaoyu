@@ -59,10 +59,10 @@ export const renderHomePage = () => `
   <section class="section compact-section" data-defer-section>
     <div class="section-heading reveal section-heading-row">
       <div>
-        <p class="eyebrow">Recent Updates</p>
+        <p class="eyebrow">最近更新</p>
         <h2>最近更新</h2>
       </div>
-      <a class="section-link" href="blog.html">View All</a>
+      <a class="section-link" href="blog.html">查看全部</a>
     </div>
     <div class="updates-list">
       ${recentUpdates
@@ -85,14 +85,14 @@ export const renderHomePage = () => `
   <section class="section compact-section" data-defer-section>
     <div class="section-heading reveal section-heading-row">
       <div>
-        <p class="eyebrow">AI Radar</p>
+        <p class="eyebrow">AI 技术雷达</p>
         <h2>AI 资讯速览</h2>
       </div>
-      <a class="section-link" href="ai-news.html">View Radar</a>
+      <a class="section-link" href="ai-news.html">查看雷达</a>
     </div>
     <div class="ai-news-preview">
       <div class="ai-news-preview-meta reveal">
-        <span>Last Update</span>
+        <span>最近更新</span>
         <strong>${escapeHtml(aiNewsUpdatedLabel())}</strong>
         <p>${escapeHtml(aiNewsMeta.itemCount || latestAiNews.length)} 条资讯来自 ${escapeHtml(aiNewsMeta.sourceCount || "多")} 个来源</p>
       </div>
@@ -113,7 +113,7 @@ export const renderHomePage = () => `
   </section>
 
   <section class="section compact-section" data-defer-section>
-    ${sectionHeading({ eyebrow: "Featured", title: "精选内容" })}
+    ${sectionHeading({ eyebrow: "精选内容", title: "精选内容" })}
     ${linkCardList(featuredContent, "content-grid", "info-card feature-card")}
   </section>
 `;

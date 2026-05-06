@@ -44,7 +44,14 @@ export const renderProjectsPage = () => {
                   <p class="project-type">${escapeHtml(project.type)}</p>
                   <h3>${escapeHtml(project.title)}</h3>
                   <p>${escapeHtml(project.summary)}</p>
-                  <button class="project-more" type="button" data-open-project>查看详情</button>
+                  <div class="project-card-actions">
+                    <button class="project-more" type="button" data-open-project>查看详情</button>
+                    ${
+                      project.href
+                        ? `<a class="project-more project-link" href="${escapeHtml(project.href)}">打开作品</a>`
+                        : ""
+                    }
+                  </div>
                 </div>
               </article>
             `

@@ -5,7 +5,7 @@ export const resourceCategories = [
   { id: "dev-tools", label: "Dev Tools" },
   { id: "learning", label: "Learning" },
   { id: "deploy", label: "Deploy" },
-  { id: "featured", label: "Featured" },
+  { id: "featured", label: "精选" },
 ];
 
 export const resources = [

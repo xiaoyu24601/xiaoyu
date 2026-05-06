@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" role="img" aria-labelledby="title desc">
+  <title id="title">单词练习室项目封面</title>
+  <desc id="desc">清爽的英语单词学习界面，包含词卡、进度和例句。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e7fbf4"/>
+      <stop offset="0.58" stop-color="#dff4ff"/>
+      <stop offset="1" stop-color="#ffe5c4"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#f7fffb" stop-opacity="0.78"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="660" rx="28" fill="url(#bg)"/>
+  <g opacity="0.5">
+    <path d="M120 124h720M120 188h720M120 252h720M120 316h720M120 380h720M120 444h720M120 508h720" stroke="#72bcc9" stroke-width="2"/>
+    <path d="M180 86v500M300 86v500M420 86v500M540 86v500M660 86v500M780 86v500" stroke="#72bcc9" stroke-width="2"/>
+  </g>
+  <rect x="104" y="86" width="752" height="488" rx="22" fill="url(#card)" stroke="#83c7d1" stroke-width="3"/>
+  <rect x="142" y="126" width="246" height="360" rx="16" fill="#ffffff" stroke="#9dd8d0" stroke-width="3"/>
+  <text x="174" y="186" fill="#157f96" font-family="Arial, sans-serif" font-size="28" font-weight="700">Word</text>
+  <text x="174" y="256" fill="#1f3438" font-family="Arial, sans-serif" font-size="56" font-weight="800">achieve</text>
+  <text x="174" y="308" fill="#667b80" font-family="Arial, sans-serif" font-size="24">/əˈtʃiːv/</text>
+  <rect x="174" y="356" width="156" height="36" rx="18" fill="#c8f0e3"/>
+  <text x="196" y="381" fill="#1f3438" font-family="Arial, sans-serif" font-size="20" font-weight="700">实现目标</text>
+  <rect x="426" y="126" width="356" height="86" rx="16" fill="#ffffff" stroke="#9dd8d0" stroke-width="3"/>
+  <rect x="426" y="236" width="356" height="86" rx="16" fill="#ffffff" stroke="#9dd8d0" stroke-width="3"/>
+  <rect x="426" y="346" width="356" height="86" rx="16" fill="#ffffff" stroke="#9dd8d0" stroke-width="3"/>
+  <text x="456" y="177" fill="#1f3438" font-family="Arial, sans-serif" font-size="25" font-weight="700">语法 · achieve a goal</text>
+  <text x="456" y="287" fill="#1f3438" font-family="Arial, sans-serif" font-size="25" font-weight="700">派生 · achievement</text>
+  <text x="456" y="397" fill="#1f3438" font-family="Arial, sans-serif" font-size="25" font-weight="700">例句 · real context</text>
+  <g fill="#f7a7a6">
+    <rect x="756" y="98" width="18" height="18"/>
+    <rect x="780" y="98" width="18" height="18"/>
+    <rect x="780" y="122" width="18" height="18"/>
+  </g>
+</svg>
