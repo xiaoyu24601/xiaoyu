@@ -1,9 +1,9 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-05-06T09:19:49.159Z",
-  "updateLabel": "2026/5/6 17:19:49",
-  "sourceCount": 3,
-  "itemCount": 15,
-  "repoCount": 6
+  "generatedAt": "2026-05-07T04:04:42.030Z",
+  "updateLabel": "2026/5/7 12:04:42",
+  "sourceCount": 5,
+  "itemCount": 24,
+  "repoCount": 51
 };
 
 export const aiNewsSources = [
@@ -39,6 +39,32 @@ export const aiNewsSources = [
 
 export const aiNewsItems = [
   {
+    "title": "How frontier enterprises are building an AI advantage",
+    "source": "OpenAI News",
+    "category": "智能体",
+    "date": "2026-05-06",
+    "summary": "OpenAI’s B2B Signals research shows how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage.",
+    "url": "https://openai.com/index/introducing-b2b-signals",
+    "tags": [
+      "智能体",
+      "研究"
+    ],
+    "score": 86
+  },
+  {
+    "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-05-06",
+    "summary": "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 79
+  },
+  {
     "title": "Games people — and machines — play: Untangling strategic reasoning to advance AI",
     "source": "MIT News AI",
     "category": "智能体",
@@ -48,7 +74,43 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 82
+    "score": 79
+  },
+  {
+    "title": "Study: Firms often use automation to control certain workers’ wages",
+    "source": "MIT News AI",
+    "category": "智能体",
+    "date": "2026-05-07",
+    "summary": "MIT economists found US companies tend to target employees earning a “wage premium,” which increases inequality but not necessarily productivity.",
+    "url": "https://news.mit.edu/2026/study-firms-often-use-automation-control-certain-workers-wages-0507",
+    "tags": [
+      "智能体"
+    ],
+    "score": 78
+  },
+  {
+    "title": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-05-06",
+    "summary": "Singular Bank built Singularity, an internal assistant using ChatGPT and Codex to help bankers save 60–90 minutes daily on meeting prep, portfolio analysis, and follow-up.",
+    "url": "https://openai.com/index/singular-bank",
+    "tags": [
+      "AI 编程"
+    ],
+    "score": 74
+  },
+  {
+    "title": "Unlocking large scale AI training networks with MRC (Multipath Reliable Connection)",
+    "source": "OpenAI News",
+    "category": "开源项目",
+    "date": "2026-05-05",
+    "summary": "OpenAI introduces MRC (Multipath Reliable Connection), a new supercomputer networking protocol released via OCP to improve resilience and performance in large-scale AI training clusters.",
+    "url": "https://openai.com/index/mrc-supercomputer-networking",
+    "tags": [
+      "开源项目"
+    ],
+    "score": 71
   },
   {
     "title": "GPT-5.5 Instant: smarter, clearer, and more personalized",
@@ -61,7 +123,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "Enabling a new model for healthcare with AI co-clinician",
@@ -75,20 +137,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 63
-  },
-  {
-    "title": "OpenAI models, Codex, and Managed Agents come to AWS",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-04-28",
-    "summary": "OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.",
-    "url": "https://openai.com/index/openai-on-aws",
-    "tags": [
-      "智能体",
-      "模型"
-    ],
-    "score": 63
+    "score": 60
   },
   {
     "title": "Gemma 4: Byte for byte, the most capable open models",
@@ -104,17 +153,80 @@ export const aiNewsItems = [
     "score": 60
   },
   {
-    "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
-    "source": "MIT News AI",
+    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+    "source": "Hugging Face Blog",
+    "category": "智能体",
+    "date": "2026-04-28",
+    "summary": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+    "tags": [
+      "智能体"
+    ],
+    "score": 58
+  },
+  {
+    "title": "ReasoningBank: Enabling agents to learn from experience",
+    "source": "Google Research",
+    "category": "智能体",
+    "date": "2026-04-21",
+    "summary": "Generative AI",
+    "url": "https://research.google/blog/reasoningbank-enabling-agents-to-learn-from-experience/",
+    "tags": [
+      "智能体"
+    ],
+    "score": 56
+  },
+  {
+    "title": "Improving the academic workflow: Introducing two AI agents for better figures and peer review",
+    "source": "Google Research",
+    "category": "智能体",
+    "date": "2026-04-08",
+    "summary": "Generative AI",
+    "url": "https://research.google/blog/improving-the-academic-workflow-introducing-two-ai-agents-for-better-figures-and-peer-review/",
+    "tags": [
+      "智能体"
+    ],
+    "score": 56
+  },
+  {
+    "title": "Four ways Google Research scientists have been using Empirical Research Assistance",
+    "source": "Google Research",
     "category": "模型技术",
     "date": "2026-04-29",
-    "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
-    "url": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429",
+    "summary": "Data Mining & Modeling",
+    "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance/",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 55
+  },
+  {
+    "title": "Granite 4.1 LLMs: How They’re Built",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "Granite 4.1 LLMs: How They’re Built",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
     "tags": [
       "模型技术",
       "模型"
     ],
-    "score": 53
+    "score": 50
+  },
+  {
+    "title": "Evaluating alignment of behavioral dispositions in LLMs",
+    "source": "Google Research",
+    "category": "模型技术",
+    "date": "2026-04-03",
+    "summary": "Generative AI",
+    "url": "https://research.google/blog/evaluating-alignment-of-behavioral-dispositions-in-llms/",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 50
   },
   {
     "title": "Where the goblins came from",
@@ -127,7 +239,32 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 52
+    "score": 49
+  },
+  {
+    "title": "Solving the “Whac-a-mole dilemma”: A smarter way to debias AI vision models",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "A new debiasing technique called WRING avoids creating or amplifying biases that can occur with existing debiasing approaches.",
+    "url": "https://news.mit.edu/2026/smarter-way-to-debias-ai-vision-models-0429",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 49
+  },
+  {
+    "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "DeepInfra on Hugging Face Inference Providers 🔥",
+    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+    "tags": [
+      "模型技术"
+    ],
+    "score": 48
   },
   {
     "title": "Measuring progress toward AGI: A cognitive framework",
@@ -142,17 +279,40 @@ export const aiNewsItems = [
     "score": 48
   },
   {
-    "title": "Enabling privacy-preserving AI training on everyday devices",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-04-29",
-    "summary": "A new method could bring more accurate and efficient AI models to high-stakes applications like health care and finance, even in under-resourced settings.",
-    "url": "https://news.mit.edu/2026/enabling-privacy-preserving-ai-training-everyday-devices-0429",
+    "title": "DeepSeek-V4: a million-token context that agents can actually use",
+    "source": "Hugging Face Blog",
+    "category": "智能体",
+    "date": "2026-04-24",
+    "summary": "DeepSeek-V4: a million-token context that agents can actually use",
+    "url": "https://huggingface.co/blog/deepseekv4",
     "tags": [
-      "模型技术",
-      "模型"
+      "智能体"
     ],
-    "score": 46
+    "score": 44
+  },
+  {
+    "title": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles",
+    "source": "Google Research",
+    "category": "模型技术",
+    "date": "2026-04-16",
+    "summary": "Generative AI",
+    "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
+    "tags": [
+      "模型技术"
+    ],
+    "score": 44
+  },
+  {
+    "title": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+    "source": "Hugging Face Blog",
+    "category": "智能体",
+    "date": "2026-04-16",
+    "summary": "Ecom-RLVE: Adaptive Verifiable Environments for E-Commerce Conversational Agents",
+    "url": "https://huggingface.co/blog/ecom-rlve",
+    "tags": [
+      "智能体"
+    ],
+    "score": 44
   },
   {
     "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
@@ -168,297 +328,320 @@ export const aiNewsItems = [
     "score": 44
   },
   {
-    "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-    "source": "Google DeepMind",
-    "category": "模型技术",
-    "date": "2026-03-26",
-    "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
+    "title": "Building better AI benchmarks: How many raters are enough?",
+    "source": "Google Research",
+    "category": "研究进展",
+    "date": "2026-03-31",
+    "summary": "Algorithms & Theory",
+    "url": "https://research.google/blog/building-better-ai-benchmarks-how-many-raters-are-enough/",
     "tags": [
-      "模型技术",
-      "模型"
+      "研究进展"
     ],
     "score": 44
-  },
-  {
-    "title": "OpenAI available at FedRAMP Moderate",
-    "source": "OpenAI News",
-    "category": "技术工具",
-    "date": "2026-04-27",
-    "summary": "OpenAI is available at FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling secure AI adoption for U.S. federal agencies.",
-    "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
-    "tags": [
-      "技术工具",
-      "开发者"
-    ],
-    "score": 43
-  },
-  {
-    "title": "Teaching AI models to say “I’m not sure”",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-04-22",
-    "summary": "A new training method improves the reliability of AI confidence estimates without sacrificing performance, addressing a root cause of hallucination in reasoning models.",
-    "url": "https://news.mit.edu/2026/teaching-ai-models-to-say-im-not-sure-0422",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 42
-  },
-  {
-    "title": "Gemini Robotics-ER 1.6: Powering real-world robotics tasks through enhanced embodied reasoning",
-    "source": "Google DeepMind",
-    "category": "模型技术",
-    "date": "2026-04-13",
-    "summary": "Gemini Robotics ER 1.6: Enhancing spatial reasoning and multi-view understanding for autonomous robotics.",
-    "url": "https://deepmind.google/blog/gemini-robotics-er-1-6/",
-    "tags": [
-      "模型技术"
-    ],
-    "score": 42
-  },
-  {
-    "title": "Bringing AI-driven protein-design tools to biologists everywhere",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-04-17",
-    "summary": "Founded by Tristan Bepler PhD ’20 and former MIT professor Tim Lu PhD ’07, OpenProtein.AI offers researchers open-source models and other tools for protein engineering.",
-    "url": "https://news.mit.edu/2026/bringing-ai-driven-protein-design-tools-everywhere-0417",
-    "tags": [
-      "模型技术",
-      "研究",
-      "模型"
-    ],
-    "score": 36
   }
 ];
 
 export const aiRepoRadar = {
   "hot": [
     {
-      "name": "langchain-ai/langchain",
-      "description": "构建 LLM 应用、RAG、工具调用和 Agent 工作流的核心框架。",
-      "url": "https://github.com/langchain-ai/langchain",
-      "stars": 108000,
-      "forks": 18000,
-      "language": "Python",
-      "updatedAt": "2026-05-01",
+      "name": "n8n-io/n8n",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "url": "https://github.com/n8n-io/n8n",
+      "stars": 186907,
+      "forks": 57413,
+      "language": "TypeScript",
+      "updatedAt": "2026-05-06",
       "topics": [
-        "llm",
-        "rag",
-        "agents",
-        "framework"
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow"
       ],
-      "heatScore": 1680,
-      "trendScore": 310
+      "heatScore": 3783,
+      "trendScore": 7471
+    },
+    {
+      "name": "affaan-m/everything-claude-code",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "stars": 174792,
+      "forks": 27051,
+      "language": "JavaScript",
+      "updatedAt": "2026-05-03",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools"
+      ],
+      "heatScore": 2650,
+      "trendScore": 38748
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "stars": 136831,
+      "forks": 34149,
+      "language": "Unknown",
+      "updatedAt": "2026-04-29",
+      "topics": [
+        "ai",
+        "bolt",
+        "cluely",
+        "copilot",
+        "cursor"
+      ],
+      "heatScore": 2507,
+      "trendScore": 10622
+    },
+    {
+      "name": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 155954,
+      "forks": 18088,
+      "language": "TypeScript",
+      "updatedAt": "2026-05-07",
+      "topics": [],
+      "heatScore": 2162,
+      "trendScore": 11497
+    },
+    {
+      "name": "langgenius/dify",
+      "description": "Production-ready platform for agentic workflow development.",
+      "url": "https://github.com/langgenius/dify",
+      "stars": 140392,
+      "forks": 22016,
+      "language": "TypeScript",
+      "updatedAt": "2026-05-07",
+      "topics": [
+        "agent",
+        "agentic-ai",
+        "agentic-framework",
+        "agentic-workflow",
+        "ai"
+      ],
+      "heatScore": 2138,
+      "trendScore": 5049
+    },
+    {
+      "name": "langchain-ai/langchain",
+      "description": "The agent engineering platform. Available in TypeScript!",
+      "url": "https://github.com/langchain-ai/langchain",
+      "stars": 135973,
+      "forks": 22478,
+      "language": "Python",
+      "updatedAt": "2026-05-06",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "heatScore": 2109,
+      "trendScore": 4626
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 136219,
+      "forks": 20877,
+      "language": "Python",
+      "updatedAt": "2026-05-07",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "heatScore": 2058,
+      "trendScore": 13046
     },
     {
       "name": "open-webui/open-webui",
-      "description": "本地和私有化 LLM Web UI，适合搭建个人 AI 工作台。",
+      "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "url": "https://github.com/open-webui/open-webui",
-      "stars": 92000,
-      "forks": 12000,
-      "language": "JavaScript",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "local-ai",
-        "llm",
-        "ollama"
-      ],
-      "heatScore": 1320,
-      "trendScore": 275
-    },
-    {
-      "name": "microsoft/autogen",
-      "description": "面向多智能体协作、工具调用和自动化工作流的开源框架。",
-      "url": "https://github.com/microsoft/autogen",
-      "stars": 48000,
-      "forks": 7200,
+      "stars": 135822,
+      "forks": 19339,
       "language": "Python",
-      "updatedAt": "2026-05-01",
+      "updatedAt": "2026-05-06",
       "topics": [
-        "agents",
+        "ai",
         "llm",
-        "multi-agent",
-        "workflow"
+        "llm-ui",
+        "llm-webui",
+        "llms"
       ],
-      "heatScore": 720,
-      "trendScore": 260
-    },
-    {
-      "name": "crewAIInc/crewAI",
-      "description": "用于编排角色化 AI Agent 团队和任务流的轻量框架。",
-      "url": "https://github.com/crewAIInc/crewAI",
-      "stars": 38000,
-      "forks": 5200,
-      "language": "Python",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "agents",
-        "automation",
-        "workflow"
-      ],
-      "heatScore": 553,
-      "trendScore": 290
-    },
-    {
-      "name": "continuedev/continue",
-      "description": "开源 AI 编程助手，可接入 IDE、本地模型和代码上下文。",
-      "url": "https://github.com/continuedev/continue",
-      "stars": 27000,
-      "forks": 2600,
-      "language": "TypeScript",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "ai-coding",
-        "ide",
-        "llm"
-      ],
-      "heatScore": 356,
-      "trendScore": 245
-    },
-    {
-      "name": "modelcontextprotocol/servers",
-      "description": "MCP 官方服务器集合，适合扩展 Agent 的工具和数据源能力。",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "stars": 15000,
-      "forks": 1800,
-      "language": "TypeScript",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "mcp",
-        "agents",
-        "tool-use"
-      ],
-      "heatScore": 210,
-      "trendScore": 330
+      "heatScore": 2003,
+      "trendScore": 5187
     }
   ],
   "rising": [
     {
-      "name": "modelcontextprotocol/servers",
-      "description": "MCP 官方服务器集合，适合扩展 Agent 的工具和数据源能力。",
-      "url": "https://github.com/modelcontextprotocol/servers",
-      "stars": 15000,
-      "forks": 1800,
-      "language": "TypeScript",
-      "updatedAt": "2026-05-01",
+      "name": "VoltAgent/awesome-design-md",
+      "description": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "stars": 72227,
+      "forks": 8846,
+      "language": "Unknown",
+      "updatedAt": "2026-05-02",
       "topics": [
-        "mcp",
-        "agents",
-        "tool-use"
+        "awesome-list",
+        "design-md",
+        "design-system",
+        "design-tokens",
+        "figma"
       ],
-      "heatScore": 210,
-      "trendScore": 330
+      "heatScore": 1017,
+      "trendScore": 45446
     },
     {
-      "name": "langchain-ai/langchain",
-      "description": "构建 LLM 应用、RAG、工具调用和 Agent 工作流的核心框架。",
-      "url": "https://github.com/langchain-ai/langchain",
-      "stars": 108000,
-      "forks": 18000,
-      "language": "Python",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "llm",
-        "rag",
-        "agents",
-        "framework"
-      ],
-      "heatScore": 1680,
-      "trendScore": 310
-    },
-    {
-      "name": "crewAIInc/crewAI",
-      "description": "用于编排角色化 AI Agent 团队和任务流的轻量框架。",
-      "url": "https://github.com/crewAIInc/crewAI",
-      "stars": 38000,
-      "forks": 5200,
-      "language": "Python",
-      "updatedAt": "2026-05-01",
-      "topics": [
-        "agents",
-        "automation",
-        "workflow"
-      ],
-      "heatScore": 553,
-      "trendScore": 290
-    },
-    {
-      "name": "open-webui/open-webui",
-      "description": "本地和私有化 LLM Web UI，适合搭建个人 AI 工作台。",
-      "url": "https://github.com/open-webui/open-webui",
-      "stars": 92000,
-      "forks": 12000,
+      "name": "affaan-m/everything-claude-code",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "url": "https://github.com/affaan-m/everything-claude-code",
+      "stars": 174792,
+      "forks": 27051,
       "language": "JavaScript",
-      "updatedAt": "2026-05-01",
+      "updatedAt": "2026-05-03",
       "topics": [
-        "local-ai",
-        "llm",
-        "ollama"
+        "ai-agents",
+        "anthropic",
+        "claude",
+        "claude-code",
+        "developer-tools"
       ],
-      "heatScore": 1320,
-      "trendScore": 275
+      "heatScore": 2650,
+      "trendScore": 38748
     },
     {
-      "name": "microsoft/autogen",
-      "description": "面向多智能体协作、工具调用和自动化工作流的开源框架。",
-      "url": "https://github.com/microsoft/autogen",
-      "stars": 48000,
-      "forks": 7200,
+      "name": "JuliusBrussee/caveman",
+      "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "stars": 55451,
+      "forks": 3039,
       "language": "Python",
       "updatedAt": "2026-05-01",
       "topics": [
-        "agents",
-        "llm",
-        "multi-agent",
-        "workflow"
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code"
       ],
-      "heatScore": 720,
-      "trendScore": 260
+      "heatScore": 656,
+      "trendScore": 38406
     },
     {
-      "name": "continuedev/continue",
-      "description": "开源 AI 编程助手，可接入 IDE、本地模型和代码上下文。",
-      "url": "https://github.com/continuedev/continue",
-      "stars": 27000,
-      "forks": 2600,
-      "language": "TypeScript",
-      "updatedAt": "2026-05-01",
+      "name": "MemPalace/mempalace",
+      "description": "The best-benchmarked open-source AI memory system. And it's free.",
+      "url": "https://github.com/MemPalace/mempalace",
+      "stars": 51369,
+      "forks": 6760,
+      "language": "Python",
+      "updatedAt": "2026-05-06",
       "topics": [
-        "ai-coding",
-        "ide",
-        "llm"
+        "ai",
+        "chromadb",
+        "llm",
+        "mcp",
+        "memory"
       ],
-      "heatScore": 356,
-      "trendScore": 245
+      "heatScore": 739,
+      "trendScore": 36680
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 136219,
+      "forks": 20877,
+      "language": "Python",
+      "updatedAt": "2026-05-07",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
+      ],
+      "heatScore": 2058,
+      "trendScore": 13046
+    },
+    {
+      "name": "anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "url": "https://github.com/anomalyco/opencode",
+      "stars": 155954,
+      "forks": 18088,
+      "language": "TypeScript",
+      "updatedAt": "2026-05-07",
+      "topics": [],
+      "heatScore": 2162,
+      "trendScore": 11497
+    },
+    {
+      "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+      "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "stars": 136831,
+      "forks": 34149,
+      "language": "Unknown",
+      "updatedAt": "2026-04-29",
+      "topics": [
+        "ai",
+        "bolt",
+        "cluely",
+        "copilot",
+        "cursor"
+      ],
+      "heatScore": 2507,
+      "trendScore": 10622
+    },
+    {
+      "name": "anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "url": "https://github.com/anthropics/claude-code",
+      "stars": 121057,
+      "forks": 20032,
+      "language": "Shell",
+      "updatedAt": "2026-05-06",
+      "topics": [],
+      "heatScore": 1878,
+      "trendScore": 8620
     }
   ]
 };
 
 export const aiNewsSummaries = {
   "daily": {
-    "count": 0,
-    "topCategory": "技术工具",
-    "topItems": []
+    "count": 1,
+    "topCategory": "智能体",
+    "topItems": [
+      "Study: Firms often use automation to control certain workers’ wages"
+    ]
   },
   "weekly": {
-    "count": 3,
-    "topCategory": "模型技术",
+    "count": 7,
+    "topCategory": "智能体",
     "topItems": [
-      "Games people — and machines — play: Untangling strategic reasoning to advance AI",
-      "GPT-5.5 Instant: smarter, clearer, and more personalized",
-      "Enabling a new model for healthcare with AI co-clinician"
+      "How frontier enterprises are building an AI advantage",
+      "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "Games people — and machines — play: Untangling strategic reasoning to advance AI"
     ]
   },
   "monthly": {
-    "count": 12,
+    "count": 20,
     "topCategory": "模型技术",
     "topItems": [
-      "Games people — and machines — play: Untangling strategic reasoning to advance AI",
-      "GPT-5.5 Instant: smarter, clearer, and more personalized",
-      "Enabling a new model for healthcare with AI co-clinician"
+      "How frontier enterprises are building an AI advantage",
+      "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "Games people — and machines — play: Untangling strategic reasoning to advance AI"
     ]
   }
 };
