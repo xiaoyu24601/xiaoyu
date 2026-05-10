@@ -169,7 +169,6 @@ export const projects = [
     href: "projects/todo/index.html",
   },
   {
-  {
     title: "Word Studio",                            // ✏️ 改这里 → 项目名
     type: "Web App / Vocabulary",
     category: "web",
