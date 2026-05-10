@@ -1,5 +1,7 @@
 export const resourceCategories = [
   { id: "all", label: "全部" },
+  { id: "vibe-coding", label: "Vibe Coding" },
+  { id: "python-learn", label: "Python 学习" },
   { id: "ai-coding", label: "AI Coding" },
   { id: "local-ai", label: "Local AI" },
   { id: "dev-tools", label: "Dev Tools" },
@@ -9,6 +11,127 @@ export const resourceCategories = [
 ];
 
 export const resources = [
+  // ============================================================
+  // Vibe Coding 工具链 —— 你正在用的
+  // ============================================================
+  {
+    title: "Claude Code",
+    description: "Anthropic 的终端 AI 编程代理，直接在 VS Code 终端里用。支持子代理、检查点回滚、Skills、Hooks、MCP。你现在的核心工具。",
+    category: "vibe-coding",
+    tags: ["AI Coding", "Claude", "CLI", "核心工具"],
+    url: "https://docs.anthropic.com/en/docs/claude-code",
+    backupUrl: "https://github.com/anthropics/claude-code",
+    note: "安装：npm install -g @anthropic-ai/claude-code，然后在项目目录运行 claude。",
+    featured: true,
+  },
+  {
+    title: "OPB-Skills（一人公司 Skills）",
+    description: "91 个虚拟专家 Skill，覆盖产品、研发、设计、营销、运营、财务。一人公司必备。",
+    category: "vibe-coding",
+    tags: ["Claude Code", "Skills", "一人公司"],
+    url: "https://github.com/chendongqi/OPB-Skills",
+    backupUrl: "https://github.com/chendongqi/OPB-Skills",
+    note: "已安装到 ~/.claude/skills/，直接在 Claude Code 中调用。",
+    featured: true,
+  },
+  {
+    title: "Vibe Coding 实战手册",
+    description: "中文系统性教程，从网页对话到本地 Agent、MCP、Skills，覆盖 Claude Code / Codex / OpenCode。",
+    category: "vibe-coding",
+    tags: ["教程", "中文", "Claude Code", "入门"],
+    url: "https://github.com/FidStyle/Vibe-Coding-Practical-Handbook",
+    backupUrl: "https://vibecoding.joytion.cn",
+    note: "首选中文字册，零基础友好，三种读法针对不同水平。",
+    featured: true,
+  },
+  {
+    title: "Cursor",
+    description: "基于 VS Code 的 AI IDE，内置 Chat、Composer 和 Agent 模式，适合 vibe coding 全流程。",
+    category: "vibe-coding",
+    tags: ["IDE", "AI Coding", "VS Code"],
+    url: "https://cursor.com/",
+    backupUrl: "https://docs.cursor.com/",
+    note: "你熟悉 VS Code 的话切换零成本，Composer 模式适合多文件修改。",
+    featured: false,
+  },
+  {
+    title: "AutoCLI Skills 仓库",
+    description: "社区维护的 Claude Code Skills 集合，包含各种实用的 Skills。",
+    category: "vibe-coding",
+    tags: ["Skills", "Claude Code", "开源"],
+    url: "https://github.com/nashsu/AutoCLI-skill",
+    backupUrl: "https://github.com/nashsu/AutoCLI-skill",
+    note: "可以找到新的 Skills 灵感或直接使用。",
+    featured: false,
+  },
+
+  // ============================================================
+  // Python 学习 —— 你的学习路线
+  // ============================================================
+  {
+    title: "Python-100-Days（GitHub）",
+    description: "GitHub 上最系统的 Python 中文学习仓库，从基础语法到 Web 开发、数据分析、机器学习，100 天循序渐进。",
+    category: "python-learn",
+    tags: ["Python", "中文", "系统学习", "入门"],
+    url: "https://github.com/jackfrued/Python-100-Days",
+    backupUrl: "https://github.com/jackfrued/Python-100-Days",
+    note: "配合 Claude Code 练习，每学完一章就写一个小练习。⭐ 你的主力教材。",
+    featured: true,
+  },
+  {
+    title: "《Python 编程：从入门到实践》（蟒蛇书）",
+    description: "全球最畅销的 Python 入门书，前半部分基础语法，后半部分三个实战项目（游戏、数据可视化、Web 应用）。",
+    category: "python-learn",
+    tags: ["Python", "书籍", "入门", "项目驱动"],
+    url: "https://item.jd.com/14042152.html",
+    backupUrl: "https://github.com/ehmatthes/pcc_3e",
+    note: "有配套 GitHub 仓库（pcc_3e）和 YouTube 视频教程，边看边练效果最好。",
+    featured: true,
+  },
+  {
+    title: "Python Crash Course 配套视频",
+    description: "蟒蛇书作者 Eric Matthes 的官方 YouTube 教学视频，逐章讲解书中内容。",
+    category: "python-learn",
+    tags: ["Python", "YouTube", "视频教程"],
+    url: "https://www.youtube.com/@ehmatthes",
+    backupUrl: "https://www.youtube.com/results?search_query=python+crash+course",
+    note: "英语讲解但语速适中，配合中英文书一起看理解更深。",
+    featured: false,
+  },
+  {
+    title: "Fireship（YouTube）",
+    description: "每个视频 2-5 分钟讲清一个技术概念，覆盖 AI 工具、编程语言、开发趋势，信息密度极高。",
+    category: "python-learn",
+    tags: ["YouTube", "编程科普", "短平快"],
+    url: "https://www.youtube.com/@Fireship",
+    backupUrl: "https://www.youtube.com/@Fireship",
+    note: "适合碎片时间看，快速了解技术生态。有 vibe coding 专题。",
+    featured: false,
+  },
+  {
+    title: "Traversy Media（YouTube）",
+    description: "项目驱动的前端/全栈教学，从零搭建完整项目，理解代码结构。适合学完基础后跟着做。",
+    category: "python-learn",
+    tags: ["YouTube", "项目实战", "前端"],
+    url: "https://www.youtube.com/@TraversyMedia",
+    backupUrl: "https://www.youtube.com/@TraversyMedia",
+    note: "Build from scratch 风格，帮你理解 AI 生成代码的底层逻辑。",
+    featured: false,
+  },
+  {
+    title: "Matt Wolfe（YouTube / FutureTools）",
+    description: "每周更新 AI 工具、工作流和行业动态，适合了解什么新工具能用。",
+    category: "python-learn",
+    tags: ["YouTube", "AI 工具", "资讯"],
+    url: "https://www.youtube.com/@mreflow",
+    backupUrl: "https://futuretools.io/",
+    note: "每周花 20 分钟看一期，保持对 AI 工具的敏感度。",
+    featured: false,
+  },
+
+  // ============================================================
+  // AI Coding 工具
+  // ============================================================
   {
     title: "Codex",
     description: "OpenAI 的代码协作与工程任务助手，适合读项目、改代码、拆任务和做前端重构。",
@@ -17,16 +140,6 @@ export const resources = [
     url: "https://openai.com/codex/",
     backupUrl: "https://chatgpt.com/",
     note: "适合处理真实项目改造，建议配合 Git diff 做审查。",
-    featured: true,
-  },
-  {
-    title: "Claude Code",
-    description: "Anthropic 面向终端和项目开发场景的 AI 编程工具。",
-    category: "ai-coding",
-    tags: ["AI Coding", "Claude", "CLI"],
-    url: "https://www.anthropic.com/claude-code",
-    backupUrl: "https://claude.ai/",
-    note: "长上下文代码理解能力强，适合架构梳理和重构讨论。",
     featured: true,
   },
   {
@@ -49,16 +162,7 @@ export const resources = [
     note: "可作为 AI IDE 方案之一进行试用和对比。",
     featured: false,
   },
-  {
-    title: "CC Switch",
-    description: "用于切换 Claude Code 配置或环境的辅助工具。",
-    category: "ai-coding",
-    tags: ["AI Coding", "Claude Code", "Utility"],
-    url: "https://github.com/",
-    backupUrl: "https://github.com/search?q=cc+switch&type=repositories",
-    note: "具体仓库可按你实际使用的版本替换为准确链接。",
-    featured: false,
-  },
+
   {
     title: "Ollama",
     description: "本地运行和管理大语言模型的轻量工具，适合快速体验本地 AI。",

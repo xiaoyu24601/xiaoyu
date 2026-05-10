@@ -1,17 +1,17 @@
-import { contactLinks, siteMeta } from "../../data/site-data.js";
+import { contactLinks, contactPage, siteMeta } from "../../data/site-data.js";
 import { pageHero } from "../render-helpers.js";
 import { escapeHtml } from "../utils.js";
 
 export const renderContactPage = () => `
   ${pageHero({
-    eyebrow: "Contact",
-    title: "从这里找到我",
-    copy: "联系信息继续沿用原站内容，复制邮箱作为独立状态管理，不影响其他页面交互。",
+    eyebrow: contactPage.eyebrow,
+    title: contactPage.title,
+    copy: contactPage.copy,
   })}
   <section class="section contact" data-defer-section>
     <div class="contact-panel reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>如果你也有新的想法，可以从这里找到我。</h2>
+      <p class="eyebrow">${escapeHtml(contactPage.eyebrow)}</p>
+      <h2>${escapeHtml(contactPage.copy)}</h2>
       <div class="contact-list">
         ${contactLinks
           .map(

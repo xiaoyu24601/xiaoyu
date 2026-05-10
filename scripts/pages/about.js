@@ -4,9 +4,9 @@ import { escapeHtml } from "../utils.js";
 
 export const renderAboutPage = () => `
   ${pageHero({
-    eyebrow: "About",
-    title: "关于小鱼",
-    copy: "这里保留原有个人介绍，并把技能、关注点和路线图拆成独立模块，后续可以继续扩展经历、价值观和作品背景。",
+    eyebrow: about.eyebrow,
+    title: about.heroTitle,
+    copy: about.heroCopy,
   })}
   <section class="section about" data-defer-section>
     ${sectionHeading({ eyebrow: about.eyebrow, title: about.title })}
