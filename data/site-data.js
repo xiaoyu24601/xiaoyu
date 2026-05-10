@@ -189,13 +189,16 @@ export const projects = [
 // ============================================================
 export const skills = [
   { icon: "Py", text: "Python" },
-  { icon: "SQL", text: "SQL / 数据库" },
+  { icon: "Dj", text: "Django / Flask" },
+  { icon: "Fa", text: "FastAPI" },
+  { icon: "SQL", text: "MySQL" },
   { icon: "API", text: "API 设计" },
+  { icon: "DK", text: "Docker" },
+  { icon: "Lin", text: "Linux" },
   { icon: "Git", text: "Git / GitHub" },
   { icon: "H", text: "HTML / CSS / JS" },
   { icon: "AI", text: "Claude Code / AI 编程" },
   { icon: "VS", text: "VS Code" },
-  { icon: "Lin", text: "Linux" },
 ];
 
 
