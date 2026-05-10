@@ -11,7 +11,7 @@
 export const siteMeta = {
   name: "小鱼",                                    // ✏️ 改这里 → 你的名字/昵称
   title: "小鱼 | 个人网站",                         // ✏️ 改这里 → 浏览器标签页标题
-  description: "小鱼的个人网站 —— Python 初学者的学习记录、项目作品和资源整理。",
+  description: "小鱼的个人网站 —— 后端开发工程师，用 AI 辅助编程做项目和工具。",
   email: "2696827479@qq.com",                     // ✏️ 改这里 → QQ 邮箱
   email163: "xiaoyu24601@163.com",                // ✏️ 改这里 → 网易邮箱
   github: "https://github.com/xiaoyu24601",       // ✏️ 改这里 → 你的 GitHub 主页
@@ -39,10 +39,10 @@ export const navigation = [
 // 🏠 首页 —— 最重要的位置，别人打开网站第一眼看到的
 // ============================================================
 export const home = {
-  eyebrow: "Learning in Public / Personal Space", // ✏️ 改这里 → 顶部小标签
-  title: "从零开始，用 AI 做自己的东西。",            // ✏️ 改这里 → 首页大标题
-  subtitle: "Python 初学者 · AI 辅助编程 · 个人项目积累 · 学习资源整理", // ✏️ 改这里 → 副标题
-  copy: "我是小鱼，一个正在自学编程的初学者。这里记录我的学习路线、练习项目、AI 工具使用心得和资源收藏。用 Claude Code + VS Code 边学边做，目标是成为一个能用代码解决实际问题的人。", // ✏️ 改这里 → 自我介绍段落
+  eyebrow: "Backend Developer / AI-powered",      // ✏️ 改这里 → 顶部小标签
+  title: "用 AI 加速后端开发，一个人就是一个团队。",   // ✏️ 改这里 → 首页大标题
+  subtitle: "后端开发 · AI 辅助编程 · 工具产品 · 学习资源", // ✏️ 改这里 → 副标题
+  copy: "我是小鱼，后端开发工程师。日常工作涉及服务端架构、API 设计和数据处理。通过 Claude Code + VS Code，我在用 AI 提升开发效率，同时探索一人做产品和工具的可能性。", // ✏️ 改这里 → 自我介绍段落
   image: "assets/summer-pixel-scene.svg",
   imageAlt: "透明感夏日天空、海面与小站台的像素风插画",
   noteLabel: "Current mood",                       // ✏️ 改这里 → 心情标签
@@ -122,10 +122,10 @@ export const featuredContent = [
 export const about = {
   eyebrow: "About",
   heroTitle: "关于小鱼",                              // ✏️ 改这里 → 关于页大标题
-  heroCopy: "从零开始学编程，用 AI 辅助（Claude Code）做自己的项目。这里记录我的学习过程、作品积累和资源整理。", // ✏️ 改这里 → 关于页顶部简介
-  title: "关于我",                                    // ✏️ 改这里 → 第二个区域标题
-  intro: "我是小鱼，一个正在自学 Python 和前端开发的初学者。我相信 AI 时代一个人也能做出好东西——通过 Claude Code + VS Code，我在用 vibe coding 的方式搭建这个网站、练习写代码、积累小工具。比起炫技，我更在意每一行代码我是否理解、每个项目是否真的能用。", // ✏️ 改这里 → 自我介绍（最重要）
-  tags: ["Python 初学", "前端入门", "AI 辅助编程", "Vibe Coding", "一人公司探索"], // ✏️ 改这里 → 兴趣标签
+  heroCopy: "后端开发工程师，用 AI 辅助编程做项目和工具，探索一人开发模式。",
+  title: "关于我",
+  intro: "我是小鱼，后端开发。日常工作涉及服务端开发、API 设计、数据库和系统架构。目前在用 Claude Code + VS Code 提升开发效率，同时把一些想法做成可用的工具和产品。这个网站就是我学习和探索的记录。",
+  tags: ["后端开发", "API 设计", "数据库", "AI 辅助编程", "Vibe Coding", "工具产品"],
 };
 
 
@@ -135,18 +135,18 @@ export const about = {
 export const focusItems = [
   {
     index: "01",
-    title: "Python 从入门到能做项目",                 // ✏️ 改这里
-    copy: "跟着《Python 编程：从入门到实践》+ GitHub Python-100-Days 系统学习，用 Claude Code 辅助练习，目标是能独立写小工具。",
+    title: "后端开发 + AI 提效",
+    copy: "日常后端开发中深度使用 Claude Code 辅助写代码、排查问题、设计架构，持续积累 AI 编程最佳实践。",
   },
   {
     index: "02",
-    title: "前端三件套 + AI 效率",                    // ✏️ 改这里
-    copy: "HTML / CSS / JavaScript 打基础，配合 Claude Code 搭个人网站、做浏览器小工具，边做边学。",
+    title: "前端补齐 + 独立做网站",
+    copy: "HTML / CSS / JavaScript 边做边学，目标是能独立开发完整的前后端项目，不依赖前端同事。",
   },
   {
     index: "03",
-    title: "积累作品，探索一人公司",                    // ✏️ 改这里
-    copy: "把学习过程中的练习变成可展示的项目，逐步探索用 AI 做小产品、接外包、做内容的可能性。",
+    title: "一人开发 · 工具产品",
+    copy: "把工作中遇到的痛点变成小工具，从后端延伸到全栈，探索一人做 SaaS 和工具产品的可能性。",
   },
 ];
 
@@ -189,12 +189,14 @@ export const projects = [
 // 🛠️ 技能列表 —— 展示你会什么
 // ============================================================
 export const skills = [
-  { icon: "Py", text: "Python（学习中）" },           // ✏️ 改这里 → 增删技能
-  { icon: "H", text: "HTML / CSS" },
-  { icon: "JS", text: "JavaScript（入门）" },
+  { icon: "Py", text: "Python" },
+  { icon: "SQL", text: "SQL / 数据库" },
+  { icon: "API", text: "API 设计" },
   { icon: "Git", text: "Git / GitHub" },
+  { icon: "H", text: "HTML / CSS / JS" },
+  { icon: "AI", text: "Claude Code / AI 编程" },
   { icon: "VS", text: "VS Code" },
-  { icon: "AI", text: "Claude Code / AI 辅助" },
+  { icon: "Lin", text: "Linux" },
 ];
 
 
@@ -202,10 +204,10 @@ export const skills = [
 // 🗺️ 路线图 —— 你在做什么、计划做什么
 // ============================================================
 export const timeline = [
-  { time: "现在", text: "📖 Python 基础语法 + 《Python 编程：从入门到实践》" },
-  { time: "1-2 月", text: "🐍 Python-100-Days 练习 + 用 Claude Code 做 2-3 个小工具" },
-  { time: "3-4 月", text: "🌐 HTML/CSS/JS 系统学习 + 完善个人网站 + 第一个上线项目" },
-  { time: "5-6 月", text: "🚀 尝试接小外包 / 做浏览器插件 / 写技术博客分享" },
+  { time: "日常", text: "🔧 后端开发工作中深度使用 Claude Code 提效" },
+  { time: "进行中", text: "🌐 补齐前端：HTML/CSS/JS + 个人网站迭代" },
+  { time: "下一步", text: "🛠️ 用 AI 做 3-5 个可展示的小工具/API 服务" },
+  { time: "目标", text: "🚀 独立开发全栈项目，探索一人 SaaS 产品" },
 ];
 
 
