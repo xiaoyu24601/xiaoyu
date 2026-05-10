@@ -196,7 +196,6 @@ export const skills = [
   { icon: "DK", text: "Docker" },
   { icon: "Lin", text: "Linux" },
   { icon: "Git", text: "Git / GitHub" },
-  { icon: "H", text: "HTML / CSS / JS" },
   { icon: "AI", text: "Claude Code / AI 编程" },
   { icon: "VS", text: "VS Code" },
 ];
