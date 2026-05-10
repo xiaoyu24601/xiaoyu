@@ -11,12 +11,12 @@
 export const siteMeta = {
   name: "小鱼",                                    // ✏️ 改这里 → 你的名字/昵称
   title: "小鱼 | 个人网站",                         // ✏️ 改这里 → 浏览器标签页标题
-  description: "一个清爽、透明感、带有唯美像素夏日氛围的个人作品网站。",
+  description: "小鱼的个人网站 —— Python 初学者的学习记录、项目作品和资源整理。",
   email: "2696827479@qq.com",                     // ✏️ 改这里 → QQ 邮箱
   email163: "xiaoyu24601@163.com",                // ✏️ 改这里 → 网易邮箱
   github: "https://github.com/xiaoyu24601",       // ✏️ 改这里 → 你的 GitHub 主页
   githubLabel: "@xiaoyu24601",                    // ✏️ 改这里 → GitHub 显示名
-  bilibili: "https://space.bilibili.com/",        // ✏️ 改这里 → 你的 B 站主页（目前是占位）
+  bilibili: "",                                    // ✏️ 改这里 → 你的 B 站主页（暂无）
 };
 
 
@@ -97,20 +97,20 @@ export const quickEntries = [
 export const featuredContent = [
   {
     label: "Selected Project",
-    title: "Breeze Notes",                                    // ✏️ 改这里 → 精选项目名
-    summary: "轻量笔记工具概念，适合继续扩展为真实的笔记原型。",  // ✏️ 改这里
-    href: "projects.html",
+    title: "轻量待办",                                     // ✏️ 改这里 → 精选项目名
+    summary: "极简待办事项工具，支持本地存储和深浅色模式，纯手写 HTML/CSS/JS。",
+    href: "projects/todo/index.html",
   },
   {
     label: "Resource Plan",
-    title: "AI 工具清单",                                     // ✏️ 改这里
-    summary: "预留给常用 AI 工具、提示词、工作流和使用笔记。",    // ✏️ 改这里
+    title: "AI 工具清单",                                   // ✏️ 改这里
+    summary: "Claude Code、Cursor、OPB-Skills 等 Vibe Coding 工具链 + Python 学习资源整理。",
     href: "resources.html",
   },
   {
     label: "Writing",
-    title: "个人网站从单页走向多页",                            // ✏️ 改这里
-    summary: "记录信息架构、页面拆分、配置化渲染和静态部署的取舍。", // ✏️ 改这里
+    title: "个人网站从单页走向多页",                          // ✏️ 改这里
+    summary: "记录信息架构、页面拆分、配置化渲染和静态部署的取舍。",
     href: "blog.html",
   },
 ];
@@ -156,6 +156,20 @@ export const focusItems = [
 // ============================================================
 export const projects = [
   {
+    title: "轻量待办",
+    type: "Web App / Todo",
+    category: "web",
+    categoryLabel: "网页应用",
+    image: "assets/project-todo.svg",
+    imageAlt: "轻量待办项目封面",
+    summary: "极简待办事项工具，支持添加、完成、删除、筛选，数据保存在浏览器本地，支持深浅色模式。",
+    detail: "用纯 HTML/CSS/JS 手写的轻量待办事项应用。支持添加任务、勾选完成、删除、按状态筛选，数据通过 localStorage 持久化存储，刷新不丢失。适配移动端，支持系统主题自动切换。",
+    tools: "HTML, CSS, JavaScript",
+    status: "已完成",
+    href: "projects/todo/index.html",
+  },
+  {
+  {
     title: "Word Studio",                            // ✏️ 改这里 → 项目名
     type: "Web App / Vocabulary",
     category: "web",
@@ -167,45 +181,6 @@ export const projects = [
     tools: "HTML, CSS, JavaScript",
     status: "可交互原型",
     href: "vocabulary.html",                         // ✏️ 改这里 → 项目链接
-  },
-  {
-    title: "Breeze Notes",
-    type: "Web App / Notes",
-    category: "web",
-    categoryLabel: "网页应用",
-    image: "assets/project-breeze.svg",
-    imageAlt: "Breeze Notes 项目封面",
-    summary: "轻量笔记工具概念，强调快速记录、自然分类和安静的阅读体验。",
-    detail: "轻量笔记工具概念，强调快速记录、自然分类和安静的阅读体验。它适合继续扩展为真实的笔记原型，例如加入标签、搜索、归档和导出功能。",
-    tools: "HTML, CSS, JavaScript",
-    status: "概念设计",
-    href: "",                                        // ✏️ 改这里 → 填上项目链接
-  },
-  {
-    title: "Lumen Desk",
-    type: "Dashboard / Habit",
-    category: "dashboard",
-    categoryLabel: "仪表盘",
-    image: "assets/project-lumen.svg",
-    imageAlt: "Lumen Desk 项目封面",
-    summary: "个人工作流仪表盘，整合待办、习惯和灵感收集，适合日常复盘。",
-    detail: "个人工作流仪表盘，整合待办、习惯和灵感收集，适合日常复盘。后续可以补充数据统计、日历视图和本地存储。",
-    tools: "HTML, CSS, JavaScript",
-    status: "交互草案",
-    href: "",
-  },
-  {
-    title: "Mint Gallery",
-    type: "Gallery / Template",
-    category: "gallery",
-    categoryLabel: "视觉模板",
-    image: "assets/project-mint.svg",
-    imageAlt: "Mint Gallery 项目封面",
-    summary: "极简图片展厅模板，用柔和视觉突出内容本身，适合摄影或插画展示。",
-    detail: "极简图片展厅模板，用柔和视觉突出内容本身，适合摄影或插画展示。可以继续加入分类、灯箱预览和响应式瀑布流。",
-    tools: "HTML, CSS, SVG",
-    status: "视觉模板",
-    href: "",
   },
 ];
 
@@ -243,14 +218,7 @@ export const posts = [
     date: "2026-05-05",
     category: "Architecture",
     summary: "记录信息架构、页面拆分、配置化渲染和静态部署的取舍。", // ✏️ 改这里
-    status: "草稿",
-  },
-  {
-    title: "如何整理自己的 AI 资源库",                 // ✏️ 改这里
-    date: "待补充",
-    category: "AI",
-    summary: "预留给工具分类、场景笔记和长期维护方法。",
-    status: "规划中",
+    status: "已发布",
   },
 ];
 
@@ -272,5 +240,4 @@ export const contactLinks = [
   { label: "QQ 邮箱", value: siteMeta.email, href: `mailto:${siteMeta.email}` },
   { label: "网易邮箱", value: siteMeta.email163, href: `mailto:${siteMeta.email163}` },
   { label: "GitHub", value: siteMeta.githubLabel, href: siteMeta.github },
-  { label: "Bilibili", value: "可替换为你的主页", href: siteMeta.bilibili }, // ✏️ 改了上面的 bilibili 链接这里自动更新
 ];

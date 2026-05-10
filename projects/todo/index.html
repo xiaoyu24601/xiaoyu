@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>轻量待办 | Todo</title>
+    <style>
+      :root {
+        --bg: #f8fafb;
+        --card: #ffffff;
+        --text: #2c3e50;
+        --muted: #94a3b8;
+        --border: #e8ecf1;
+        --accent: #5b9bd5;
+        --accent-soft: #e8f2fa;
+        --danger: #e07b6c;
+        --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.03);
+        --radius: 12px;
+      }
+
+      [data-theme="dark"] {
+        --bg: #1a1d23;
+        --card: #23262d;
+        --text: #d8dbe2;
+        --muted: #6b7280;
+        --border: #2e3239;
+        --accent: #6db3e6;
+        --accent-soft: #1e2d3d;
+        --danger: #d47263;
+        --shadow: 0 1px 3px rgba(0,0,0,0.2);
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 40px 16px;
+        transition: background 0.3s, color 0.3s;
+      }
+
+      .app {
+        width: 100%;
+        max-width: 480px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+      }
+
+      .header h1 {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+      }
+
+      .header small {
+        display: block;
+        color: var(--muted);
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 2px;
+      }
+
+      .theme-btn {
+        width: 36px; height: 36px;
+        border-radius: 50%;
+        border: 1px solid var(--border);
+        background: var(--card);
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+      }
+      .theme-btn:hover { background: var(--accent-soft); }
+
+      .add-bar {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+      }
+
+      .add-bar input {
+        flex: 1;
+        padding: 10px 14px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        font-size: 15px;
+        background: var(--card);
+        color: var(--text);
+        outline: none;
+        transition: border 0.2s;
+      }
+      .add-bar input:focus { border-color: var(--accent); }
+
+      .add-bar button {
+        padding: 10px 20px;
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        border-radius: var(--radius);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: opacity 0.2s;
+      }
+      .add-bar button:hover { opacity: 0.88; }
+
+      .filters {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+
+      .filters button {
+        padding: 5px 14px;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        background: transparent;
+        color: var(--muted);
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .filters button.active {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+
+      .task-list { list-style: none; }
+
+      .task {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 14px;
+        margin-bottom: 6px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        transition: all 0.2s;
+      }
+      .task:hover { border-color: var(--accent); }
+
+      .task.done .task-text {
+        text-decoration: line-through;
+        color: var(--muted);
+      }
+
+      .task-check {
+        width: 20px; height: 20px;
+        border-radius: 50%;
+        border: 2px solid var(--border);
+        cursor: pointer;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s;
+        font-size: 11px;
+        color: transparent;
+      }
+      .task.done .task-check {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+
+      .task-text {
+        flex: 1;
+        font-size: 15px;
+        word-break: break-word;
+      }
+
+      .task-time {
+        font-size: 11px;
+        color: var(--muted);
+        flex-shrink: 0;
+      }
+
+      .task-del {
+        width: 24px; height: 24px;
+        border: none;
+        background: transparent;
+        color: var(--muted);
+        cursor: pointer;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: all 0.15s;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .task-del:hover {
+        background: #fce4e4;
+        color: var(--danger);
+      }
+
+      .empty {
+        text-align: center;
+        color: var(--muted);
+        padding: 48px 16px;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .counter {
+        text-align: center;
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div>
+          <h1>轻量待办</h1>
+          <small>数据保存在浏览器本地</small>
+        </div>
+        <button class="theme-btn" id="themeToggle" aria-label="切换主题">🌓</button>
+      </div>
+
+      <div class="add-bar">
+        <input type="text" id="taskInput" placeholder="添加新任务..." maxlength="200" autofocus />
+        <button id="addBtn">添加</button>
+      </div>
+
+      <div class="filters">
+        <button class="active" data-filter="all">全部</button>
+        <button data-filter="active">未完成</button>
+        <button data-filter="done">已完成</button>
+      </div>
+
+      <ul class="task-list" id="taskList"></ul>
+      <p class="counter" id="counter"></p>
+      <p class="empty" id="emptyMsg" style="display:none">还没有任务<br>输入内容后点击「添加」或按 Enter</p>
+    </div>
+
+    <script>
+      const STORAGE_KEY = "todo_app_data";
+      let tasks = [];
+      let filter = "all";
+
+      function load() {
+        try { tasks = JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
+        catch { tasks = []; }
+      }
+
+      function save() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks));
+      }
+
+      function now() {
+        const d = new Date();
+        return d.getHours().toString().padStart(2,"0") + ":" + d.getMinutes().toString().padStart(2,"0");
+      }
+
+      function add(text) {
+        tasks.unshift({ id: Date.now(), text, done: false, time: now() });
+        save();
+        render();
+      }
+
+      function toggle(id) {
+        const t = tasks.find(t => t.id === id);
+        if (t) { t.done = !t.done; save(); render(); }
+      }
+
+      function remove(id) {
+        tasks = tasks.filter(t => t.id !== id);
+        save();
+        render();
+      }
+
+      function render() {
+        const list = document.getElementById("taskList");
+        const empty = document.getElementById("emptyMsg");
+        const counter = document.getElementById("counter");
+
+        let filtered = tasks;
+        if (filter === "active") filtered = tasks.filter(t => !t.done);
+        if (filter === "done") filtered = tasks.filter(t => t.done);
+
+        const activeCount = tasks.filter(t => !t.done).length;
+
+        if (filtered.length === 0) {
+          list.innerHTML = "";
+          empty.style.display = "block";
+        } else {
+          empty.style.display = "none";
+          list.innerHTML = filtered.map(t => `
+            <li class="task ${t.done ? "done" : ""}" data-id="${t.id}">
+              <span class="task-check" data-action="toggle">${t.done ? "✓" : ""}</span>
+              <span class="task-text">${escape(t.text)}</span>
+              <span class="task-time">${t.time}</span>
+              <button class="task-del" data-action="del">×</button>
+            </li>
+          `).join("");
+        }
+
+        counter.textContent = activeCount === 0 ? "全部完成 🎉" : `${activeCount} 项未完成`;
+      }
+
+      function escape(s) {
+        const d = document.createElement("div");
+        d.textContent = s;
+        return d.innerHTML;
+      }
+
+      // Event delegation
+      document.getElementById("taskList").addEventListener("click", e => {
+        const li = e.target.closest(".task");
+        if (!li) return;
+        const id = Number(li.dataset.id);
+        const action = e.target.dataset.action;
+        if (action === "toggle") toggle(id);
+        if (action === "del") remove(id);
+      });
+
+      document.getElementById("addBtn").addEventListener("click", () => {
+        const input = document.getElementById("taskInput");
+        const text = input.value.trim();
+        if (!text) return;
+        add(text);
+        input.value = "";
+        input.focus();
+      });
+
+      document.getElementById("taskInput").addEventListener("keydown", e => {
+        if (e.key === "Enter") document.getElementById("addBtn").click();
+      });
+
+      document.querySelectorAll(".filters button").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".filters button").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          filter = btn.dataset.filter;
+          render();
+        });
+      });
+
+      // Theme
+      const themeBtn = document.getElementById("themeToggle");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const saved = localStorage.getItem("todo_theme");
+      if (saved === "dark" || (!saved && prefersDark)) {
+        document.documentElement.dataset.theme = "dark";
+      }
+      themeBtn.addEventListener("click", () => {
+        const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        if (next === "dark") document.documentElement.dataset.theme = "dark";
+        else delete document.documentElement.dataset.theme;
+        localStorage.setItem("todo_theme", next);
+      });
+
+      load();
+      render();
+    </script>
+  </body>
+</html>
