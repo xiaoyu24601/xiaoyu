@@ -16,5 +16,15 @@
   </head>
   <body data-page="resources">
     <noscript><p style="text-align:center;padding:40px;">请启用 JavaScript 以查看此页面。</p></noscript>
+    <div id="js-error" style="display:none;max-width:600px;margin:40px auto;padding:20px;background:#fff3cd;border:1px solid #ffc107;border-radius:8px;font-family:monospace;font-size:13px;color:#856404;"></div>
+    <script>
+      window.addEventListener("error", function(e) {
+        var el = document.getElementById("js-error");
+        if (el) {
+          el.style.display = "block";
+          el.innerHTML = "<strong>JS 错误：</strong><br>" + e.message + "<br><br><strong>文件：</strong>" + e.filename + ":" + e.lineno;
+        }
+      });
+    </script>
   </body>
 </html>
