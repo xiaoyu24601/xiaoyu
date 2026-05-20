@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-05-19T04:33:06.028Z",
-  "updateLabel": "2026/5/19 12:33:06",
+  "generatedAt": "2026-05-20T04:35:31.195Z",
+  "updateLabel": "2026/5/20 12:35:31",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 53
@@ -48,7 +48,33 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 99
+    "score": 95
+  },
+  {
+    "title": "OlmoEarth v1.1: A more efficient family of models",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-05-19",
+    "summary": "OlmoEarth v1.1: A more efficient family of models",
+    "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 79
+  },
+  {
+    "title": "Building AI models that understand chemical principles",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-05-20",
+    "summary": "Connor Coley works at the interface of chemistry and machine learning, to discover and design new drug compounds.",
+    "url": "https://news.mit.edu/2026/building-ai-models-with-chemical-principles-connor-coley-0520",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 78
   },
   {
     "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
@@ -60,7 +86,7 @@ export const aiNewsItems = [
     "tags": [
       "实用技能"
     ],
-    "score": 78
+    "score": 74
   },
   {
     "title": "The Open Agent Leaderboard",
@@ -72,7 +98,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 78
+    "score": 74
   },
   {
     "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
@@ -85,7 +111,20 @@ export const aiNewsItems = [
       "实用技能",
       "技能"
     ],
-    "score": 75
+    "score": 71
+  },
+  {
+    "title": "How WeatherNext helped the National Hurricane Center better predict Hurricane Melissa’s historic landfall in Jamaica",
+    "source": "Google DeepMind",
+    "category": "模型技术",
+    "date": "2026-05-16",
+    "summary": "Learn how our WeatherNext AI model help forecasters give communities unprecedented time to prepare ahead of the historic Hurricane Melissa.",
+    "url": "https://deepmind.google/blog/how-weathernext-helped-the-national-hurricane-center-better-predict-hurricane-melissas-historic-landfall-in-jamaica/",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 70
   },
   {
     "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
@@ -98,19 +137,7 @@ export const aiNewsItems = [
       "智能体",
       "模型"
     ],
-    "score": 68
-  },
-  {
-    "title": "Building a safe, effective sandbox to enable Codex on Windows",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-05-13",
-    "summary": "Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.",
-    "url": "https://openai.com/index/building-codex-windows-sandbox",
-    "tags": [
-      "智能体"
-    ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "Sea's View on the Future of Agentic Software Development with Codex",
@@ -122,7 +149,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 67
+    "score": 63
   },
   {
     "title": "How business operations teams use Codex",
@@ -134,7 +161,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 60
+    "score": 56
   },
   {
     "title": "How sales teams use Codex",
@@ -146,7 +173,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 60
+    "score": 56
   },
   {
     "title": "How data science teams use Codex",
@@ -158,7 +185,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 60
+    "score": 56
   },
   {
     "title": "Building Blocks for Foundation Model Training and Inference on AWS",
@@ -171,32 +198,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 60
-  },
-  {
-    "title": "Gemma 4: Byte for byte, the most capable open models",
-    "source": "Google DeepMind",
-    "category": "智能体",
-    "date": "2026-04-02",
-    "summary": "Gemma 4: Our most intelligent open models to date, purpose-built for advanced reasoning and agentic workflows.",
-    "url": "https://deepmind.google/blog/gemma-4-byte-for-byte-the-most-capable-open-models/",
-    "tags": [
-      "智能体",
-      "模型"
-    ],
-    "score": 60
-  },
-  {
-    "title": "Work with Codex from anywhere",
-    "source": "OpenAI News",
-    "category": "AI 编程",
-    "date": "2026-05-14",
-    "summary": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments.",
-    "url": "https://openai.com/index/work-with-codex-from-anywhere",
-    "tags": [
-      "AI 编程"
-    ],
-    "score": 58
+    "score": 56
   },
   {
     "title": "ReasoningBank: Enabling agents to learn from experience",
@@ -223,16 +225,16 @@ export const aiNewsItems = [
     "score": 56
   },
   {
-    "title": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
-    "source": "Hugging Face Blog",
-    "category": "智能体",
-    "date": "2026-04-28",
-    "summary": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
-    "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence",
+    "title": "Work with Codex from anywhere",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-05-14",
+    "summary": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments.",
+    "url": "https://openai.com/index/work-with-codex-from-anywhere",
     "tags": [
-      "智能体"
+      "AI 编程"
     ],
-    "score": 50
+    "score": 54
   },
   {
     "title": "Evaluating alignment of behavioral dispositions in LLMs",
@@ -248,20 +250,6 @@ export const aiNewsItems = [
     "score": 50
   },
   {
-    "title": "Enabling a new model for healthcare with AI co-clinician",
-    "source": "Google DeepMind",
-    "category": "模型技术",
-    "date": "2026-04-30",
-    "summary": "Researching the path to AI-augmented care and development of an AI co-clinician.",
-    "url": "https://deepmind.google/blog/ai-co-clinician/",
-    "tags": [
-      "模型技术",
-      "研究",
-      "模型"
-    ],
-    "score": 44
-  },
-  {
     "title": "Designing synthetic datasets for the real world: Mechanism design and reasoning from first principles",
     "source": "Google Research",
     "category": "模型技术",
@@ -270,19 +258,6 @@ export const aiNewsItems = [
     "url": "https://research.google/blog/designing-synthetic-datasets-for-the-real-world-mechanism-design-and-reasoning-from-first-principles/",
     "tags": [
       "模型技术"
-    ],
-    "score": 44
-  },
-  {
-    "title": "Gemini 3.1 Flash TTS: the next generation of expressive AI speech",
-    "source": "Google DeepMind",
-    "category": "模型技术",
-    "date": "2026-04-15",
-    "summary": "Our newest audio model introduces granular audio tags that give you precise control to direct AI speech for expressive audio generation.",
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-tts-the-next-generation-of-expressive-ai-speech/",
-    "tags": [
-      "模型技术",
-      "模型"
     ],
     "score": 44
   },
@@ -299,42 +274,68 @@ export const aiNewsItems = [
     "score": 44
   },
   {
-    "title": "Reimagining the mouse pointer for the AI era",
-    "source": "Google DeepMind",
-    "category": "实用技能",
-    "date": "2026-03-29",
-    "summary": "Google DeepMind is transforming the mouse pointer into a context-aware AI partner. Move beyond the friction of traditional prompting with intuitive AI collaboration in Chrome and beyond.",
-    "url": "https://deepmind.google/blog/ai-pointer/",
-    "tags": [
-      "实用技能",
-      "技能"
-    ],
-    "score": 44
-  },
-  {
-    "title": "Gemini 3.1 Flash Live: Making audio AI more natural and reliable",
-    "source": "Google DeepMind",
-    "category": "模型技术",
-    "date": "2026-03-26",
-    "summary": "Our latest voice model has improved precision and lower latency to make voice interactions more fluid, natural and precise.",
-    "url": "https://deepmind.google/blog/gemini-3-1-flash-live-making-audio-ai-more-natural-and-reliable/",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 44
-  },
-  {
-    "title": "AlphaEvolve: How our Gemini-powered coding agent is scaling impact across fields",
-    "source": "Google DeepMind",
+    "title": "Games people — and machines — play: Untangling strategic reasoning to advance AI",
+    "source": "MIT News AI",
     "category": "智能体",
-    "date": "2026-05-06",
-    "summary": "Explore how AlphaEvolve's Gemini-powered algorithms are driving impact across business, infrastructure, and science.",
-    "url": "https://deepmind.google/blog/alphaevolve-impact/",
+    "date": "2026-05-05",
+    "summary": "Assistant Professor Gabriele Farina mines the foundations of decision-making in complex multi-agent scenarios.",
+    "url": "https://news.mit.edu/2026/untangling-strategic-reasoning-to-advance-ai-gabriele-farina-0505",
     "tags": [
       "智能体"
     ],
     "score": 42
+  },
+  {
+    "title": "Four ways Google Research scientists have been using Empirical Research Assistance",
+    "source": "Google Research",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "Data Mining & Modeling",
+    "url": "https://research.google/blog/four-ways-google-research-scientists-have-been-using-empirical-research-assistance/",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 42
+  },
+  {
+    "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-05-06",
+    "summary": "vLLM V0 to V1: Correctness Before Corrections in RL",
+    "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 38
+  },
+  {
+    "title": "Granite 4.1 LLMs: How They’re Built",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "Granite 4.1 LLMs: How They’re Built",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 38
+  },
+  {
+    "title": "DeepInfra on Hugging Face Inference Providers 🔥",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-04-29",
+    "summary": "DeepInfra on Hugging Face Inference Providers 🔥",
+    "url": "https://huggingface.co/blog/inference-providers-deepinfra",
+    "tags": [
+      "模型技术"
+    ],
+    "score": 38
   }
 ];
 
@@ -344,10 +345,10 @@ export const aiRepoRadar = {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 188612,
-      "forks": 57798,
+      "stars": 188771,
+      "forks": 57833,
       "language": "TypeScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai",
         "apis",
@@ -355,17 +356,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 3813,
-      "trendScore": 7518
+      "heatScore": 3815,
+      "trendScore": 7523
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 186697,
-      "forks": 28907,
+      "stars": 187285,
+      "forks": 28999,
       "language": "JavaScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -373,15 +374,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 2831,
-      "trendScore": 37563
+      "heatScore": 2839,
+      "trendScore": 37396
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 137767,
-      "forks": 34352,
+      "stars": 137890,
+      "forks": 34384,
       "language": "Unknown",
       "updatedAt": "2026-05-18",
       "topics": [
@@ -391,17 +392,17 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2523,
-      "trendScore": 10494
+      "heatScore": 2525,
+      "trendScore": 10487
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 156737,
-      "forks": 25235,
+      "stars": 158270,
+      "forks": 25633,
       "language": "Python",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai",
         "ai-agent",
@@ -409,29 +410,29 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2409,
-      "trendScore": 14723
+      "heatScore": 2437,
+      "trendScore": 14844
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 162270,
-      "forks": 19098,
+      "stars": 162763,
+      "forks": 19184,
       "language": "TypeScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [],
-      "heatScore": 2259,
-      "trendScore": 11666
+      "heatScore": 2267,
+      "trendScore": 11680
     },
     {
       "name": "langgenius/dify",
       "description": "Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 141837,
-      "forks": 22295,
+      "stars": 141949,
+      "forks": 22309,
       "language": "TypeScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "agent",
         "agentic-ai",
@@ -439,17 +440,17 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2162,
-      "trendScore": 5077
+      "heatScore": 2163,
+      "trendScore": 5078
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
       "url": "https://github.com/langchain-ai/langchain",
-      "stars": 137066,
-      "forks": 22673,
+      "stars": 137161,
+      "forks": 22690,
       "language": "Python",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "agents",
         "ai",
@@ -457,17 +458,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2126,
-      "trendScore": 4643
+      "heatScore": 2128,
+      "trendScore": 4645
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "url": "https://github.com/open-webui/open-webui",
-      "stars": 137663,
-      "forks": 19670,
+      "stars": 137840,
+      "forks": 19704,
       "language": "Python",
-      "updatedAt": "2026-05-15",
+      "updatedAt": "2026-05-19",
       "topics": [
         "ai",
         "llm",
@@ -475,8 +476,8 @@ export const aiRepoRadar = {
         "llm-webui",
         "llms"
       ],
-      "heatScore": 2032,
-      "trendScore": 5221
+      "heatScore": 2035,
+      "trendScore": 5223
     }
   ],
   "rising": [
@@ -484,8 +485,8 @@ export const aiRepoRadar = {
       "name": "VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files inspired by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 80971,
-      "forks": 9780,
+      "stars": 81442,
+      "forks": 9821,
       "language": "Unknown",
       "updatedAt": "2026-05-18",
       "topics": [
@@ -495,17 +496,17 @@ export const aiRepoRadar = {
         "design-tokens",
         "figma"
       ],
-      "heatScore": 1136,
-      "trendScore": 38555
+      "heatScore": 1142,
+      "trendScore": 38013
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 186697,
-      "forks": 28907,
+      "stars": 187285,
+      "forks": 28999,
       "language": "JavaScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -513,15 +514,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 2831,
-      "trendScore": 37563
+      "heatScore": 2839,
+      "trendScore": 37396
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 61903,
-      "forks": 3453,
+      "stars": 62404,
+      "forks": 3486,
       "language": "JavaScript",
       "updatedAt": "2026-05-17",
       "topics": [
@@ -531,17 +532,17 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 734,
-      "trendScore": 31463
+      "heatScore": 740,
+      "trendScore": 31032
     },
     {
       "name": "MemPalace/mempalace",
       "description": "The best-benchmarked open-source AI memory system. And it's free.",
       "url": "https://github.com/MemPalace/mempalace",
-      "stars": 52458,
-      "forks": 6928,
+      "stars": 52516,
+      "forks": 6931,
       "language": "Python",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai",
         "chromadb",
@@ -550,14 +551,14 @@ export const aiRepoRadar = {
         "memory"
       ],
       "heatScore": 756,
-      "trendScore": 27453
+      "trendScore": 26889
     },
     {
       "name": "safishamsi/graphify",
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
       "url": "https://github.com/safishamsi/graphify",
-      "stars": 49215,
-      "forks": 5346,
+      "stars": 49747,
+      "forks": 5394,
       "language": "Python",
       "updatedAt": "2026-05-18",
       "topics": [
@@ -567,17 +568,17 @@ export const aiRepoRadar = {
         "gemini",
         "graphrag"
       ],
-      "heatScore": 670,
-      "trendScore": 24865
+      "heatScore": 677,
+      "trendScore": 24603
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 156737,
-      "forks": 25235,
+      "stars": 158270,
+      "forks": 25633,
       "language": "Python",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [
         "ai",
         "ai-agent",
@@ -585,27 +586,27 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2409,
-      "trendScore": 14723
+      "heatScore": 2437,
+      "trendScore": 14844
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 162270,
-      "forks": 19098,
+      "stars": 162763,
+      "forks": 19184,
       "language": "TypeScript",
-      "updatedAt": "2026-05-19",
+      "updatedAt": "2026-05-20",
       "topics": [],
-      "heatScore": 2259,
-      "trendScore": 11666
+      "heatScore": 2267,
+      "trendScore": 11680
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 137767,
-      "forks": 34352,
+      "stars": 137890,
+      "forks": 34384,
       "language": "Unknown",
       "updatedAt": "2026-05-18",
       "topics": [
@@ -615,34 +616,36 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2523,
-      "trendScore": 10494
+      "heatScore": 2525,
+      "trendScore": 10487
     }
   ]
 };
 
 export const aiNewsSummaries = {
   "daily": {
-    "count": 0,
-    "topCategory": "技术工具",
-    "topItems": []
+    "count": 1,
+    "topCategory": "模型技术",
+    "topItems": [
+      "Building AI models that understand chemical principles"
+    ]
   },
   "weekly": {
-    "count": 11,
+    "count": 13,
     "topCategory": "智能体",
     "topItems": [
       "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-      "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
-      "The Open Agent Leaderboard"
+      "OlmoEarth v1.1: A more efficient family of models",
+      "Building AI models that understand chemical principles"
     ]
   },
   "monthly": {
-    "count": 16,
-    "topCategory": "智能体",
+    "count": 20,
+    "topCategory": "模型技术",
     "topItems": [
       "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-      "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
-      "The Open Agent Leaderboard"
+      "OlmoEarth v1.1: A more efficient family of models",
+      "Building AI models that understand chemical principles"
     ]
   }
 };
