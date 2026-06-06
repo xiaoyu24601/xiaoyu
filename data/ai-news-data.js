@@ -1,8 +1,8 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-06-05T04:45:58.849Z",
-  "updateLabel": "2026/6/5 12:45:58",
+  "generatedAt": "2026-06-06T04:19:34.386Z",
+  "updateLabel": "2026/6/6 12:19:34",
   "sourceCount": 5,
-  "itemCount": 20,
+  "itemCount": 21,
   "repoCount": 55
 };
 
@@ -48,7 +48,33 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 94
+    "score": 90
+  },
+  {
+    "title": "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+    "source": "Google Research",
+    "category": "智能体",
+    "date": "2026-06-05",
+    "summary": "Data Management",
+    "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag/",
+    "tags": [
+      "智能体",
+      "技能"
+    ],
+    "score": 88
+  },
+  {
+    "title": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+    "source": "Hugging Face Blog",
+    "category": "智能体",
+    "date": "2026-06-05",
+    "summary": "Thousand Token Wood: shipping a multi-agent economy on a 3B model",
+    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim",
+    "tags": [
+      "智能体",
+      "模型"
+    ],
+    "score": 85
   },
   {
     "title": "Teaching AI agents to ask better questions by playing “Battleship”",
@@ -62,7 +88,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 85
+    "score": 81
   },
   {
     "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
@@ -74,7 +100,7 @@ export const aiNewsItems = [
     "tags": [
       "模型技术"
     ],
-    "score": 81
+    "score": 77
   },
   {
     "title": "The next chapter in flood resilience: Open sourcing Google’s hydrology framework",
@@ -86,7 +112,7 @@ export const aiNewsItems = [
     "tags": [
       "技术工具"
     ],
-    "score": 81
+    "score": 77
   },
   {
     "title": "Codex is becoming a productivity tool for everyone",
@@ -99,7 +125,7 @@ export const aiNewsItems = [
       "智能体",
       "研究"
     ],
-    "score": 78
+    "score": 74
   },
   {
     "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
@@ -111,7 +137,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 76
+    "score": 72
   },
   {
     "title": "Introducing new capabilities to GPT-Rosalind",
@@ -124,7 +150,7 @@ export const aiNewsItems = [
       "智能体",
       "研究"
     ],
-    "score": 76
+    "score": 72
   },
   {
     "title": "Holo3.1: Fast & Local Computer Use Agents",
@@ -136,7 +162,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 76
+    "score": 72
   },
   {
     "title": "Beyond LLMs: Why Scalable Enterprise AI Adoption Depends on Agent Logic",
@@ -149,7 +175,7 @@ export const aiNewsItems = [
       "智能体",
       "模型"
     ],
-    "score": 74
+    "score": 70
   },
   {
     "title": "Codex for every role, tool, and workflow",
@@ -161,7 +187,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "Adding MCP Tools to Reachy Mini",
@@ -173,7 +199,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 72
+    "score": 68
   },
   {
     "title": "A blueprint for democratic governance of frontier AI",
@@ -185,7 +211,7 @@ export const aiNewsItems = [
     "tags": [
       "技术工具"
     ],
-    "score": 71
+    "score": 67
   },
   {
     "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
@@ -197,7 +223,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 70
+    "score": 66
   },
   {
     "title": "MIT researchers teach AI models to interpret charts",
@@ -211,7 +237,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 70
+    "score": 66
   },
   {
     "title": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
@@ -224,7 +250,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "ReasoningBank: Enabling agents to learn from experience",
@@ -265,18 +291,6 @@ export const aiNewsItems = [
     "score": 42
   },
   {
-    "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
-    "source": "Hugging Face Blog",
-    "category": "智能体",
-    "date": "2026-05-25",
-    "summary": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
-    "url": "https://huggingface.co/blog/agent-glossary",
-    "tags": [
-      "智能体"
-    ],
-    "score": 40
-  },
-  {
     "title": "Building AI models that understand chemical principles",
     "source": "MIT News AI",
     "category": "模型技术",
@@ -297,8 +311,8 @@ export const aiRepoRadar = {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 191145,
-      "forks": 58282,
+      "stars": 191281,
+      "forks": 58326,
       "language": "TypeScript",
       "updatedAt": "2026-06-05",
       "topics": [
@@ -308,17 +322,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 3854,
-      "trendScore": 7577
+      "heatScore": 3857,
+      "trendScore": 7581
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 207473,
-      "forks": 31842,
+      "stars": 208464,
+      "forks": 31977,
       "language": "JavaScript",
-      "updatedAt": "2026-06-04",
+      "updatedAt": "2026-06-05",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -326,17 +340,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3136,
-      "trendScore": 36975
+      "heatScore": 3151,
+      "trendScore": 36911
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 181305,
-      "forks": 31112,
+      "stars": 183423,
+      "forks": 31461,
       "language": "Python",
-      "updatedAt": "2026-06-05",
+      "updatedAt": "2026-06-06",
       "topics": [
         "ai",
         "ai-agent",
@@ -344,15 +358,15 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2850,
-      "trendScore": 16638
+      "heatScore": 2883,
+      "trendScore": 16801
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 138786,
-      "forks": 34516,
+      "stars": 138834,
+      "forks": 34526,
       "language": "Unknown",
       "updatedAt": "2026-05-23",
       "topics": [
@@ -362,29 +376,29 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2538,
-      "trendScore": 10297
+      "heatScore": 2539,
+      "trendScore": 10286
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 170074,
-      "forks": 20344,
+      "stars": 170551,
+      "forks": 20418,
       "language": "TypeScript",
-      "updatedAt": "2026-06-05",
+      "updatedAt": "2026-06-06",
       "topics": [],
-      "heatScore": 2379,
-      "trendScore": 11840
+      "heatScore": 2386,
+      "trendScore": 11853
     },
     {
       "name": "langgenius/dify",
       "description": "Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 143923,
-      "forks": 22648,
+      "stars": 144075,
+      "forks": 22675,
       "language": "TypeScript",
-      "updatedAt": "2026-06-05",
+      "updatedAt": "2026-06-06",
       "topics": [
         "agent",
         "agentic-ai",
@@ -392,17 +406,17 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2194,
-      "trendScore": 5108
+      "heatScore": 2197,
+      "trendScore": 5112
     },
     {
       "name": "langchain-ai/langchain",
       "description": "The agent engineering platform.",
       "url": "https://github.com/langchain-ai/langchain",
-      "stars": 138538,
-      "forks": 22953,
+      "stars": 138615,
+      "forks": 22965,
       "language": "Python",
-      "updatedAt": "2026-06-04",
+      "updatedAt": "2026-06-05",
       "topics": [
         "agents",
         "ai",
@@ -410,17 +424,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2150,
-      "trendScore": 4667
+      "heatScore": 2152,
+      "trendScore": 4666
     },
     {
       "name": "open-webui/open-webui",
       "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
       "url": "https://github.com/open-webui/open-webui",
-      "stars": 140090,
-      "forks": 20110,
+      "stars": 140232,
+      "forks": 20136,
       "language": "Python",
-      "updatedAt": "2026-06-04",
+      "updatedAt": "2026-06-06",
       "topics": [
         "ai",
         "llm",
@@ -428,8 +442,8 @@ export const aiRepoRadar = {
         "llm-webui",
         "llms"
       ],
-      "heatScore": 2071,
-      "trendScore": 5264
+      "heatScore": 2074,
+      "trendScore": 5267
     }
   ],
   "rising": [
@@ -437,10 +451,10 @@ export const aiRepoRadar = {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 207473,
-      "forks": 31842,
+      "stars": 208464,
+      "forks": 31977,
       "language": "JavaScript",
-      "updatedAt": "2026-06-04",
+      "updatedAt": "2026-06-05",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -448,15 +462,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3136,
-      "trendScore": 36975
+      "heatScore": 3151,
+      "trendScore": 36911
     },
     {
       "name": "VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 87560,
-      "forks": 10469,
+      "stars": 87841,
+      "forks": 10488,
       "language": "Unknown",
       "updatedAt": "2026-05-30",
       "topics": [
@@ -466,17 +480,17 @@ export const aiRepoRadar = {
         "design-tokens",
         "figma"
       ],
-      "heatScore": 1225,
-      "trendScore": 31133
+      "heatScore": 1228,
+      "trendScore": 30786
     },
     {
       "name": "safishamsi/graphify",
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
       "url": "https://github.com/safishamsi/graphify",
-      "stars": 59426,
-      "forks": 6184,
+      "stars": 59920,
+      "forks": 6223,
       "language": "Python",
-      "updatedAt": "2026-06-03",
+      "updatedAt": "2026-06-05",
       "topics": [
         "antigravity",
         "claude-code",
@@ -484,17 +498,17 @@ export const aiRepoRadar = {
         "gemini",
         "graphrag"
       ],
-      "heatScore": 800,
-      "trendScore": 22009
+      "heatScore": 807,
+      "trendScore": 21858
     },
     {
       "name": "MemPalace/mempalace",
       "description": "The best-benchmarked open-source AI memory system. And it's free.",
       "url": "https://github.com/MemPalace/mempalace",
-      "stars": 53576,
-      "forks": 7059,
+      "stars": 53941,
+      "forks": 7083,
       "language": "Python",
-      "updatedAt": "2026-06-03",
+      "updatedAt": "2026-06-06",
       "topics": [
         "ai",
         "chromadb",
@@ -502,15 +516,15 @@ export const aiRepoRadar = {
         "mcp",
         "memory"
       ],
-      "heatScore": 771,
-      "trendScore": 20442
+      "heatScore": 776,
+      "trendScore": 20264
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 68956,
-      "forks": 3879,
+      "stars": 69325,
+      "forks": 3907,
       "language": "JavaScript",
       "updatedAt": "2026-05-20",
       "topics": [
@@ -520,17 +534,17 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 819,
-      "trendScore": 20409
+      "heatScore": 823,
+      "trendScore": 20203
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 181305,
-      "forks": 31112,
+      "stars": 183423,
+      "forks": 31461,
       "language": "Python",
-      "updatedAt": "2026-06-05",
+      "updatedAt": "2026-06-06",
       "topics": [
         "ai",
         "ai-agent",
@@ -538,27 +552,27 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 2850,
-      "trendScore": 16638
+      "heatScore": 2883,
+      "trendScore": 16801
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 170074,
-      "forks": 20344,
+      "stars": 170551,
+      "forks": 20418,
       "language": "TypeScript",
-      "updatedAt": "2026-06-05",
+      "updatedAt": "2026-06-06",
       "topics": [],
-      "heatScore": 2379,
-      "trendScore": 11840
+      "heatScore": 2386,
+      "trendScore": 11853
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 138786,
-      "forks": 34516,
+      "stars": 138834,
+      "forks": 34526,
       "language": "Unknown",
       "updatedAt": "2026-05-23",
       "topics": [
@@ -568,8 +582,8 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2538,
-      "trendScore": 10297
+      "heatScore": 2539,
+      "trendScore": 10286
     }
   ]
 };
@@ -581,21 +595,21 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 15,
-    "topCategory": "智能体",
-    "topItems": [
-      "How Endava is redesigning software delivery around AI agents",
-      "Teaching AI agents to ask better questions by playing “Battleship”",
-      "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI"
-    ]
-  },
-  "monthly": {
     "count": 17,
     "topCategory": "智能体",
     "topItems": [
       "How Endava is redesigning software delivery around AI agents",
-      "Teaching AI agents to ask better questions by playing “Battleship”",
-      "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI"
+      "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+      "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
+    ]
+  },
+  "monthly": {
+    "count": 18,
+    "topCategory": "智能体",
+    "topItems": [
+      "How Endava is redesigning software delivery around AI agents",
+      "Unlocking dependable responses with Gemini Enterprise Agent Platform’s Agentic RAG",
+      "Thousand Token Wood: shipping a multi-agent economy on a 3B model"
     ]
   }
 };
