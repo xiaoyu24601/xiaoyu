@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-07-06T04:37:47.138Z",
-  "updateLabel": "2026/7/6 12:37:47",
+  "generatedAt": "2026-07-07T04:15:29.673Z",
+  "updateLabel": "2026/7/7 12:15:29",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 54
@@ -39,6 +39,18 @@ export const aiNewsSources = [
 
 export const aiNewsItems = [
   {
+    "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+    "source": "Hugging Face Blog",
+    "category": "实用技能",
+    "date": "2026-07-07",
+    "summary": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+    "url": "https://huggingface.co/blog/lerobot-release-v060",
+    "tags": [
+      "实用技能"
+    ],
+    "score": 80
+  },
+  {
     "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
     "source": "Hugging Face Blog",
     "category": "智能体",
@@ -48,7 +60,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 79
+    "score": 75
   },
   {
     "title": "Q&A: What is agentic AI today, and what do we want it to be?",
@@ -61,20 +73,7 @@ export const aiNewsItems = [
       "智能体",
       "开发者"
     ],
-    "score": 68
-  },
-  {
-    "title": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
-    "source": "Hugging Face Blog",
-    "category": "模型技术",
-    "date": "2026-06-30",
-    "summary": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
-    "url": "https://huggingface.co/blog/eee-community-evals",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 62
+    "score": 64
   },
   {
     "title": "Introducing TabFM: A zero-shot foundation model for tabular data",
@@ -87,7 +86,20 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 61
+    "score": 58
+  },
+  {
+    "title": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-06-30",
+    "summary": "Featuring Every Eval Ever Results on Hugging Face Model Pages",
+    "url": "https://huggingface.co/blog/eee-community-evals",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 58
   },
   {
     "title": "Mapping Europe’s AI Workforce Opportunity",
@@ -99,7 +111,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 57
+    "score": 53
   },
   {
     "title": "Introducing GeneBench-Pro",
@@ -112,7 +124,7 @@ export const aiNewsItems = [
       "研究进展",
       "研究"
     ],
-    "score": 54
+    "score": 50
   },
   {
     "title": "Thinking to recall: How reasoning unlocks parametric knowledge in LLMs",
@@ -178,32 +190,6 @@ export const aiNewsItems = [
     "score": 48
   },
   {
-    "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
-    "source": "Google Research",
-    "category": "模型技术",
-    "date": "2026-06-26",
-    "summary": "Machine Intelligence",
-    "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 47
-  },
-  {
-    "title": "LLMs help robots understand vague instructions and focus on key details",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-06-26",
-    "summary": "To help robots do chores in places like homes and factories, a new approach from MIT uses one language model to clarify users’ instructions, then another to ignore irrelevant info.",
-    "url": "https://news.mit.edu/2026/llms-help-robots-understand-vague-instructions-and-focus-key-details-0626",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 46
-  },
-  {
     "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
     "source": "Hugging Face Blog",
     "category": "模型技术",
@@ -213,20 +199,6 @@ export const aiNewsItems = [
     "tags": [
       "模型技术",
       "模型"
-    ],
-    "score": 44
-  },
-  {
-    "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
-    "source": "Hugging Face Blog",
-    "category": "实用技能",
-    "date": "2026-06-23",
-    "summary": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
-    "url": "https://huggingface.co/blog/cross-origin-storage",
-    "tags": [
-      "实用技能",
-      "开发者",
-      "技能"
     ],
     "score": 44
   },
@@ -241,6 +213,32 @@ export const aiNewsItems = [
       "技术工具"
     ],
     "score": 44
+  },
+  {
+    "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
+    "source": "Google Research",
+    "category": "模型技术",
+    "date": "2026-06-26",
+    "summary": "Machine Intelligence",
+    "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 43
+  },
+  {
+    "title": "LLMs help robots understand vague instructions and focus on key details",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-06-26",
+    "summary": "To help robots do chores in places like homes and factories, a new approach from MIT uses one language model to clarify users’ instructions, then another to ignore irrelevant info.",
+    "url": "https://news.mit.edu/2026/llms-help-robots-understand-vague-instructions-and-focus-key-details-0626",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 42
   },
   {
     "title": "How agents are transforming work",
@@ -303,20 +301,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 40
-  },
-  {
-    "title": "Previewing GPT-5.6 Sol: a next-generation model",
-    "source": "OpenAI News",
-    "category": "模型技术",
-    "date": "2026-06-26",
-    "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
-    "url": "https://openai.com/index/previewing-gpt-5-6-sol",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 39
+    "score": 38
   },
   {
     "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
@@ -329,6 +314,19 @@ export const aiNewsItems = [
       "研究进展"
     ],
     "score": 38
+  },
+  {
+    "title": "Previewing GPT-5.6 Sol: a next-generation model",
+    "source": "OpenAI News",
+    "category": "模型技术",
+    "date": "2026-06-26",
+    "summary": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack.",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 36
   },
   {
     "title": "New chip could help tiny robots traverse complex environments",
@@ -352,22 +350,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194591,
-      "forks": 109830,
+      "stars": 194617,
+      "forks": 109814,
       "language": "Rust",
       "updatedAt": "2026-06-26",
       "topics": [],
       "heatScore": 5607,
-      "trendScore": 56205
+      "trendScore": 55754
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 195332,
-      "forks": 59087,
+      "stars": 195474,
+      "forks": 59134,
       "language": "TypeScript",
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-07-07",
       "topics": [
         "ai",
         "apis",
@@ -375,17 +373,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 3923,
-      "trendScore": 7673
+      "heatScore": 3926,
+      "trendScore": 7679
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 226380,
-      "forks": 34629,
+      "stars": 226725,
+      "forks": 34671,
       "language": "JavaScript",
-      "updatedAt": "2026-07-04",
+      "updatedAt": "2026-07-06",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -393,17 +391,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3418,
-      "trendScore": 33576
+      "heatScore": 3423,
+      "trendScore": 33453
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 209797,
-      "forks": 38356,
+      "stars": 210477,
+      "forks": 38566,
       "language": "Python",
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-07-07",
       "topics": [
         "ai",
         "ai-agent",
@@ -411,17 +409,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3377,
-      "trendScore": 18367
+      "heatScore": 3390,
+      "trendScore": 18406
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 247064,
-      "forks": 21914,
+      "stars": 247900,
+      "forks": 22012,
       "language": "Shell",
-      "updatedAt": "2026-07-05",
+      "updatedAt": "2026-07-06",
       "topics": [
         "ai",
         "brainstorming",
@@ -429,27 +427,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3201,
-      "trendScore": 22841
+      "heatScore": 3213,
+      "trendScore": 22845
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 182714,
-      "forks": 22625,
+      "stars": 183095,
+      "forks": 22691,
       "language": "TypeScript",
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-07-07",
       "topics": [],
-      "heatScore": 2581,
-      "trendScore": 11971
+      "heatScore": 2587,
+      "trendScore": 11972
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 141573,
-      "forks": 34785,
+      "stars": 141615,
+      "forks": 34792,
       "language": "Unknown",
       "updatedAt": "2026-07-03",
       "topics": [
@@ -459,17 +457,17 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2575,
-      "trendScore": 10018
+      "heatScore": 2576,
+      "trendScore": 10008
     },
     {
       "name": "langgenius/dify",
       "description": "Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 147817,
-      "forks": 23279,
+      "stars": 147957,
+      "forks": 23300,
       "language": "TypeScript",
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-07-07",
       "topics": [
         "agent",
         "agentic-ai",
@@ -477,8 +475,8 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2254,
-      "trendScore": 5177
+      "heatScore": 2256,
+      "trendScore": 5179
     }
   ],
   "rising": [
@@ -486,10 +484,10 @@ export const aiRepoRadar = {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 75063,
-      "forks": 3967,
+      "stars": 76072,
+      "forks": 4037,
       "language": "JavaScript",
-      "updatedAt": "2026-07-01",
+      "updatedAt": "2026-07-07",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -497,29 +495,29 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 883,
-      "trendScore": 70319
+      "heatScore": 895,
+      "trendScore": 68489
     },
     {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194591,
-      "forks": 109830,
+      "stars": 194617,
+      "forks": 109814,
       "language": "Rust",
       "updatedAt": "2026-06-26",
       "topics": [],
       "heatScore": 5607,
-      "trendScore": 56205
+      "trendScore": 55754
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 226380,
-      "forks": 34629,
+      "stars": 226725,
+      "forks": 34671,
       "language": "JavaScript",
-      "updatedAt": "2026-07-04",
+      "updatedAt": "2026-07-06",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -527,17 +525,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3418,
-      "trendScore": 33576
+      "heatScore": 3423,
+      "trendScore": 33453
     },
     {
       "name": "nexu-io/open-design",
-      "description": "🎨 The Vibe Design Workspace & the open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
+      "description": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
       "url": "https://github.com/nexu-io/open-design",
-      "stars": 75275,
-      "forks": 8611,
+      "stars": 75667,
+      "forks": 8632,
       "language": "TypeScript",
-      "updatedAt": "2026-07-06",
+      "updatedAt": "2026-07-07",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -545,17 +543,17 @@ export const aiRepoRadar = {
         "byok",
         "claude-code-for-design"
       ],
-      "heatScore": 1040,
-      "trendScore": 25424
+      "heatScore": 1044,
+      "trendScore": 25207
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 247064,
-      "forks": 21914,
+      "stars": 247900,
+      "forks": 22012,
       "language": "Shell",
-      "updatedAt": "2026-07-05",
+      "updatedAt": "2026-07-06",
       "topics": [
         "ai",
         "brainstorming",
@@ -563,15 +561,15 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3201,
-      "trendScore": 22841
+      "heatScore": 3213,
+      "trendScore": 22845
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 85053,
-      "forks": 4733,
+      "stars": 85797,
+      "forks": 4775,
       "language": "JavaScript",
       "updatedAt": "2026-07-03",
       "topics": [
@@ -581,15 +579,15 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 1008,
-      "trendScore": 21114
+      "heatScore": 1017,
+      "trendScore": 21081
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 78237,
-      "forks": 7733,
+      "stars": 78846,
+      "forks": 7781,
       "language": "Python",
       "updatedAt": "2026-07-06",
       "topics": [
@@ -599,15 +597,15 @@ export const aiRepoRadar = {
         "gemini",
         "graphrag"
       ],
-      "heatScore": 1040,
-      "trendScore": 19610
+      "heatScore": 1048,
+      "trendScore": 19564
     },
     {
       "name": "VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 95980,
-      "forks": 11297,
+      "stars": 96283,
+      "forks": 11321,
       "language": "Unknown",
       "updatedAt": "2026-06-16",
       "topics": [
@@ -617,34 +615,34 @@ export const aiRepoRadar = {
         "design-tokens",
         "figma"
       ],
-      "heatScore": 1336,
-      "trendScore": 18816
+      "heatScore": 1340,
+      "trendScore": 18693
     }
   ]
 };
 
 export const aiNewsSummaries = {
   "daily": {
-    "count": 0,
-    "topCategory": "技术工具",
-    "topItems": []
+    "count": 1,
+    "topCategory": "实用技能",
+    "topItems": [
+      "LeRobot v0.6.0: Imagine, Evaluate, Improve"
+    ]
   },
   "weekly": {
-    "count": 5,
-    "topCategory": "智能体",
+    "count": 1,
+    "topCategory": "实用技能",
     "topItems": [
-      "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
-      "Q&A: What is agentic AI today, and what do we want it to be?",
-      "Featuring Every Eval Ever Results on Hugging Face Model Pages"
+      "LeRobot v0.6.0: Imagine, Evaluate, Improve"
     ]
   },
   "monthly": {
     "count": 22,
     "topCategory": "模型技术",
     "topItems": [
+      "LeRobot v0.6.0: Imagine, Evaluate, Improve",
       "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
-      "Q&A: What is agentic AI today, and what do we want it to be?",
-      "Featuring Every Eval Ever Results on Hugging Face Model Pages"
+      "Q&A: What is agentic AI today, and what do we want it to be?"
     ]
   }
 };
