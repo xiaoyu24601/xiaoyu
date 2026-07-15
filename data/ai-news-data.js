@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-07-14T03:31:38.630Z",
-  "updateLabel": "2026/7/14 11:31:38",
+  "generatedAt": "2026-07-15T03:31:57.808Z",
+  "updateLabel": "2026/7/15 11:31:57",
   "sourceCount": 5,
   "itemCount": 22,
   "repoCount": 54
@@ -48,7 +48,33 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 83
+    "score": 79
+  },
+  {
+    "title": "Helping AI models to meet the real world",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-07-14",
+    "summary": "Through research and entrepreneurship, Professor Devavrat Shah is helping to design methods that can handle constant decision-making using limited computational resources.",
+    "url": "https://news.mit.edu/2026/helping-ai-models-meet-real-world-0714",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 77
+  },
+  {
+    "title": "Can AI build a jet engine? JARVIS Challenge tests role of AI copilots in tough-tech engineering",
+    "source": "MIT News AI",
+    "category": "AI 编程",
+    "date": "2026-07-14",
+    "summary": "MIT students designed, built, and tested a jet engine with AI copilots, assessing AI’s usefulness in developing high-performance aerospace systems.",
+    "url": "https://news.mit.edu/2026/can-ai-build-jet-engine-jarvis-challenge-tests-ai-copilots-in-tough-tech-engineering-0714",
+    "tags": [
+      "AI 编程"
+    ],
+    "score": 77
   },
   {
     "title": "New method aims to keep kids safe from illegal AI-generated content",
@@ -63,7 +89,19 @@ export const aiNewsItems = [
       "模型",
       "技能"
     ],
-    "score": 81
+    "score": 77
+  },
+  {
+    "title": "How to manage AI investments in the agentic era",
+    "source": "OpenAI News",
+    "category": "智能体",
+    "date": "2026-07-14",
+    "summary": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows.",
+    "url": "https://openai.com/index/managing-ai-investments-in-agentic-era",
+    "tags": [
+      "智能体"
+    ],
+    "score": 72
   },
   {
     "title": "Separating signal from noise in coding evaluations",
@@ -76,7 +114,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
@@ -89,7 +127,7 @@ export const aiNewsItems = [
       "AI 编程",
       "模型"
     ],
-    "score": 66
+    "score": 62
   },
   {
     "title": "Data for Agents",
@@ -101,7 +139,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 65
+    "score": 61
   },
   {
     "title": "How Deutsche Telekom is rewiring telecommunications with AI",
@@ -113,7 +151,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 63
+    "score": 59
   },
   {
     "title": "Native-speed vLLM transformers modeling backend",
@@ -125,18 +163,6 @@ export const aiNewsItems = [
     "tags": [
       "模型技术",
       "模型"
-    ],
-    "score": 62
-  },
-  {
-    "title": "ChatGPT is now a partner for your most ambitious work",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-07-09",
-    "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
-    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
-    "tags": [
-      "智能体"
     ],
     "score": 58
   },
@@ -153,15 +179,14 @@ export const aiNewsItems = [
     "score": 58
   },
   {
-    "title": "Introducing GPT-Live",
+    "title": "ChatGPT is now a partner for your most ambitious work",
     "source": "OpenAI News",
-    "category": "模型技术",
-    "date": "2026-07-08",
-    "summary": "A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.",
-    "url": "https://openai.com/index/introducing-gpt-live",
+    "category": "智能体",
+    "date": "2026-07-09",
+    "summary": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work.",
+    "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
     "tags": [
-      "模型技术",
-      "模型"
+      "智能体"
     ],
     "score": 54
   },
@@ -175,30 +200,6 @@ export const aiNewsItems = [
     "tags": [
       "模型技术",
       "模型"
-    ],
-    "score": 54
-  },
-  {
-    "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
-    "source": "Hugging Face Blog",
-    "category": "实用技能",
-    "date": "2026-07-07",
-    "summary": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
-    "url": "https://huggingface.co/blog/lerobot-release-v060",
-    "tags": [
-      "实用技能"
-    ],
-    "score": 52
-  },
-  {
-    "title": "MUFG aims to become AI-native with OpenAI",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-07-07",
-    "summary": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale.",
-    "url": "https://openai.com/index/mufg",
-    "tags": [
-      "智能体"
     ],
     "score": 50
   },
@@ -228,14 +229,14 @@ export const aiNewsItems = [
     "score": 50
   },
   {
-    "title": "Australian Payments Plus moves faster with ChatGPT and Codex",
-    "source": "OpenAI News",
-    "category": "AI 编程",
+    "title": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+    "source": "Hugging Face Blog",
+    "category": "实用技能",
     "date": "2026-07-07",
-    "summary": "See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and keeps human judgment central.",
-    "url": "https://openai.com/index/australian-payments-plus",
+    "summary": "LeRobot v0.6.0: Imagine, Evaluate, Improve",
+    "url": "https://huggingface.co/blog/lerobot-release-v060",
     "tags": [
-      "AI 编程"
+      "实用技能"
     ],
     "score": 48
   },
@@ -324,22 +325,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194759,
-      "forks": 109693,
+      "stars": 194763,
+      "forks": 109662,
       "language": "Rust",
       "updatedAt": "2026-06-26",
       "topics": [],
-      "heatScore": 5604,
-      "trendScore": 42236
+      "heatScore": 5603,
+      "trendScore": 41918
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 196346,
-      "forks": 59307,
+      "stars": 196465,
+      "forks": 59325,
       "language": "TypeScript",
-      "updatedAt": "2026-07-14",
+      "updatedAt": "2026-07-15",
       "topics": [
         "ai",
         "apis",
@@ -347,17 +348,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 3940,
+      "heatScore": 3942,
       "trendScore": 7698
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 214346,
-      "forks": 39832,
+      "stars": 214943,
+      "forks": 40006,
       "language": "Python",
-      "updatedAt": "2026-07-14",
+      "updatedAt": "2026-07-15",
       "topics": [
         "ai",
         "ai-agent",
@@ -365,15 +366,15 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3471,
-      "trendScore": 18456
+      "heatScore": 3483,
+      "trendScore": 18425
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 229315,
-      "forks": 35132,
+      "stars": 229774,
+      "forks": 35168,
       "language": "JavaScript",
       "updatedAt": "2026-07-14",
       "topics": [
@@ -383,17 +384,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3464,
-      "trendScore": 32649
+      "heatScore": 3470,
+      "trendScore": 32547
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 254000,
-      "forks": 22698,
+      "stars": 254792,
+      "forks": 22770,
       "language": "Shell",
-      "updatedAt": "2026-07-13",
+      "updatedAt": "2026-07-14",
       "topics": [
         "ai",
         "brainstorming",
@@ -401,27 +402,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3297,
-      "trendScore": 22890
+      "heatScore": 3307,
+      "trendScore": 22887
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 185512,
-      "forks": 23188,
+      "stars": 185900,
+      "forks": 23246,
       "language": "TypeScript",
-      "updatedAt": "2026-07-14",
+      "updatedAt": "2026-07-15",
       "topics": [],
-      "heatScore": 2628,
-      "trendScore": 11995
+      "heatScore": 2634,
+      "trendScore": 11999
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 141889,
-      "forks": 34804,
+      "stars": 141924,
+      "forks": 34805,
       "language": "Unknown",
       "updatedAt": "2026-07-12",
       "topics": [
@@ -432,16 +433,16 @@ export const aiRepoRadar = {
         "cursor"
       ],
       "heatScore": 2579,
-      "trendScore": 9930
+      "trendScore": 9919
     },
     {
       "name": "langgenius/dify",
       "description": "Production-ready platform for agentic workflow development.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 148733,
-      "forks": 23426,
+      "stars": 148858,
+      "forks": 23436,
       "language": "TypeScript",
-      "updatedAt": "2026-07-14",
+      "updatedAt": "2026-07-15",
       "topics": [
         "agent",
         "agentic-ai",
@@ -449,8 +450,8 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2268,
-      "trendScore": 5193
+      "heatScore": 2270,
+      "trendScore": 5195
     }
   ],
   "rising": [
@@ -458,8 +459,8 @@ export const aiRepoRadar = {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 82447,
-      "forks": 4467,
+      "stars": 83202,
+      "forks": 4516,
       "language": "JavaScript",
       "updatedAt": "2026-07-10",
       "topics": [
@@ -469,27 +470,27 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 973,
-      "trendScore": 58220
+      "heatScore": 983,
+      "trendScore": 56993
     },
     {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194759,
-      "forks": 109693,
+      "stars": 194763,
+      "forks": 109662,
       "language": "Rust",
       "updatedAt": "2026-06-26",
       "topics": [],
-      "heatScore": 5604,
-      "trendScore": 42236
+      "heatScore": 5603,
+      "trendScore": 41918
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 229315,
-      "forks": 35132,
+      "stars": 229774,
+      "forks": 35168,
       "language": "JavaScript",
       "updatedAt": "2026-07-14",
       "topics": [
@@ -499,17 +500,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3464,
-      "trendScore": 32649
+      "heatScore": 3470,
+      "trendScore": 32547
     },
     {
       "name": "nexu-io/open-design",
       "description": "🎨 The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen & 20+ CLIs via BYOK.",
       "url": "https://github.com/nexu-io/open-design",
-      "stars": 77890,
-      "forks": 8928,
+      "stars": 78220,
+      "forks": 8997,
       "language": "TypeScript",
-      "updatedAt": "2026-07-14",
+      "updatedAt": "2026-07-15",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -517,17 +518,17 @@ export const aiRepoRadar = {
         "byok",
         "claude-code-for-design"
       ],
-      "heatScore": 1077,
-      "trendScore": 23688
+      "heatScore": 1082,
+      "trendScore": 23499
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 254000,
-      "forks": 22698,
+      "stars": 254792,
+      "forks": 22770,
       "language": "Shell",
-      "updatedAt": "2026-07-13",
+      "updatedAt": "2026-07-14",
       "topics": [
         "ai",
         "brainstorming",
@@ -535,15 +536,15 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3297,
-      "trendScore": 22890
+      "heatScore": 3307,
+      "trendScore": 22887
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 89135,
-      "forks": 5117,
+      "stars": 89535,
+      "forks": 5145,
       "language": "JavaScript",
       "updatedAt": "2026-07-03",
       "topics": [
@@ -553,17 +554,17 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 1062,
-      "trendScore": 20437
+      "heatScore": 1067,
+      "trendScore": 20332
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 84963,
-      "forks": 8380,
+      "stars": 86563,
+      "forks": 8515,
       "language": "Python",
-      "updatedAt": "2026-07-13",
+      "updatedAt": "2026-07-14",
       "topics": [
         "antigravity",
         "claude-code",
@@ -571,26 +572,26 @@ export const aiRepoRadar = {
         "gemini",
         "graphrag"
       ],
-      "heatScore": 1129,
-      "trendScore": 19694
+      "heatScore": 1149,
+      "trendScore": 19874
     },
     {
-      "name": "VoltAgent/awesome-design-md",
-      "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
-      "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 101632,
-      "forks": 11719,
-      "language": "Unknown",
-      "updatedAt": "2026-06-16",
+      "name": "NousResearch/hermes-agent",
+      "description": "The agent that grows with you",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 214943,
+      "forks": 40006,
+      "language": "Python",
+      "updatedAt": "2026-07-15",
       "topics": [
-        "awesome-list",
-        "design-md",
-        "design-system",
-        "design-tokens",
-        "figma"
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "anthropic",
+        "chatgpt"
       ],
-      "heatScore": 1407,
-      "trendScore": 18460
+      "heatScore": 3483,
+      "trendScore": 18425
     }
   ]
 };
@@ -602,12 +603,12 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 9,
+    "count": 8,
     "topCategory": "智能体",
     "topItems": [
       "AI agents create virtual playgrounds to help robots get crucial training data",
-      "New method aims to keep kids safe from illegal AI-generated content",
-      "Separating signal from noise in coding evaluations"
+      "Helping AI models to meet the real world",
+      "Can AI build a jet engine? JARVIS Challenge tests role of AI copilots in tough-tech engineering"
     ]
   },
   "monthly": {
@@ -615,8 +616,8 @@ export const aiNewsSummaries = {
     "topCategory": "智能体",
     "topItems": [
       "AI agents create virtual playgrounds to help robots get crucial training data",
-      "New method aims to keep kids safe from illegal AI-generated content",
-      "Separating signal from noise in coding evaluations"
+      "Helping AI models to meet the real world",
+      "Can AI build a jet engine? JARVIS Challenge tests role of AI copilots in tough-tech engineering"
     ]
   }
 };
