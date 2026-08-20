@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-08-19T01:51:37.737Z",
-  "updateLabel": "2026/8/19 09:51:37",
+  "generatedAt": "2026-08-20T01:50:02.344Z",
+  "updateLabel": "2026/8/20 09:50:02",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 52
@@ -39,6 +39,20 @@ export const aiNewsSources = [
 
 export const aiNewsItems = [
   {
+    "title": "Offering Zero Data Retention for frontier models",
+    "source": "OpenAI News",
+    "category": "模型技术",
+    "date": "2026-08-19",
+    "summary": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+    "url": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+    "tags": [
+      "模型技术",
+      "开发者",
+      "模型"
+    ],
+    "score": 83
+  },
+  {
     "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
     "source": "Hugging Face Blog",
     "category": "模型技术",
@@ -50,7 +64,7 @@ export const aiNewsItems = [
       "模型",
       "技能"
     ],
-    "score": 82
+    "score": 78
   },
   {
     "title": "How Much Memory Does Your Agent Actually Need?",
@@ -62,7 +76,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 79
+    "score": 75
   },
   {
     "title": "When AI art has no author: Study finds generated images often can’t be traced to training data",
@@ -75,7 +89,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 77
+    "score": 73
   },
   {
     "title": "Pacing model development in an era of cyber-critical capabilities",
@@ -88,7 +102,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 76
+    "score": 72
   },
   {
     "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
@@ -100,21 +114,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 75
-  },
-  {
-    "title": "The builder’s guide to GPT‑5.6",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-08-13",
-    "summary": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
-    "url": "https://openai.com/index/builders-guide-to-gpt-5-6",
-    "tags": [
-      "智能体",
-      "开发者",
-      "模型"
-    ],
-    "score": 74
+    "score": 71
   },
   {
     "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
@@ -127,7 +127,7 @@ export const aiNewsItems = [
       "智能体",
       "技能"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "How NVIDIA scales expertise with ChatGPT Work",
@@ -139,7 +139,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 72
+    "score": 68
   },
   {
     "title": "The Defender’s Window",
@@ -152,7 +152,7 @@ export const aiNewsItems = [
       "技术工具",
       "开发者"
     ],
-    "score": 71
+    "score": 67
   },
   {
     "title": "Putting sign language AI into users’ hands",
@@ -165,7 +165,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 61
+    "score": 57
   },
   {
     "title": "State of Open Models: Summer 2026 Observations",
@@ -177,19 +177,6 @@ export const aiNewsItems = [
     "tags": [
       "模型技术",
       "模型"
-    ],
-    "score": 60
-  },
-  {
-    "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
-    "source": "OpenAI News",
-    "category": "技术工具",
-    "date": "2026-08-13",
-    "summary": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
-    "url": "https://openai.com/index/previewing-ultrafast",
-    "tags": [
-      "技术工具",
-      "开发者"
     ],
     "score": 56
   },
@@ -204,7 +191,7 @@ export const aiNewsItems = [
       "智能体",
       "开源"
     ],
-    "score": 56
+    "score": 52
   },
   {
     "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
@@ -217,7 +204,7 @@ export const aiNewsItems = [
       "实用技能",
       "技能"
     ],
-    "score": 55
+    "score": 51
   },
   {
     "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
@@ -229,20 +216,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 53
-  },
-  {
-    "title": "With a feel for physics, AI models simulate a wider range of real-world scenarios",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-08-10",
-    "summary": "“GeoPT” helps AI models understand the basics of physics so they can simulate how objects respond to things like wind and water more efficiently and accurately.",
-    "url": "https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 45
+    "score": 49
   },
   {
     "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
@@ -346,6 +320,32 @@ export const aiNewsItems = [
       "模型"
     ],
     "score": 42
+  },
+  {
+    "title": "Accelerating Gemini Nano models on Pixel with frozen Multi-Token Prediction",
+    "source": "Google Research",
+    "category": "模型技术",
+    "date": "2026-06-26",
+    "summary": "Machine Intelligence",
+    "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 42
+  },
+  {
+    "title": "With a feel for physics, AI models simulate a wider range of real-world scenarios",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-08-10",
+    "summary": "“GeoPT” helps AI models understand the basics of physics so they can simulate how objects respond to things like wind and water more efficiently and accurately.",
+    "url": "https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 41
   }
 ];
 
@@ -355,22 +355,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195087,
-      "forks": 109055,
+      "stars": 195086,
+      "forks": 109034,
       "language": "Rust",
       "updatedAt": "2026-08-16",
       "topics": [],
-      "heatScore": 5586,
-      "trendScore": 42103
+      "heatScore": 5585,
+      "trendScore": 41881
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 201125,
-      "forks": 60213,
+      "stars": 201221,
+      "forks": 60234,
       "language": "TypeScript",
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-08-20",
       "topics": [
         "ai",
         "apis",
@@ -378,17 +378,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 4018,
+      "heatScore": 4020,
       "trendScore": 7795
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 232578,
-      "forks": 46423,
+      "stars": 233075,
+      "forks": 46626,
       "language": "Python",
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-08-20",
       "topics": [
         "ai",
         "ai-agent",
@@ -396,17 +396,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3873,
-      "trendScore": 19235
+      "heatScore": 3885,
+      "trendScore": 19264
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 240980,
-      "forks": 36549,
+      "stars": 241201,
+      "forks": 36575,
       "language": "JavaScript",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -414,17 +414,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3628,
-      "trendScore": 29111
+      "heatScore": 3631,
+      "trendScore": 29018
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 273701,
-      "forks": 24491,
+      "stars": 274302,
+      "forks": 24556,
       "language": "Shell",
-      "updatedAt": "2026-08-13",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai",
         "brainstorming",
@@ -432,27 +432,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3553,
-      "trendScore": 22119
+      "heatScore": 3562,
+      "trendScore": 22106
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 198853,
-      "forks": 25656,
+      "stars": 199251,
+      "forks": 25698,
       "language": "TypeScript",
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-08-20",
       "topics": [],
-      "heatScore": 2844,
-      "trendScore": 12175
+      "heatScore": 2849,
+      "trendScore": 12180
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 142900,
-      "forks": 34843,
+      "stars": 142939,
+      "forks": 34844,
       "language": "Unknown",
       "updatedAt": "2026-08-11",
       "topics": [
@@ -462,17 +462,17 @@ export const aiRepoRadar = {
         "copilot",
         "cursor"
       ],
-      "heatScore": 2590,
-      "trendScore": 9541
+      "heatScore": 2591,
+      "trendScore": 9531
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 152846,
-      "forks": 24142,
+      "stars": 152931,
+      "forks": 24151,
       "language": "TypeScript",
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-08-20",
       "topics": [
         "agent",
         "agentic-ai",
@@ -480,8 +480,8 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2333,
-      "trendScore": 5259
+      "heatScore": 2334,
+      "trendScore": 5260
     }
   ],
   "rising": [
@@ -489,20 +489,20 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195087,
-      "forks": 109055,
+      "stars": 195086,
+      "forks": 109034,
       "language": "Rust",
       "updatedAt": "2026-08-16",
       "topics": [],
-      "heatScore": 5586,
-      "trendScore": 42103
+      "heatScore": 5585,
+      "trendScore": 41881
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 105432,
-      "forks": 5823,
+      "stars": 106030,
+      "forks": 5859,
       "language": "JavaScript",
       "updatedAt": "2026-08-07",
       "topics": [
@@ -512,17 +512,17 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 1248,
-      "trendScore": 35452
+      "heatScore": 1256,
+      "trendScore": 35147
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 240980,
-      "forks": 36549,
+      "stars": 241201,
+      "forks": 36575,
       "language": "JavaScript",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -530,17 +530,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3628,
-      "trendScore": 29111
+      "heatScore": 3631,
+      "trendScore": 29018
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 273701,
-      "forks": 24491,
+      "stars": 274302,
+      "forks": 24556,
       "language": "Shell",
-      "updatedAt": "2026-08-13",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai",
         "brainstorming",
@@ -548,17 +548,17 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3553,
-      "trendScore": 22119
+      "heatScore": 3562,
+      "trendScore": 22106
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 232578,
-      "forks": 46423,
+      "stars": 233075,
+      "forks": 46626,
       "language": "Python",
-      "updatedAt": "2026-08-19",
+      "updatedAt": "2026-08-20",
       "topics": [
         "ai",
         "ai-agent",
@@ -566,17 +566,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3873,
-      "trendScore": 19235
+      "heatScore": 3885,
+      "trendScore": 19264
     },
     {
       "name": "nexu-io/open-design",
       "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.",
       "url": "https://github.com/nexu-io/open-design",
-      "stars": 88921,
-      "forks": 10272,
+      "stars": 89348,
+      "forks": 10313,
       "language": "TypeScript",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-20",
       "topics": [
         "agent-skills",
         "ai-design",
@@ -584,17 +584,17 @@ export const aiRepoRadar = {
         "claude-code-for-design",
         "claude-design"
       ],
-      "heatScore": 1232,
-      "trendScore": 18780
+      "heatScore": 1237,
+      "trendScore": 18712
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 107955,
-      "forks": 10483,
+      "stars": 108374,
+      "forks": 10516,
       "language": "Python",
-      "updatedAt": "2026-08-17",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai-agents",
         "antigravity",
@@ -602,17 +602,17 @@ export const aiRepoRadar = {
         "claude-code",
         "code-analysis"
       ],
-      "heatScore": 1429,
-      "trendScore": 18762
+      "heatScore": 1434,
+      "trendScore": 18705
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 99007,
-      "forks": 5740,
+      "stars": 99247,
+      "forks": 5758,
       "language": "Go",
-      "updatedAt": "2026-08-18",
+      "updatedAt": "2026-08-19",
       "topics": [
         "ai",
         "anthropic",
@@ -620,8 +620,8 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 1181,
-      "trendScore": 16893
+      "heatScore": 1184,
+      "trendScore": 16811
     }
   ]
 };
@@ -633,21 +633,21 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 11,
+    "count": 9,
     "topCategory": "模型技术",
     "topItems": [
+      "Offering Zero Data Retention for frontier models",
       "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
-      "How Much Memory Does Your Agent Actually Need?",
-      "When AI art has no author: Study finds generated images often can’t be traced to training data"
+      "How Much Memory Does Your Agent Actually Need?"
     ]
   },
   "monthly": {
-    "count": 20,
+    "count": 18,
     "topCategory": "模型技术",
     "topItems": [
+      "Offering Zero Data Retention for frontier models",
       "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
-      "How Much Memory Does Your Agent Actually Need?",
-      "When AI art has no author: Study finds generated images often can’t be traced to training data"
+      "How Much Memory Does Your Agent Actually Need?"
     ]
   }
 };
