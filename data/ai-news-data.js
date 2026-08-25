@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-08-24T01:56:14.810Z",
-  "updateLabel": "2026/8/24 09:56:14",
+  "generatedAt": "2026-08-25T01:50:53.532Z",
+  "updateLabel": "2026/8/25 09:50:53",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 52
@@ -39,6 +39,19 @@ export const aiNewsSources = [
 
 export const aiNewsItems = [
   {
+    "title": "Advancing price-performance for developers with GPT‑5.6 in Kiro",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-08-24",
+    "summary": "GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.",
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "tags": [
+      "AI 编程",
+      "开发者"
+    ],
+    "score": 76
+  },
+  {
     "title": "How mobility gives language models a deeper understanding of place",
     "source": "Google Research",
     "category": "模型技术",
@@ -49,7 +62,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 74
+    "score": 70
   },
   {
     "title": "Measuring benchmark optimization in speech recognition",
@@ -61,7 +74,7 @@ export const aiNewsItems = [
     "tags": [
       "研究进展"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
@@ -73,7 +86,7 @@ export const aiNewsItems = [
     "tags": [
       "模型技术"
     ],
-    "score": 67
+    "score": 63
   },
   {
     "title": "Offering Zero Data Retention for frontier models",
@@ -87,7 +100,7 @@ export const aiNewsItems = [
       "开发者",
       "模型"
     ],
-    "score": 67
+    "score": 63
   },
   {
     "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
@@ -101,7 +114,7 @@ export const aiNewsItems = [
       "模型",
       "技能"
     ],
-    "score": 62
+    "score": 58
   },
   {
     "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
@@ -113,7 +126,7 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 60
+    "score": 56
   },
   {
     "title": "How Much Memory Does Your Agent Actually Need?",
@@ -125,7 +138,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 59
+    "score": 55
   },
   {
     "title": "When AI art has no author: Study finds generated images often can’t be traced to training data",
@@ -138,7 +151,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 57
+    "score": 53
   },
   {
     "title": "Pacing model development in an era of cyber-critical capabilities",
@@ -151,19 +164,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 56
-  },
-  {
-    "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
-    "source": "OpenAI News",
-    "category": "AI 编程",
-    "date": "2026-08-18",
-    "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
-    "url": "https://openai.com/index/asana",
-    "tags": [
-      "AI 编程"
-    ],
-    "score": 55
+    "score": 52
   },
   {
     "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
@@ -176,7 +177,19 @@ export const aiNewsItems = [
       "智能体",
       "技能"
     ],
-    "score": 53
+    "score": 52
+  },
+  {
+    "title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-08-18",
+    "summary": "Asana used OpenAI Codex to replace an outdated testing system in two weeks, completing work expected to take five years for about $12K.",
+    "url": "https://openai.com/index/asana",
+    "tags": [
+      "AI 编程"
+    ],
+    "score": 51
   },
   {
     "title": "How NVIDIA scales expertise with ChatGPT Work",
@@ -188,20 +201,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 52
-  },
-  {
-    "title": "The Defender’s Window",
-    "source": "OpenAI News",
-    "category": "技术工具",
-    "date": "2026-08-17",
-    "summary": "AI is reshaping cybersecurity for attackers and defenders alike. Learn how OpenAI is strengthening its defenses and what security teams can do now.",
-    "url": "https://openai.com/index/the-defenders-window",
-    "tags": [
-      "技术工具",
-      "开发者"
-    ],
-    "score": 51
+    "score": 48
   },
   {
     "title": "Putting sign language AI into users’ hands",
@@ -329,7 +329,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 40
+    "score": 38
   },
   {
     "title": "Introducing OlmoEarth embeddings: Custom embedding exports from OlmoEarth Studio for downstream analysis",
@@ -352,20 +352,20 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195111,
-      "forks": 108973,
+      "stars": 195109,
+      "forks": 108952,
       "language": "Rust",
       "updatedAt": "2026-08-16",
       "topics": [],
-      "heatScore": 5584,
-      "trendScore": 41028
+      "heatScore": 5583,
+      "trendScore": 40821
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 202162,
-      "forks": 60328,
+      "stars": 202314,
+      "forks": 60362,
       "language": "TypeScript",
       "updatedAt": "2026-08-24",
       "topics": [
@@ -375,17 +375,17 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 4033,
-      "trendScore": 7809
+      "heatScore": 4035,
+      "trendScore": 7814
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 235027,
-      "forks": 47358,
+      "stars": 235838,
+      "forks": 47585,
       "language": "Python",
-      "updatedAt": "2026-08-24",
+      "updatedAt": "2026-08-25",
       "topics": [
         "ai",
         "ai-agent",
@@ -393,17 +393,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3929,
-      "trendScore": 19366
+      "heatScore": 3945,
+      "trendScore": 19416
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 242578,
-      "forks": 36722,
+      "stars": 242941,
+      "forks": 36765,
       "language": "JavaScript",
-      "updatedAt": "2026-08-21",
+      "updatedAt": "2026-08-25",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -411,15 +411,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3650,
-      "trendScore": 28709
+      "heatScore": 3655,
+      "trendScore": 28638
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 276696,
-      "forks": 24751,
+      "stars": 277131,
+      "forks": 24793,
       "language": "Shell",
       "updatedAt": "2026-08-19",
       "topics": [
@@ -429,27 +429,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3592,
-      "trendScore": 22048
+      "heatScore": 3598,
+      "trendScore": 22022
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 200692,
-      "forks": 25956,
+      "stars": 201046,
+      "forks": 26028,
       "language": "TypeScript",
-      "updatedAt": "2026-08-24",
+      "updatedAt": "2026-08-25",
       "topics": [],
-      "heatScore": 2872,
-      "trendScore": 12201
+      "heatScore": 2878,
+      "trendScore": 12205
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 143034,
-      "forks": 34843,
+      "stars": 143054,
+      "forks": 34844,
       "language": "Unknown",
       "updatedAt": "2026-08-11",
       "topics": [
@@ -460,16 +460,16 @@ export const aiRepoRadar = {
         "cursor"
       ],
       "heatScore": 2592,
-      "trendScore": 9490
+      "trendScore": 9480
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 153295,
-      "forks": 24217,
+      "stars": 153393,
+      "forks": 24236,
       "language": "TypeScript",
-      "updatedAt": "2026-08-24",
+      "updatedAt": "2026-08-25",
       "topics": [
         "agent",
         "agentic-ai",
@@ -477,8 +477,8 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2340,
-      "trendScore": 5263
+      "heatScore": 2342,
+      "trendScore": 5264
     }
   ],
   "rising": [
@@ -486,22 +486,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195111,
-      "forks": 108973,
+      "stars": 195109,
+      "forks": 108952,
       "language": "Rust",
       "updatedAt": "2026-08-16",
       "topics": [],
-      "heatScore": 5584,
-      "trendScore": 41028
+      "heatScore": 5583,
+      "trendScore": 40821
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 242578,
-      "forks": 36722,
+      "stars": 242941,
+      "forks": 36765,
       "language": "JavaScript",
-      "updatedAt": "2026-08-21",
+      "updatedAt": "2026-08-25",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -509,15 +509,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 3650,
-      "trendScore": 28709
+      "heatScore": 3655,
+      "trendScore": 28638
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 108841,
-      "forks": 6014,
+      "stars": 109791,
+      "forks": 6052,
       "language": "JavaScript",
       "updatedAt": "2026-08-07",
       "topics": [
@@ -527,15 +527,15 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 1289,
-      "trendScore": 27307
+      "heatScore": 1300,
+      "trendScore": 27180
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 276696,
-      "forks": 24751,
+      "stars": 277131,
+      "forks": 24793,
       "language": "Shell",
       "updatedAt": "2026-08-19",
       "topics": [
@@ -545,17 +545,17 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3592,
-      "trendScore": 22048
+      "heatScore": 3598,
+      "trendScore": 22022
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 235027,
-      "forks": 47358,
+      "stars": 235838,
+      "forks": 47585,
       "language": "Python",
-      "updatedAt": "2026-08-24",
+      "updatedAt": "2026-08-25",
       "topics": [
         "ai",
         "ai-agent",
@@ -563,17 +563,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 3929,
-      "trendScore": 19366
+      "heatScore": 3945,
+      "trendScore": 19416
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 109848,
-      "forks": 10678,
+      "stars": 110144,
+      "forks": 10715,
       "language": "Python",
-      "updatedAt": "2026-08-20",
+      "updatedAt": "2026-08-24",
       "topics": [
         "ai-agents",
         "antigravity",
@@ -581,17 +581,17 @@ export const aiRepoRadar = {
         "claude-code",
         "code-analysis"
       ],
-      "heatScore": 1454,
-      "trendScore": 18462
+      "heatScore": 1459,
+      "trendScore": 18392
     },
     {
       "name": "nexu-io/open-design",
       "description": "🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ Your coding agent becomes the design engine: prototypes, landing pages, dashboards, slides, images & video — real files, HTML/PDF/PPTX/MP4 export. 🤖 Claude Code / Codex / Cursor / DeepSeek Harness / OpenCode & 20+ CLIs via BYOK.",
       "url": "https://github.com/nexu-io/open-design",
-      "stars": 90761,
-      "forks": 10457,
+      "stars": 91111,
+      "forks": 10495,
       "language": "TypeScript",
-      "updatedAt": "2026-08-24",
+      "updatedAt": "2026-08-25",
       "topics": [
         "agent-skills",
         "ai-design",
@@ -599,15 +599,15 @@ export const aiRepoRadar = {
         "claude-code-for-design",
         "claude-design"
       ],
-      "heatScore": 1256,
-      "trendScore": 18399
+      "heatScore": 1261,
+      "trendScore": 18324
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 100521,
-      "forks": 5839,
+      "stars": 100707,
+      "forks": 5849,
       "language": "Go",
       "updatedAt": "2026-08-24",
       "topics": [
@@ -617,8 +617,8 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 1200,
-      "trendScore": 16563
+      "heatScore": 1202,
+      "trendScore": 16482
     }
   ]
 };
@@ -630,21 +630,21 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 11,
+    "count": 6,
     "topCategory": "模型技术",
     "topItems": [
+      "Advancing price-performance for developers with GPT‑5.6 in Kiro",
       "How mobility gives language models a deeper understanding of place",
-      "Measuring benchmark optimization in speech recognition",
-      "Up to 3.2x Faster Inference with LFM2.5-DSpark"
+      "Measuring benchmark optimization in speech recognition"
     ]
   },
   "monthly": {
     "count": 19,
     "topCategory": "模型技术",
     "topItems": [
+      "Advancing price-performance for developers with GPT‑5.6 in Kiro",
       "How mobility gives language models a deeper understanding of place",
-      "Measuring benchmark optimization in speech recognition",
-      "Up to 3.2x Faster Inference with LFM2.5-DSpark"
+      "Measuring benchmark optimization in speech recognition"
     ]
   }
 };
