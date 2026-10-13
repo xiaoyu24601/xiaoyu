@@ -1,9 +1,9 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-10-12T05:54:33.706Z",
-  "updateLabel": "2026/10/12 13:54:33",
+  "generatedAt": "2026-10-13T06:45:30.167Z",
+  "updateLabel": "2026/10/13 14:45:30",
   "sourceCount": 5,
   "itemCount": 24,
-  "repoCount": 50
+  "repoCount": 49
 };
 
 export const aiNewsSources = [
@@ -49,7 +49,7 @@ export const aiNewsItems = [
       "智能体",
       "模型"
     ],
-    "score": 77
+    "score": 73
   },
   {
     "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
@@ -63,7 +63,7 @@ export const aiNewsItems = [
       "模型",
       "技能"
     ],
-    "score": 75
+    "score": 71
   },
   {
     "title": "Advancing computer use with Ironclad",
@@ -75,7 +75,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
@@ -87,7 +87,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "Multimodal open d1 decision models for the edge",
@@ -100,7 +100,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
@@ -113,7 +113,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 68
+    "score": 64
   },
   {
     "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
@@ -125,32 +125,7 @@ export const aiNewsItems = [
     "tags": [
       "模型技术"
     ],
-    "score": 67
-  },
-  {
-    "title": "LegalOn halves Codex costs while maintaining development speed",
-    "source": "OpenAI News",
-    "category": "AI 编程",
-    "date": "2026-10-08",
-    "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
-    "url": "https://openai.com/index/legalon-halves-codex-costs",
-    "tags": [
-      "AI 编程"
-    ],
-    "score": 64
-  },
-  {
-    "title": "The model that didn&apos;t exist, so you made it yourself",
-    "source": "Hugging Face Blog",
-    "category": "模型技术",
-    "date": "2026-10-08",
-    "summary": "The model that didn&apos;t exist, so you made it yourself",
-    "url": "https://huggingface.co/blog/building-with-ml-intern",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 64
+    "score": 63
   },
   {
     "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
@@ -163,7 +138,32 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 64
+    "score": 60
+  },
+  {
+    "title": "LegalOn halves Codex costs while maintaining development speed",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-10-08",
+    "summary": "LegalOn cut estimated daily Codex costs by 65% while maintaining development speed. It matched Astra, Sol, and Luna to tasks and managed budgets strategically.",
+    "url": "https://openai.com/index/legalon-halves-codex-costs",
+    "tags": [
+      "AI 编程"
+    ],
+    "score": 59
+  },
+  {
+    "title": "The model that didn&apos;t exist, so you made it yourself",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-10-08",
+    "summary": "The model that didn&apos;t exist, so you made it yourself",
+    "url": "https://huggingface.co/blog/building-with-ml-intern",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 59
   },
   {
     "title": "Sharing AI progress in mathematics",
@@ -178,7 +178,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 62
+    "score": 57
   },
   {
     "title": "Open and Emergent Problems in Agentic Privacy and Security: A Contextual Angle",
@@ -190,7 +190,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 61
+    "score": 57
   },
   {
     "title": "How Jump Trading is scaling quant research with ChatGPT",
@@ -203,7 +203,7 @@ export const aiNewsItems = [
       "智能体",
       "研究"
     ],
-    "score": 56
+    "score": 51
   },
   {
     "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
@@ -218,18 +218,6 @@ export const aiNewsItems = [
     "score": 50
   },
   {
-    "title": "The Agent Said It Was Done. The Database Disagreed.",
-    "source": "Hugging Face Blog",
-    "category": "智能体",
-    "date": "2026-10-03",
-    "summary": "The Agent Said It Was Done. The Database Disagreed.",
-    "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-    "tags": [
-      "智能体"
-    ],
-    "score": 49
-  },
-  {
     "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
     "source": "Hugging Face Blog",
     "category": "智能体",
@@ -239,7 +227,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 48
+    "score": 46
   },
   {
     "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
@@ -252,6 +240,18 @@ export const aiNewsItems = [
       "实用技能"
     ],
     "score": 46
+  },
+  {
+    "title": "The Agent Said It Was Done. The Database Disagreed.",
+    "source": "Hugging Face Blog",
+    "category": "智能体",
+    "date": "2026-10-03",
+    "summary": "The Agent Said It Was Done. The Database Disagreed.",
+    "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+    "tags": [
+      "智能体"
+    ],
+    "score": 45
   },
   {
     "title": "Introducing SynthID Bio",
@@ -337,7 +337,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 37
+    "score": 36
   }
 ];
 
@@ -347,22 +347,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194969,
-      "forks": 108067,
+      "stars": 194939,
+      "forks": 108050,
       "language": "Rust",
-      "updatedAt": "2026-10-11",
+      "updatedAt": "2026-10-13",
       "topics": [],
-      "heatScore": 5552,
-      "trendScore": 33319
+      "heatScore": 5551,
+      "trendScore": 33194
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 252868,
-      "forks": 54765,
+      "stars": 253237,
+      "forks": 54891,
       "language": "Python",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "topics": [
         "ai",
         "ai-agent",
@@ -370,15 +370,15 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4354,
-      "trendScore": 20028
+      "heatScore": 4362,
+      "trendScore": 20034
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 277360,
-      "forks": 41370,
+      "stars": 278082,
+      "forks": 41445,
       "language": "JavaScript",
       "updatedAt": "2026-10-12",
       "topics": [
@@ -388,17 +388,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4153,
-      "trendScore": 27497
+      "heatScore": 4162,
+      "trendScore": 27476
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 207043,
-      "forks": 61094,
+      "stars": 207172,
+      "forks": 61110,
       "language": "TypeScript",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "topics": [
         "ai",
         "apis",
@@ -406,15 +406,15 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 4107,
-      "trendScore": 7899
+      "heatScore": 4109,
+      "trendScore": 7901
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 297836,
-      "forks": 26607,
+      "stars": 298330,
+      "forks": 26662,
       "language": "Shell",
       "updatedAt": "2026-10-10",
       "topics": [
@@ -424,29 +424,47 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3865,
-      "trendScore": 20912
+      "heatScore": 3872,
+      "trendScore": 20896
+    },
+    {
+      "name": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "stars": 173310,
+      "forks": 41511,
+      "language": "TypeScript",
+      "updatedAt": "2026-10-13",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "binary-analysis",
+        "claude-code",
+        "cli"
+      ],
+      "heatScore": 3117,
+      "trendScore": 25567
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 212773,
-      "forks": 28478,
+      "stars": 213010,
+      "forks": 28549,
       "language": "TypeScript",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "topics": [],
-      "heatScore": 3077,
-      "trendScore": 12040
+      "heatScore": 3082,
+      "trendScore": 12046
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 143954,
-      "forks": 34759,
+      "stars": 143981,
+      "forks": 34755,
       "language": "Unknown",
-      "updatedAt": "2026-08-11",
+      "updatedAt": "2026-10-12",
       "topics": [
         "ai",
         "bolt",
@@ -455,25 +473,7 @@ export const aiRepoRadar = {
         "cursor"
       ],
       "heatScore": 2598,
-      "trendScore": 7211
-    },
-    {
-      "name": "langgenius/dify",
-      "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
-      "url": "https://github.com/langgenius/dify",
-      "stars": 158190,
-      "forks": 25007,
-      "language": "TypeScript",
-      "updatedAt": "2026-10-12",
-      "topics": [
-        "agent",
-        "agentic-ai",
-        "agentic-framework",
-        "agentic-workflow",
-        "ai"
-      ],
-      "heatScore": 2415,
-      "trendScore": 5325
+      "trendScore": 9004
     }
   ],
   "rising": [
@@ -481,22 +481,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194969,
-      "forks": 108067,
+      "stars": 194939,
+      "forks": 108050,
       "language": "Rust",
-      "updatedAt": "2026-10-11",
+      "updatedAt": "2026-10-13",
       "topics": [],
-      "heatScore": 5552,
-      "trendScore": 33319
+      "heatScore": 5551,
+      "trendScore": 33194
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 161258,
-      "forks": 8700,
+      "stars": 162046,
+      "forks": 8748,
       "language": "JavaScript",
-      "updatedAt": "2026-10-10",
+      "updatedAt": "2026-10-13",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -504,15 +504,15 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 1903,
-      "trendScore": 30561
+      "heatScore": 1912,
+      "trendScore": 30459
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 277360,
-      "forks": 41370,
+      "stars": 278082,
+      "forks": 41445,
       "language": "JavaScript",
       "updatedAt": "2026-10-12",
       "topics": [
@@ -522,15 +522,33 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4153,
-      "trendScore": 27497
+      "heatScore": 4162,
+      "trendScore": 27476
+    },
+    {
+      "name": "morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "url": "https://github.com/morluto/rea",
+      "stars": 173310,
+      "forks": 41511,
+      "language": "TypeScript",
+      "updatedAt": "2026-10-13",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "binary-analysis",
+        "claude-code",
+        "cli"
+      ],
+      "heatScore": 3117,
+      "trendScore": 25567
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 297836,
-      "forks": 26607,
+      "stars": 298330,
+      "forks": 26662,
       "language": "Shell",
       "updatedAt": "2026-10-10",
       "topics": [
@@ -540,17 +558,17 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3865,
-      "trendScore": 20912
+      "heatScore": 3872,
+      "trendScore": 20896
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 252868,
-      "forks": 54765,
+      "stars": 253237,
+      "forks": 54891,
       "language": "Python",
-      "updatedAt": "2026-10-12",
+      "updatedAt": "2026-10-13",
       "topics": [
         "ai",
         "ai-agent",
@@ -558,35 +576,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4354,
-      "trendScore": 20028
-    },
-    {
-      "name": "morluto/rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "url": "https://github.com/morluto/rea",
-      "stars": 116553,
-      "forks": 26178,
-      "language": "TypeScript",
-      "updatedAt": "2026-10-12",
-      "topics": [
-        "agent-skills",
-        "ai-agents",
-        "binary-analysis",
-        "claude-code",
-        "cli"
-      ],
-      "heatScore": 2038,
-      "trendScore": 17097
+      "heatScore": 4362,
+      "trendScore": 20034
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 125619,
-      "forks": 12126,
+      "stars": 125948,
+      "forks": 12154,
       "language": "Python",
-      "updatedAt": "2026-10-11",
+      "updatedAt": "2026-10-12",
       "topics": [
         "ai-agents",
         "antigravity",
@@ -594,17 +594,17 @@ export const aiRepoRadar = {
         "claude-code",
         "code-analysis"
       ],
-      "heatScore": 1660,
-      "trendScore": 16023
+      "heatScore": 1665,
+      "trendScore": 15983
     },
     {
       "name": "VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 120379,
-      "forks": 13417,
+      "stars": 120678,
+      "forks": 13442,
       "language": "Unknown",
-      "updatedAt": "2026-10-05",
+      "updatedAt": "2026-10-12",
       "topics": [
         "awesome-list",
         "design-md",
@@ -612,8 +612,8 @@ export const aiRepoRadar = {
         "design-tokens",
         "figma"
       ],
-      "heatScore": 1651,
-      "trendScore": 15275
+      "heatScore": 1655,
+      "trendScore": 15238
     }
   ]
 };
@@ -625,12 +625,12 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 12,
+    "count": 7,
     "topCategory": "模型技术",
     "topItems": [
       "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
-      "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-      "Advancing computer use with Ironclad"
+      "How Oracle turns days of work into minutes with ChatGPT and Codex",
+      "Multimodal open d1 decision models for the edge"
     ]
   },
   "monthly": {
