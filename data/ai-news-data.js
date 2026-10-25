@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-10-24T04:33:37.437Z",
-  "updateLabel": "2026/10/24 12:33:37",
+  "generatedAt": "2026-10-25T04:38:09.736Z",
+  "updateLabel": "2026/10/25 12:38:09",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 48
@@ -49,7 +49,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 85
+    "score": 81
   },
   {
     "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
@@ -61,7 +61,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 83
+    "score": 79
   },
   {
     "title": "Securing our frontier model training environment",
@@ -74,7 +74,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 81
+    "score": 77
   },
   {
     "title": "OpenAI models are coming to Google Cloud",
@@ -87,7 +87,7 @@ export const aiNewsItems = [
       "智能体",
       "模型"
     ],
-    "score": 80
+    "score": 76
   },
   {
     "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
@@ -101,7 +101,7 @@ export const aiNewsItems = [
       "开源",
       "研究"
     ],
-    "score": 79
+    "score": 75
   },
   {
     "title": "Does Your Model Run on AWS Trainium? Look It Up",
@@ -114,7 +114,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 78
+    "score": 74
   },
   {
     "title": "Q&A: How AI came to model the “messy” human mind",
@@ -127,7 +127,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 74
+    "score": 70
   },
   {
     "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
@@ -141,7 +141,7 @@ export const aiNewsItems = [
       "开发者",
       "技能"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "Ensemble forecasting with IBM Granite time-series models",
@@ -154,7 +154,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "Build more responsive apps with the Decisions API",
@@ -167,7 +167,7 @@ export const aiNewsItems = [
       "技术工具",
       "开发者"
     ],
-    "score": 71
+    "score": 67
   },
   {
     "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
@@ -179,7 +179,7 @@ export const aiNewsItems = [
     "tags": [
       "模型技术"
     ],
-    "score": 71
+    "score": 67
   },
   {
     "title": "Uber brings ChatGPT Work to all employees with OpenAI",
@@ -192,7 +192,7 @@ export const aiNewsItems = [
       "智能体",
       "研究"
     ],
-    "score": 70
+    "score": 66
   },
   {
     "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
@@ -205,7 +205,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 64
+    "score": 60
   },
   {
     "title": "Using thousands of AI agents to uncover new leads in biological data",
@@ -218,7 +218,7 @@ export const aiNewsItems = [
       "智能体",
       "研究"
     ],
-    "score": 63
+    "score": 59
   },
   {
     "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
@@ -230,7 +230,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 63
+    "score": 59
   },
   {
     "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
@@ -243,7 +243,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 62
+    "score": 58
   },
   {
     "title": "Why teaching AI about symmetry could make prenatal diagnosis more reliable",
@@ -257,33 +257,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 61
-  },
-  {
-    "title": "Giving AI a “crystal clear” view of the materials world",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-10-18",
-    "summary": "New research can help AI models understand crystalline materials in 3D and reason about their properties.",
-    "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
-    "tags": [
-      "模型技术",
-      "研究",
-      "模型"
-    ],
-    "score": 54
-  },
-  {
-    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
-    "source": "Google Research",
-    "category": "智能体",
-    "date": "2026-10-14",
-    "summary": "Earth AI",
-    "url": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
-    "tags": [
-      "智能体"
-    ],
-    "score": 54
+    "score": 57
   },
   {
     "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
@@ -300,6 +274,32 @@ export const aiNewsItems = [
     "score": 54
   },
   {
+    "title": "Giving AI a “crystal clear” view of the materials world",
+    "source": "MIT News AI",
+    "category": "模型技术",
+    "date": "2026-10-18",
+    "summary": "New research can help AI models understand crystalline materials in 3D and reason about their properties.",
+    "url": "https://news.mit.edu/2026/giving-ai-crystal-clear-view-of-materials-world-1018",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 50
+  },
+  {
+    "title": "Putting Earth AI to work: Geospatial agents for our planet's biggest challenges",
+    "source": "Google Research",
+    "category": "智能体",
+    "date": "2026-10-14",
+    "summary": "Earth AI",
+    "url": "https://research.google/blog/putting-earth-ai-to-work-geospatial-agents-for-our-planets-biggest-challenges/",
+    "tags": [
+      "智能体"
+    ],
+    "score": 50
+  },
+  {
     "title": "AI model decodes the language cells use to communicate",
     "source": "MIT News AI",
     "category": "模型技术",
@@ -311,7 +311,7 @@ export const aiNewsItems = [
       "开发者",
       "模型"
     ],
-    "score": 51
+    "score": 47
   },
   {
     "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
@@ -358,10 +358,10 @@ export const aiRepoRadar = {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
-      "stars": 373951,
-      "forks": 93528,
+      "stars": 379505,
+      "forks": 94845,
       "language": "TypeScript",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-25",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -369,29 +369,29 @@ export const aiRepoRadar = {
         "claude-code",
         "cli"
       ],
-      "heatScore": 6857,
-      "trendScore": 52967
+      "heatScore": 6957,
+      "trendScore": 53502
     },
     {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195067,
-      "forks": 107799,
+      "stars": 195065,
+      "forks": 107777,
       "language": "Rust",
       "updatedAt": "2026-10-23",
       "topics": [],
-      "heatScore": 5544,
-      "trendScore": 32002
+      "heatScore": 5543,
+      "trendScore": 31897
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 256571,
-      "forks": 56091,
+      "stars": 256856,
+      "forks": 56199,
       "language": "Python",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-25",
       "topics": [
         "ai",
         "ai-agent",
@@ -399,15 +399,15 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4435,
-      "trendScore": 20109
+      "heatScore": 4442,
+      "trendScore": 20112
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 287428,
-      "forks": 42621,
+      "stars": 288196,
+      "forks": 42723,
       "language": "JavaScript",
       "updatedAt": "2026-10-20",
       "topics": [
@@ -417,17 +417,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4295,
-      "trendScore": 27439
+      "heatScore": 4306,
+      "trendScore": 27429
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 208434,
-      "forks": 61216,
+      "stars": 208515,
+      "forks": 61225,
       "language": "TypeScript",
-      "updatedAt": "2026-10-23",
+      "updatedAt": "2026-10-24",
       "topics": [
         "ai",
         "apis",
@@ -435,15 +435,15 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 4125,
-      "trendScore": 7916
+      "heatScore": 4126,
+      "trendScore": 7918
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 304300,
-      "forks": 27104,
+      "stars": 304688,
+      "forks": 27142,
       "language": "Shell",
       "updatedAt": "2026-10-23",
       "topics": [
@@ -453,27 +453,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3946,
-      "trendScore": 20772
+      "heatScore": 3952,
+      "trendScore": 20751
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 220690,
-      "forks": 29511,
+      "stars": 221180,
+      "forks": 29593,
       "language": "TypeScript",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-25",
       "topics": [],
-      "heatScore": 3191,
-      "trendScore": 12262
+      "heatScore": 3198,
+      "trendScore": 12277
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 144208,
-      "forks": 34700,
+      "stars": 144233,
+      "forks": 34701,
       "language": "Unknown",
       "updatedAt": "2026-10-12",
       "topics": [
@@ -484,7 +484,7 @@ export const aiRepoRadar = {
         "cursor"
       ],
       "heatScore": 2599,
-      "trendScore": 8907
+      "trendScore": 8898
     }
   ],
   "rising": [
@@ -492,10 +492,10 @@ export const aiRepoRadar = {
       "name": "morluto/rea",
       "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "url": "https://github.com/morluto/rea",
-      "stars": 373951,
-      "forks": 93528,
+      "stars": 379505,
+      "forks": 94845,
       "language": "TypeScript",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-25",
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -503,27 +503,27 @@ export const aiRepoRadar = {
         "claude-code",
         "cli"
       ],
-      "heatScore": 6857,
-      "trendScore": 52967
+      "heatScore": 6957,
+      "trendScore": 53502
     },
     {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 195067,
-      "forks": 107799,
+      "stars": 195065,
+      "forks": 107777,
       "language": "Rust",
       "updatedAt": "2026-10-23",
       "topics": [],
-      "heatScore": 5544,
-      "trendScore": 32002
+      "heatScore": 5543,
+      "trendScore": 31897
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 174895,
-      "forks": 9529,
+      "stars": 175614,
+      "forks": 9577,
       "language": "JavaScript",
       "updatedAt": "2026-10-18",
       "topics": [
@@ -533,15 +533,15 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 2067,
-      "trendScore": 30290
+      "heatScore": 2075,
+      "trendScore": 30198
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 287428,
-      "forks": 42621,
+      "stars": 288196,
+      "forks": 42723,
       "language": "JavaScript",
       "updatedAt": "2026-10-20",
       "topics": [
@@ -551,15 +551,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4295,
-      "trendScore": 27439
+      "heatScore": 4306,
+      "trendScore": 27429
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 304300,
-      "forks": 27104,
+      "stars": 304688,
+      "forks": 27142,
       "language": "Shell",
       "updatedAt": "2026-10-23",
       "topics": [
@@ -569,17 +569,17 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 3946,
-      "trendScore": 20772
+      "heatScore": 3952,
+      "trendScore": 20751
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 256571,
-      "forks": 56091,
+      "stars": 256856,
+      "forks": 56199,
       "language": "Python",
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-25",
       "topics": [
         "ai",
         "ai-agent",
@@ -587,15 +587,15 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4435,
-      "trendScore": 20109
+      "heatScore": 4442,
+      "trendScore": 20112
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 133973,
-      "forks": 12796,
+      "stars": 134548,
+      "forks": 12841,
       "language": "Python",
       "updatedAt": "2026-10-23",
       "topics": [
@@ -605,15 +605,15 @@ export const aiRepoRadar = {
         "claude-code",
         "code-analysis"
       ],
-      "heatScore": 1766,
-      "trendScore": 16150
+      "heatScore": 1774,
+      "trendScore": 16146
     },
     {
       "name": "VoltAgent/awesome-design-md",
       "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
       "url": "https://github.com/VoltAgent/awesome-design-md",
-      "stars": 123186,
-      "forks": 13669,
+      "stars": 123359,
+      "forks": 13689,
       "language": "Unknown",
       "updatedAt": "2026-10-14",
       "topics": [
@@ -623,8 +623,8 @@ export const aiRepoRadar = {
         "design-tokens",
         "figma"
       ],
-      "heatScore": 1687,
-      "trendScore": 14801
+      "heatScore": 1690,
+      "trendScore": 14757
     }
   ]
 };
@@ -636,7 +636,7 @@ export const aiNewsSummaries = {
     "topItems": []
   },
   "weekly": {
-    "count": 17,
+    "count": 16,
     "topCategory": "模型技术",
     "topItems": [
       "Bringing foundational models to the front lines of TB screening",
