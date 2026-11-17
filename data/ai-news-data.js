@@ -1,6 +1,6 @@
 export const aiNewsMeta = {
-  "generatedAt": "2026-11-16T06:24:41.416Z",
-  "updateLabel": "2026/11/16 14:24:41",
+  "generatedAt": "2026-11-17T07:52:05.089Z",
+  "updateLabel": "2026/11/17 15:52:05",
   "sourceCount": 5,
   "itemCount": 24,
   "repoCount": 49
@@ -39,16 +39,95 @@ export const aiNewsSources = [
 
 export const aiNewsItems = [
   {
-    "title": "Introducing ChatGPT Wallet",
+    "title": "How Revolut raises ambition without lowering the bar",
+    "source": "OpenAI News",
+    "category": "AI 编程",
+    "date": "2026-11-16",
+    "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+    "url": "https://openai.com/business/customer-stories/revolut",
+    "tags": [
+      "AI 编程",
+      "模型"
+    ],
+    "score": 81
+  },
+  {
+    "title": "Our first phase of embedded assessments",
+    "source": "OpenAI News",
+    "category": "模型技术",
+    "date": "2026-11-16",
+    "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 81
+  },
+  {
+    "title": "More ways to move care forward with ChatGPT for Healthcare",
     "source": "OpenAI News",
     "category": "智能体",
-    "date": "2026-11-13",
-    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
-    "url": "https://openai.com/index/introducing-chatgpt-wallet",
+    "date": "2026-11-16",
+    "summary": "Introducing computer-use agents, improved clinical answers, and new healthcare plugins that work across healthcare software to get real work done.",
+    "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
     "tags": [
       "智能体"
     ],
     "score": 78
+  },
+  {
+    "title": "Advancing computer-use agents for healthcare teams",
+    "source": "OpenAI News",
+    "category": "智能体",
+    "date": "2026-11-16",
+    "summary": "Advancing computer-use agents for healthcare teams",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+    "tags": [
+      "智能体"
+    ],
+    "score": 78
+  },
+  {
+    "title": "Broadening access to AI for scientists",
+    "source": "OpenAI News",
+    "category": "模型技术",
+    "date": "2026-11-16",
+    "summary": "We’re expanding our ChatGPT for Academic Researchers program to offer 200,000 researchers worldwide free access to our frontier models.",
+    "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "tags": [
+      "模型技术",
+      "研究",
+      "模型"
+    ],
+    "score": 76
+  },
+  {
+    "title": "Science at the Frontier: How scientists use ChatGPT",
+    "source": "OpenAI News",
+    "category": "智能体",
+    "date": "2026-11-16",
+    "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+    "url": "https://openai.com/index/science-at-the-frontier",
+    "tags": [
+      "智能体",
+      "研究"
+    ],
+    "score": 75
+  },
+  {
+    "title": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-11-16",
+    "summary": "Hugging Face and OpenRouter join forces to make open-weight models easy to run",
+    "url": "https://huggingface.co/blog/openrouter",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 75
   },
   {
     "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
@@ -60,7 +139,7 @@ export const aiNewsItems = [
     "tags": [
       "技术工具"
     ],
-    "score": 78
+    "score": 74
   },
   {
     "title": "A step toward defining the Standard Model on a lattice",
@@ -73,32 +152,20 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 77
-  },
-  {
-    "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-11-12",
-    "summary": "Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.",
-    "url": "https://openai.com/business/customer-stories/amplitude",
-    "tags": [
-      "智能体",
-      "模型"
-    ],
-    "score": 77
-  },
-  {
-    "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-    "source": "OpenAI News",
-    "category": "智能体",
-    "date": "2026-11-13",
-    "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-    "url": "https://openai.com/business/customer-stories/shield",
-    "tags": [
-      "智能体"
-    ],
     "score": 73
+  },
+  {
+    "title": "At Holiday Extras, dots get to work before anyone asks",
+    "source": "OpenAI News",
+    "category": "实用技能",
+    "date": "2026-11-16",
+    "summary": "Dots deliver launch reports unprompted, flag issues people might miss, and talk through upcoming meetings on the commute to work.",
+    "url": "https://openai.com/business/customer-stories/holiday-extras-dots",
+    "tags": [
+      "实用技能",
+      "技能"
+    ],
+    "score": 71
   },
   {
     "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
@@ -110,7 +177,7 @@ export const aiNewsItems = [
     "tags": [
       "智能体"
     ],
-    "score": 73
+    "score": 69
   },
   {
     "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
@@ -123,20 +190,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 69
-  },
-  {
-    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-    "source": "Hugging Face Blog",
-    "category": "模型技术",
-    "date": "2026-11-12",
-    "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 67
+    "score": 65
   },
   {
     "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
@@ -150,7 +204,7 @@ export const aiNewsItems = [
       "模型",
       "技能"
     ],
-    "score": 67
+    "score": 63
   },
   {
     "title": "New AI “copilot” helps engineers design better structures",
@@ -162,7 +216,20 @@ export const aiNewsItems = [
     "tags": [
       "AI 编程"
     ],
-    "score": 66
+    "score": 62
+  },
+  {
+    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "source": "Hugging Face Blog",
+    "category": "模型技术",
+    "date": "2026-11-12",
+    "summary": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "tags": [
+      "模型技术",
+      "模型"
+    ],
+    "score": 62
   },
   {
     "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
@@ -175,7 +242,7 @@ export const aiNewsItems = [
       "智能体",
       "模型"
     ],
-    "score": 66
+    "score": 62
   },
   {
     "title": "Opening the datasets behind our AI weather models",
@@ -188,7 +255,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 63
+    "score": 59
   },
   {
     "title": "New research could lead to faster, trustworthy AI models for climate prediction",
@@ -202,19 +269,7 @@ export const aiNewsItems = [
       "研究",
       "模型"
     ],
-    "score": 62
-  },
-  {
-    "title": "Holiday Extras is rethinking what it can build with Codex",
-    "source": "OpenAI News",
-    "category": "AI 编程",
-    "date": "2026-11-12",
-    "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-    "tags": [
-      "AI 编程"
-    ],
-    "score": 61
+    "score": 58
   },
   {
     "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
@@ -227,19 +282,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 59
-  },
-  {
-    "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-    "source": "OpenAI News",
-    "category": "实用技能",
-    "date": "2026-11-11",
-    "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production.",
-    "url": "https://openai.com/index/jiostar-vijay-seshadri",
-    "tags": [
-      "实用技能"
-    ],
-    "score": 57
+    "score": 54
   },
   {
     "title": "Decision Models in Hugging Face",
@@ -252,20 +295,7 @@ export const aiNewsItems = [
       "模型技术",
       "模型"
     ],
-    "score": 55
-  },
-  {
-    "title": "A single AI model simulates the behavior of many substances, from sliding sand to folding proteins",
-    "source": "MIT News AI",
-    "category": "模型技术",
-    "date": "2026-11-09",
-    "summary": "By learning how matter moves, the WorldParticle system could assist with developing soft robots, medicines, and more.",
-    "url": "https://news.mit.edu/2026/single-ai-model-simulates-many-substances-behavior-1109",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 50
+    "score": 51
   },
   {
     "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
@@ -315,32 +345,6 @@ export const aiNewsItems = [
       "智能体"
     ],
     "score": 48
-  },
-  {
-    "title": "Agile Deliberation: How AI helps humans define the gray areas",
-    "source": "Google Research",
-    "category": "模型技术",
-    "date": "2026-11-04",
-    "summary": "Data Mining & Modeling",
-    "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 44
-  },
-  {
-    "title": "Bringing foundational models to the front lines of TB screening",
-    "source": "Google Research",
-    "category": "模型技术",
-    "date": "2026-10-23",
-    "summary": "Generative AI",
-    "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
-    "tags": [
-      "模型技术",
-      "模型"
-    ],
-    "score": 44
   }
 ];
 
@@ -350,22 +354,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194764,
-      "forks": 107283,
+      "stars": 194759,
+      "forks": 107257,
       "language": "Rust",
       "updatedAt": "2026-11-10",
       "topics": [],
-      "heatScore": 5524,
-      "trendScore": 29790
+      "heatScore": 5523,
+      "trendScore": 29700
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 263700,
-      "forks": 59456,
+      "stars": 264019,
+      "forks": 59545,
       "language": "Python",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai",
         "ai-agent",
@@ -373,17 +377,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4619,
+      "heatScore": 4625,
       "trendScore": 20274
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 303973,
-      "forks": 44799,
+      "stars": 304835,
+      "forks": 44888,
       "language": "JavaScript",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -391,17 +395,17 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4533,
-      "trendScore": 27120
+      "heatScore": 4545,
+      "trendScore": 27109
     },
     {
       "name": "n8n-io/n8n",
       "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
       "url": "https://github.com/n8n-io/n8n",
-      "stars": 210609,
-      "forks": 61534,
+      "stars": 210701,
+      "forks": 61532,
       "language": "TypeScript",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai",
         "apis",
@@ -409,15 +413,15 @@ export const aiRepoRadar = {
         "cli",
         "data-flow"
       ],
-      "heatScore": 4157,
-      "trendScore": 7953
+      "heatScore": 4158,
+      "trendScore": 7954
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 318166,
-      "forks": 28352,
+      "stars": 318831,
+      "forks": 28413,
       "language": "Shell",
       "updatedAt": "2026-11-03",
       "topics": [
@@ -427,27 +431,27 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 4127,
-      "trendScore": 20637
+      "heatScore": 4135,
+      "trendScore": 20633
     },
     {
       "name": "anomalyco/opencode",
       "description": "The open source coding agent.",
       "url": "https://github.com/anomalyco/opencode",
-      "stars": 227117,
-      "forks": 30765,
+      "stars": 227409,
+      "forks": 30814,
       "language": "TypeScript",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [],
-      "heatScore": 3297,
+      "heatScore": 3301,
       "trendScore": 12281
     },
     {
       "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
       "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
-      "stars": 144695,
-      "forks": 34690,
+      "stars": 144722,
+      "forks": 34681,
       "language": "Unknown",
       "updatedAt": "2026-10-12",
       "topics": [
@@ -458,16 +462,16 @@ export const aiRepoRadar = {
         "cursor"
       ],
       "heatScore": 2603,
-      "trendScore": 6977
+      "trendScore": 6970
     },
     {
       "name": "langgenius/dify",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "url": "https://github.com/langgenius/dify",
-      "stars": 161234,
-      "forks": 25512,
+      "stars": 161326,
+      "forks": 25516,
       "language": "Python",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "agent",
         "agentic-ai",
@@ -475,7 +479,7 @@ export const aiRepoRadar = {
         "agentic-workflow",
         "ai"
       ],
-      "heatScore": 2463,
+      "heatScore": 2464,
       "trendScore": 5364
     }
   ],
@@ -484,22 +488,22 @@ export const aiRepoRadar = {
       "name": "ultraworkers/claw-code",
       "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
       "url": "https://github.com/ultraworkers/claw-code",
-      "stars": 194764,
-      "forks": 107283,
+      "stars": 194759,
+      "forks": 107257,
       "language": "Rust",
       "updatedAt": "2026-11-10",
       "topics": [],
-      "heatScore": 5524,
-      "trendScore": 29790
+      "heatScore": 5523,
+      "trendScore": 29700
     },
     {
       "name": "affaan-m/ECC",
       "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "url": "https://github.com/affaan-m/ECC",
-      "stars": 303973,
-      "forks": 44799,
+      "stars": 304835,
+      "forks": 44888,
       "language": "JavaScript",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai-agents",
         "anthropic",
@@ -507,15 +511,15 @@ export const aiRepoRadar = {
         "claude-code",
         "developer-tools"
       ],
-      "heatScore": 4533,
-      "trendScore": 27120
+      "heatScore": 4545,
+      "trendScore": 27109
     },
     {
       "name": "DietrichGebert/ponytail",
       "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
       "url": "https://github.com/DietrichGebert/ponytail",
-      "stars": 191599,
-      "forks": 10733,
+      "stars": 192407,
+      "forks": 10793,
       "language": "JavaScript",
       "updatedAt": "2026-10-29",
       "topics": [
@@ -525,15 +529,15 @@ export const aiRepoRadar = {
         "claude-code",
         "claude-code-plugin"
       ],
-      "heatScore": 2274,
-      "trendScore": 22800
+      "heatScore": 2284,
+      "trendScore": 22750
     },
     {
       "name": "obra/superpowers",
       "description": "An agentic skills framework & software development methodology that works.",
       "url": "https://github.com/obra/superpowers",
-      "stars": 318166,
-      "forks": 28352,
+      "stars": 318831,
+      "forks": 28413,
       "language": "Shell",
       "updatedAt": "2026-11-03",
       "topics": [
@@ -543,17 +547,17 @@ export const aiRepoRadar = {
         "obra",
         "sdlc"
       ],
-      "heatScore": 4127,
-      "trendScore": 20637
+      "heatScore": 4135,
+      "trendScore": 20633
     },
     {
       "name": "NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "url": "https://github.com/NousResearch/hermes-agent",
-      "stars": 263700,
-      "forks": 59456,
+      "stars": 264019,
+      "forks": 59545,
       "language": "Python",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai",
         "ai-agent",
@@ -561,17 +565,17 @@ export const aiRepoRadar = {
         "anthropic",
         "chatgpt"
       ],
-      "heatScore": 4619,
+      "heatScore": 4625,
       "trendScore": 20274
     },
     {
       "name": "Graphify-Labs/graphify",
       "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "url": "https://github.com/Graphify-Labs/graphify",
-      "stars": 148564,
-      "forks": 14256,
+      "stars": 149199,
+      "forks": 14339,
       "language": "Python",
-      "updatedAt": "2026-11-15",
+      "updatedAt": "2026-11-16",
       "topics": [
         "ai-agents",
         "antigravity",
@@ -579,17 +583,17 @@ export const aiRepoRadar = {
         "claude-code",
         "code-analysis"
       ],
-      "heatScore": 1961,
-      "trendScore": 16238
+      "heatScore": 1970,
+      "trendScore": 16241
     },
     {
       "name": "stablyai/orca",
       "description": "Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.",
       "url": "https://github.com/stablyai/orca",
-      "stars": 126020,
-      "forks": 7989,
+      "stars": 127077,
+      "forks": 8065,
       "language": "TypeScript",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "agent-ide",
         "ai-agents",
@@ -597,17 +601,17 @@ export const aiRepoRadar = {
         "bot",
         "claude-code"
       ],
-      "heatScore": 1527,
-      "trendScore": 12732
+      "heatScore": 1540,
+      "trendScore": 12788
     },
     {
       "name": "JuliusBrussee/caveman",
       "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
       "url": "https://github.com/JuliusBrussee/caveman",
-      "stars": 120528,
-      "forks": 7040,
+      "stars": 120843,
+      "forks": 7060,
       "language": "Go",
-      "updatedAt": "2026-11-16",
+      "updatedAt": "2026-11-17",
       "topics": [
         "ai",
         "anthropic",
@@ -615,8 +619,8 @@ export const aiRepoRadar = {
         "claude",
         "claude-code"
       ],
-      "heatScore": 1440,
-      "trendScore": 12715
+      "heatScore": 1444,
+      "trendScore": 12692
     }
   ]
 };
@@ -631,18 +635,18 @@ export const aiNewsSummaries = {
     "count": 16,
     "topCategory": "模型技术",
     "topItems": [
-      "Introducing ChatGPT Wallet",
-      "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "A step toward defining the Standard Model on a lattice"
+      "How Revolut raises ambition without lowering the bar",
+      "Our first phase of embedded assessments",
+      "More ways to move care forward with ChatGPT for Healthcare"
     ]
   },
   "monthly": {
     "count": 22,
     "topCategory": "模型技术",
     "topItems": [
-      "Introducing ChatGPT Wallet",
-      "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "A step toward defining the Standard Model on a lattice"
+      "How Revolut raises ambition without lowering the bar",
+      "Our first phase of embedded assessments",
+      "More ways to move care forward with ChatGPT for Healthcare"
     ]
   }
 };
